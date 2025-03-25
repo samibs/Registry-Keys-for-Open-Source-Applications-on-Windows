@@ -63,10 +63,10 @@ KeePass
 - HKEY_LOCAL_MACHINE\SOFTWARE\VideoLAN\VLC
 
 ### Keys
-| Key | Type | Purpose |
-|-----|------|---------|
-| InstallDir | REG_SZ | Installation directory |
-| recentlyUsedMedia | REG_MULTI_SZ | List of recently opened files |
+| Key                | Type         | Purpose                         |
+|--------------------|--------------|---------------------------------|
+| InstallDir         | REG_SZ       | Installation directory          |
+| recentlyUsedMedia  | REG_MULTI_SZ | List of recently opened files   |
 
 ### Notes
 - Keys may differ if using Microsoft Store version.
