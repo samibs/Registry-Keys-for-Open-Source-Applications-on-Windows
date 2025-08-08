@@ -14,62 +14,37 @@ Offer a community-driven knowledge base
 
 ✅ Structure
 
-registry-keys/
+.
 ├── windows/
-│   ├── vlc.md
 │   ├── 7zip.md
 │   ├── git.md
-│   ├── vscode.md
-│   ├── gimp.md
-│   └── ...
-├── tools/
-│   ├── export_reg_script.ps1
-│   └── reg_compare.ps1
-├── README.md
+│   ├── vlc.md
+│   └── vscode.md (placeholder)
+├── CONTRIBUTING.md
 ├── LICENSE
-└── CONTRIBUTING.md
+└── README.md
 
 🧪 Verified Programs
 
-Below is the initial list. More will be added over time:
+Below is the initial list of applications with documented registry keys. More will be added over time.
 
-VLC Media Player
+- [7-Zip](./windows/7zip.md)
+- [Git for Windows](./windows/git.md)
+- [VLC Media Player](./windows/vlc.md)
+- [Visual Studio Code](./windows/vscode.md) (placeholder)
 
-7-Zip
+The following applications are planned to be added:
 
-Git for Windows
+- GIMP
+- Notepad++
+- Audacity
+- FileZilla
+- Inkscape
+- KeePass
 
-Visual Studio Code
+📄 Template Format
 
-GIMP
-
-Notepad++
-
-Audacity
-
-FileZilla
-
-Inkscape
-
-KeePass
-
-📄 Template Format (for each program)
-
-## VLC Media Player
-
-**Version:** 3.0.20  
-**Registry Paths:**
-- HKEY_CURRENT_USER\Software\VideoLAN\VLC
-- HKEY_LOCAL_MACHINE\SOFTWARE\VideoLAN\VLC
-
-### Keys
-| Key                | Type         | Purpose                         |
-|--------------------|--------------|---------------------------------|
-| InstallDir         | REG_SZ       | Installation directory          |
-| recentlyUsedMedia  | REG_MULTI_SZ | List of recently opened files   |
-
-### Notes
-- Keys may differ if using Microsoft Store version.
+Please see the `CONTRIBUTING.md` file for the template to use when adding a new application.
 
 🤝 Contributing
 
