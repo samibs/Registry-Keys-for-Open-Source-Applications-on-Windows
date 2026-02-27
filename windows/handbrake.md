@@ -1,7 +1,25 @@
+---
+tags:
+  - video
+  - transcoding
+  - HKCU
+  - HKLM
+  - exe-installer
+---
+
 # HandBrake
 
 **Version tested:** 1.7.3
 **Installer type:** `.exe` official installer from handbrake.fr
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install HandBrake.HandBrake` |
+| Chocolatey | `choco install handbrake` |
+| Scoop      | `scoop install handbrake` |
 
 ## 📁 Registry Paths
 
@@ -29,3 +47,10 @@
 - All user preferences (output format defaults, subtitle/audio tracks, preset library) are stored in `%AppData%\HandBrake\`, not the registry.
 - The **portable version** (ZIP extract) creates no registry entries whatsoever.
 - HandBrake relies on bundled codecs; it does not register any DirectShow or MFT filters in the registry.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\HandBrake"                 -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\HandBrake"                 -Recurse -Force -ErrorAction SilentlyContinue
+```

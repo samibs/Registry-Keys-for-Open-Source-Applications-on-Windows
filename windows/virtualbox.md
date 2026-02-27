@@ -1,7 +1,24 @@
+---
+tags:
+  - virtualization
+  - HKLM
+  - SYSTEM-services
+  - exe-installer
+---
+
 # Oracle VM VirtualBox
 
 **Version tested:** 7.0.14
 **Installer type:** `.exe` official installer from virtualbox.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install Oracle.VirtualBox` |
+| Chocolatey | `choco install virtualbox` |
+| Scoop      | `scoop install virtualbox` |
 
 ## 📁 Registry Paths
 
@@ -48,3 +65,10 @@
 - VirtualBox installs several kernel-mode drivers (`VBoxSup`, `VBoxNetAdp`, `VBoxNetLwf`, `VBoxUSBMon`); each creates a corresponding `Services` key under `HKLM\SYSTEM\CurrentControlSet\Services`.
 - The **Extension Pack** installs additional COM components but does not change the main registry path.
 - Uninstalling VirtualBox does not automatically remove leftover network adapter entries in Device Manager; use VirtualBox's uninstaller or `VBoxNetAdpCtl` to clean up.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKLM:\SOFTWARE\Oracle\VirtualBox"         -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\WOW6432Node\Oracle\VirtualBox" -Recurse -Force -ErrorAction SilentlyContinue
+```

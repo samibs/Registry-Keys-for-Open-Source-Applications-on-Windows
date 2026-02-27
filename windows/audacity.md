@@ -1,7 +1,24 @@
+---
+tags:
+  - audio
+  - HKCU
+  - HKLM
+  - exe-installer
+---
+
 # Audacity
 
 **Version tested:** 3.4.2
 **Installer type:** `.exe` official installer from audacityteam.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install Audacity.Audacity` |
+| Chocolatey | `choco install audacity` |
+| Scoop      | `scoop install audacity` |
 
 ## 📁 Registry Paths
 
@@ -36,3 +53,10 @@
 - Audacity 3.x switched from the legacy `audacity.cfg` ini format to a SQLite-based project format (`.aup3`).
 - On 32-bit Windows or older 32-bit builds, the key may appear under `HKLM\SOFTWARE\WOW6432Node\Audacity`.
 - Audacity does not register file associations by default; `.aup3` association is optional during install.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\Audacity"                  -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\Audacity"                  -Recurse -Force -ErrorAction SilentlyContinue
+```

@@ -1,7 +1,24 @@
+---
+tags:
+  - image-editing
+  - HKCU
+  - HKLM
+  - exe-installer
+---
+
 # GIMP
 
 **Version tested:** 2.10.36
 **Installer type:** `.exe` official installer from gimp.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install GIMP.GIMP` |
+| Chocolatey | `choco install gimp` |
+| Scoop      | `scoop install gimp` |
 
 ## 📁 Registry Paths
 
@@ -35,3 +52,11 @@
 - On 64-bit Windows the keys appear under `HKLM\SOFTWARE\GIMP\2.0`; there is no WOW6432Node redirect because the official build is 64-bit.
 - GIMP 3.x uses a different installer and registry path (`HKLM\SOFTWARE\GIMP\3.0`); document separately when stable.
 - File associations (`.xcf`, `.psd`, etc.) are registered under `HKLM\SOFTWARE\Classes` at install time.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\GIMP"                      -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\GIMP"                      -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\WOW6432Node\GIMP"          -Recurse -Force -ErrorAction SilentlyContinue
+```

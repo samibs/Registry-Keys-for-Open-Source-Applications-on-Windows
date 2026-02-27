@@ -6,12 +6,15 @@
     "version_tested": "23.01",
     "installer_type": "`.exe` from 7-zip.org",
     "hives": [
+      "HKCR",
       "HKCU",
       "HKLM"
     ],
     "registry_paths": [
       "HKEY_CURRENT_USER\\Software\\7-Zip",
-      "HKEY_LOCAL_MACHINE\\SOFTWARE\\7-Zip"
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\7-Zip",
+      "HKEY_CLASSES_ROOT\\*\\shellex\\ContextMenuHandlers\\7-Zip",
+      "HKEY_CLASSES_ROOT\\7-Zip.*"
     ]
   },
   {
@@ -26,6 +29,56 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Audacity",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Audacity"
+    ]
+  },
+  {
+    "name": "Brave Browser",
+    "slug": "brave",
+    "file": "windows/brave.md",
+    "version_tested": "1.63.169",
+    "installer_type": "`.exe` official installer from brave.com",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\BraveSoftware\\Brave-Browser",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\BraveSoftware Brave Browser",
+      "HKEY_CURRENT_USER\\Software\\BraveSoftware\\Brave-Browser",
+      "HKEY_CLASSES_ROOT\\BraveHTML",
+      "HKEY_CLASSES_ROOT\\brave"
+    ]
+  },
+  {
+    "name": "DBeaver Community Edition",
+    "slug": "dbeaver",
+    "file": "windows/dbeaver.md",
+    "version_tested": "24.0.0",
+    "installer_type": "`.exe` official installer from dbeaver.io",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\DBeaver Community_is1",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\DBeaver Community_is1"
+    ]
+  },
+  {
+    "name": "Docker Desktop",
+    "slug": "docker-desktop",
+    "file": "windows/docker-desktop.md",
+    "version_tested": "4.29.0",
+    "installer_type": "`.exe` official installer from docker.com",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Docker Inc.\\Docker Desktop",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Docker Desktop",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\com.docker.service",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\DockerDesktopBackend"
     ]
   },
   {
@@ -49,6 +102,7 @@
     "version_tested": "123.0",
     "installer_type": "`.exe` official full installer from mozilla.org",
     "hives": [
+      "HKCR",
       "HKCU",
       "HKLM"
     ],
@@ -56,7 +110,9 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Mozilla\\Mozilla Firefox",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Mozilla\\Mozilla Firefox\\<version> (x64 en-US)\\Main",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Mozilla Firefox <version> (x64 en-US)",
-      "HKEY_CURRENT_USER\\Software\\Mozilla\\Mozilla Firefox"
+      "HKEY_CURRENT_USER\\Software\\Mozilla\\Mozilla Firefox",
+      "HKEY_CLASSES_ROOT\\FirefoxHTML-<hash>",
+      "HKEY_CLASSES_ROOT\\FirefoxURL-<hash>"
     ]
   },
   {
@@ -89,6 +145,22 @@
     ]
   },
   {
+    "name": "Git Extensions",
+    "slug": "git-extensions",
+    "file": "windows/git-extensions.md",
+    "version_tested": "4.2.1",
+    "installer_type": "`.msi` official installer from gitextensions.github.io",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\GitExtensions\\GitExtensions",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}",
+      "HKEY_CURRENT_USER\\Software\\GitExtensions"
+    ]
+  },
+  {
     "name": "HandBrake",
     "slug": "handbrake",
     "file": "windows/handbrake.md",
@@ -99,6 +171,21 @@
     ],
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HandBrake"
+    ]
+  },
+  {
+    "name": "HeidiSQL",
+    "slug": "heidisql",
+    "file": "windows/heidisql.md",
+    "version_tested": "12.6.0",
+    "installer_type": "`.exe` official installer from heidisql.com",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\HeidiSQL",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HeidiSQL_is1"
     ]
   },
   {
@@ -143,6 +230,20 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\LibreOffice\\LibreOffice\\7.6",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}",
       "HKEY_CURRENT_USER\\Software\\LibreOffice"
+    ]
+  },
+  {
+    "name": "Node.js",
+    "slug": "nodejs",
+    "file": "windows/nodejs.md",
+    "version_tested": "20.11.1 LTS",
+    "installer_type": "`.msi` official installer from nodejs.org",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Node.js",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}"
     ]
   },
   {
@@ -193,18 +294,88 @@
     ]
   },
   {
+    "name": "Python",
+    "slug": "python",
+    "file": "windows/python.md",
+    "version_tested": "3.12.2",
+    "installer_type": "`.exe` official installer from python.org",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Python\\PythonCore\\3.12",
+      "HKEY_CURRENT_USER\\Software\\Python\\PythonCore\\3.12",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}",
+      "HKEY_CLASSES_ROOT\\.py",
+      "HKEY_CLASSES_ROOT\\Python.File",
+      "HKEY_CLASSES_ROOT\\Python.CompiledFile"
+    ]
+  },
+  {
     "name": "qBittorrent",
     "slug": "qbittorrent",
     "file": "windows/qbittorrent.md",
     "version_tested": "4.6.3",
     "installer_type": "`.exe` official installer from qbittorrent.org",
     "hives": [
+      "HKCR",
       "HKCU",
       "HKLM"
     ],
     "registry_paths": [
       "HKEY_CURRENT_USER\\Software\\qBittorrent",
-      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\qBittorrent"
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\qBittorrent",
+      "HKEY_CLASSES_ROOT\\.torrent",
+      "HKEY_CLASSES_ROOT\\magnet"
+    ]
+  },
+  {
+    "name": "Signal Desktop",
+    "slug": "signal",
+    "file": "windows/signal.md",
+    "version_tested": "7.7.0",
+    "installer_type": "`.exe` official installer from signal.org",
+    "hives": [
+      "HKCR",
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\signal-desktop",
+      "HKEY_CLASSES_ROOT\\sgnl",
+      "HKEY_CLASSES_ROOT\\signalcaptcha"
+    ]
+  },
+  {
+    "name": "Sublime Text",
+    "slug": "sublime-text",
+    "file": "windows/sublime-text.md",
+    "version_tested": "4.0 (Build 4169)",
+    "installer_type": "`.exe` official installer from sublimetext.com",
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Sublime Text_is1",
+      "HKEY_CLASSES_ROOT\\sublime_auto_file",
+      "HKEY_CLASSES_ROOT\\*\\shell\\Open with Sublime Text"
+    ]
+  },
+  {
+    "name": "Telegram Desktop",
+    "slug": "telegram",
+    "file": "windows/telegram.md",
+    "version_tested": "4.16.6",
+    "installer_type": "`.exe` official installer from telegram.org",
+    "hives": [
+      "HKCR",
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{53F49750-6209-4FBF-9CA8-7A333C87D1ED}_is1",
+      "HKEY_CLASSES_ROOT\\tg"
     ]
   },
   {
@@ -231,12 +402,15 @@
     "version_tested": "3.0.20",
     "installer_type": "Official `.exe` from VideoLAN website",
     "hives": [
+      "HKCR",
       "HKCU",
       "HKLM"
     ],
     "registry_paths": [
       "HKEY_CURRENT_USER\\Software\\VideoLAN\\VLC",
-      "HKEY_LOCAL_MACHINE\\SOFTWARE\\VideoLAN\\VLC"
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\VideoLAN\\VLC",
+      "HKEY_CLASSES_ROOT\\VLC.*",
+      "HKEY_CLASSES_ROOT\\.mp4`, `.mkv`, `.avi`, `.mp3"
     ]
   },
   {
@@ -279,12 +453,16 @@
     "version_tested": "4.2.3",
     "installer_type": "`.exe` official installer from wireshark.org",
     "hives": [
+      "HKCR",
       "HKLM"
     ],
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wireshark",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Wireshark",
-      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Npcap"
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Npcap",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\npcap",
+      "HKEY_CLASSES_ROOT\\.pcap",
+      "HKEY_CLASSES_ROOT\\.pcapng"
     ]
   }
 ]

@@ -1,7 +1,26 @@
+---
+tags:
+  - sftp
+  - ftp
+  - HKCU
+  - HKLM
+  - exe-installer
+  - network
+---
+
 # WinSCP
 
 **Version tested:** 6.3.3
 **Installer type:** `.exe` official installer from winscp.net
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install WinSCP.WinSCP` |
+| Chocolatey | `choco install winscp` |
+| Scoop      | `scoop install winscp` |
 
 ## 📁 Registry Paths
 
@@ -56,3 +75,10 @@
 - WinSCP uses the registry as its primary config store (unlike most apps in this collection); exporting `HKCU\Software\Martin Prikryl\WinSCP 2` is the standard way to migrate settings between machines.
 - The **portable version** stores all configuration in `WinSCP.ini` alongside the executable and does not create any registry entries.
 - SSH host key fingerprints are stored under `HKCU\Software\SimonTatham\PuTTY\SshHostKeys` if PuTTY is installed; otherwise WinSCP creates its own subkey for host key storage.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\Martin Prikryl\WinSCP 2"  -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\Martin Prikryl\WinSCP 2"  -Recurse -Force -ErrorAction SilentlyContinue
+```

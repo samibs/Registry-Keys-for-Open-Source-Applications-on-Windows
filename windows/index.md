@@ -19,25 +19,35 @@ When open-source applications are installed on Windows, they write entries to th
 
 | Application | Version | Installer | Hives |
 |-------------|---------|-----------|-------|
-| [7-Zip](7zip.md) | 23.01 | `.exe` | HKCU, HKLM |
-| [Audacity](audacity.md) | 3.4.2 | `.exe` | HKLM |
-| [FileZilla](filezilla.md) | 3.66.5 | `.exe` | HKLM |
-| [Mozilla Firefox](firefox.md) | 123.0 | `.exe` | HKCU, HKLM |
-| [GIMP](gimp.md) | 2.10.36 | `.exe` | HKLM |
+| [7-Zip](7zip.md) | 23.01 | `.exe` | HKCU, HKLM, HKCR |
+| [Audacity](audacity.md) | 3.4.2 | `.exe` | HKCU, HKLM |
+| [Brave Browser](brave.md) | 1.63.169 | `.exe` | HKCU, HKLM, HKCR |
+| [DBeaver](dbeaver.md) | 24.0.0 | `.exe` | HKLM |
+| [Docker Desktop](docker-desktop.md) | 4.29.0 | `.exe` | HKLM, SYSTEM |
+| [FileZilla](filezilla.md) | 3.66.5 | `.exe` | HKCU, HKLM |
+| [Mozilla Firefox](firefox.md) | 123.0 | `.exe` | HKCU, HKLM, HKCR |
+| [GIMP](gimp.md) | 2.10.36 | `.exe` | HKCU, HKLM |
+| [Git Extensions](git-extensions.md) | 4.2.1 | `.msi` | HKCU, HKLM, HKCR |
 | [Git for Windows](git.md) | 2.44.0 | `.exe` | HKCU, HKLM |
-| [HandBrake](handbrake.md) | 1.7.3 | `.exe` | HKLM |
-| [Inkscape](inkscape.md) | 1.3.2 | `.exe` | HKLM |
-| [KeePass Password Safe](keepass.md) | 2.55 | `.exe` | HKLM |
+| [HandBrake](handbrake.md) | 1.7.3 | `.exe` | HKCU, HKLM |
+| [HeidiSQL](heidisql.md) | 12.6.0 | `.exe` | HKCU, HKLM |
+| [Inkscape](inkscape.md) | 1.3.2 | `.exe` | HKCU, HKLM |
+| [KeePass Password Safe](keepass.md) | 2.55 | `.exe` | HKCU, HKLM |
 | [LibreOffice](libreoffice.md) | 7.6.5 | `.msi` | HKCU, HKLM |
-| [Notepad++](notepadplusplus.md) | 8.6.2 | `.exe` | HKCU, HKLM |
-| [OBS Studio](obs.md) | 30.0.2 | `.exe` | HKLM |
+| [Node.js](nodejs.md) | 20.11.1 | `.msi` | HKLM |
+| [Notepad++](notepadplusplus.md) | 8.6.2 | `.exe` | HKLM |
+| [OBS Studio](obs.md) | 30.0.2 | `.exe` | HKCU, HKLM |
 | [PuTTY](putty.md) | 0.80 | `.msi` | HKCU, HKLM |
-| [qBittorrent](qbittorrent.md) | 4.6.3 | `.exe` | HKCU, HKLM |
-| [Oracle VM VirtualBox](virtualbox.md) | 7.0.14 | `.exe` | HKLM |
-| [VLC Media Player](vlc.md) | 3.0.20 | `.exe` | HKCU, HKLM |
-| [Visual Studio Code](vscode.md) | 1.85.1 | User `.exe` | HKCU |
+| [Python](python.md) | 3.12.2 | `.exe` | HKCU, HKLM, HKCR |
+| [qBittorrent](qbittorrent.md) | 4.6.3 | `.exe` | HKCU, HKLM, HKCR |
+| [Signal Desktop](signal.md) | 7.7.0 | `.exe` | HKCU, HKCR |
+| [Sublime Text](sublime-text.md) | 4169 | `.exe` | HKLM, HKCR |
+| [Telegram Desktop](telegram.md) | 4.16.6 | `.exe` | HKCU, HKCR |
+| [Oracle VM VirtualBox](virtualbox.md) | 7.0.14 | `.exe` | HKLM, SYSTEM |
+| [VLC Media Player](vlc.md) | 3.0.20 | `.exe` | HKCU, HKLM, HKCR |
+| [Visual Studio Code](vscode.md) | 1.85.1 | User `.exe` | HKCU, HKCR |
 | [WinSCP](winscp.md) | 6.3.3 | `.exe` | HKCU, HKLM |
-| [Wireshark](wireshark.md) | 4.2.3 | `.exe` | HKLM |
+| [Wireshark](wireshark.md) | 4.2.3 | `.exe` | HKLM, HKCR, SYSTEM |
 
 ---
 

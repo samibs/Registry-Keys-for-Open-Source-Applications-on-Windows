@@ -1,48 +1,164 @@
-# Contributing to Registry Keys
+# Contributing to Registry Keys for Open-Source Windows Apps
 
-We welcome contributions from the community to help grow this collection of registry keys for open-source applications. Your help is essential for keeping this repository up-to-date and comprehensive.
+We welcome contributions from sysadmins, developers, and power users who have hands-on experience with Windows registry behaviour. Quality over quantity — every entry should be **verified on a real machine**.
 
-## How to Contribute
+---
 
-There are several ways you can contribute to this project:
+## Ways to Contribute
 
-- **Adding a new application:** If you have information about an application that is not yet in our collection, please follow the steps below to add it.
-- **Updating existing information:** If you find that the information for an application is outdated or incomplete, you can submit a pull request with the necessary changes.
-- **Reporting issues:** If you find any problems with the repository, such as incorrect information or broken links, please open an issue.
+| Type | How |
+|------|-----|
+| ➕ **New application** | Add a new `windows/<app>.md` following the template below |
+| 🔄 **Update existing doc** | Open a PR correcting version, paths, or key values |
+| 🐛 **Report an error** | Open an issue — include OS version and app version |
+| 💡 **Suggest an app** | Open an issue with the app name and why it's useful |
 
-## Adding a New Application
+---
 
-To add a new application to the collection, please follow these steps:
+## Before You Start
 
-1.  **Fork the repository:** Start by forking the repository to your own GitHub account.
-2.  **Create a new file:** In the `windows/` directory, create a new markdown file for the application. The filename should be the application's name in lowercase (e.g., `notepadplusplus.md`).
-3.  **Follow the template:** Use the following template to structure the information in the new file. Make sure to fill in all the relevant details.
+- Verify registry keys on a **clean install** (VM snapshot recommended).
+- Test with the **latest stable release** of the app.
+- Use `tools/export-reg-changes.ps1` to capture before/after snapshots automatically.
+- Run `tools/validate-docs.ps1` locally before opening a PR — CI will reject failures.
 
-    ```markdown
-    # Application Name
+---
 
-    **Version tested:** [Version number]
-    **Installer type:** [e.g., .exe, .msi, portable]
+## Full Document Template
 
-    ## 📁 Registry Paths
+Every `windows/<app>.md` must include all sections below. Replace everything in `[brackets]`.
 
-    - `[Full registry path]`
-    - `[Another full registry path, if applicable]`
+```markdown
+---
+tags:
+  - [category]       # e.g. browser, text-editor, audio, network
+  - [HKCU|HKLM|HKCR|HKLM-SYSTEM]   # all hives this app touches
+  - [exe-installer|msi-installer|portable]
+---
 
-    ## 🔑 Keys
+# [Application Name]
 
-    | Key Name      | Type        | Description                               |
-    |---------------|-------------|-------------------------------------------|
-    | `ExampleKey`  | `REG_SZ`    | A brief description of what this key does.|
-    | `AnotherKey`  | `REG_DWORD` | Another example key.                      |
+**Version tested:** [e.g., 1.2.3]
+**Installer type:** [e.g., `.exe` official installer from example.com]
 
-    ## 📝 Notes
+## 📦 Package Managers
 
-    - Any additional notes or observations go here.
-    ```
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install Publisher.AppName` |
+| Chocolatey | `choco install appname` |
+| Scoop      | `scoop install appname` |
 
-4.  **Submit a pull request:** Once you have created the new file, commit your changes and submit a pull request. We will review your contribution and merge it if everything is correct.
+## 📁 Registry Paths
+
+- `HKEY_CURRENT_USER\Software\Vendor\AppName`
+- `HKEY_LOCAL_MACHINE\SOFTWARE\Vendor\AppName`
+- `HKEY_CLASSES_ROOT\.ext`  *(file association, if applicable)*
+
+## 🔑 Keys
+
+| Key Name       | Type        | Description                              |
+|----------------|-------------|------------------------------------------|
+| `KeyName`      | `REG_SZ`    | What this value controls                 |
+| `AnotherKey`   | `REG_DWORD` | Numeric setting; `0` = disabled, `1` = enabled |
+
+### Optional subsection for complex apps
+
+| Key Name    | Type     | Description |
+|-------------|----------|-------------|
+| `SubKey`    | `REG_SZ` | ...         |
+
+## 📝 Notes
+
+- Key behaviours, caveats, or security warnings.
+- ⚠️ Use this prefix for anything security-relevant.
+- Differences between admin and user installs.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\Vendor\AppName"  -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\Vendor\AppName"  -Recurse -Force -ErrorAction SilentlyContinue
+```
+```
+
+---
+
+## Annotated Example — `windows/keepass.md`
+
+Here's what a complete, production-ready doc looks like (abbreviated):
+
+```markdown
+---
+tags:
+  - password-manager
+  - security
+  - HKCU
+  - HKLM
+  - exe-installer
+---
+
+# KeePass Password Safe
+
+**Version tested:** 2.55
+**Installer type:** `.exe` official installer from keepass.info
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install DominikReichl.KeePass` |
+| Chocolatey | `choco install keepass` |
+| Scoop      | `scoop install keepass` |
+
+## 📁 Registry Paths
+
+- `HKEY_CURRENT_USER\Software\KeePass`
+- `HKEY_LOCAL_MACHINE\SOFTWARE\KeePass`
+
+## 🔑 Keys
+
+| Key Name         | Type     | Description                          |
+|------------------|----------|--------------------------------------|
+| `LastUsedFile`   | `REG_SZ` | Path to the last opened .kdbx file  |
+| `StartWithWindows` | `REG_DWORD` | `1` = launch KeePass at logon   |
+
+## 📝 Notes
+
+- The master database (.kdbx) is **not** stored in the registry.
+- ⚠️ Do not store the master password in the registry.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\KeePass"  -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\KeePass"  -Recurse -Force -ErrorAction SilentlyContinue
+```
+```
+
+---
+
+## Filename Conventions
+
+| Rule | Example |
+|------|---------|
+| Lowercase, no spaces | `notepadplusplus.md` ✅ |
+| Hyphens for multi-word | `git-extensions.md` ✅ |
+| No version numbers | `vscode.md` ✅ not `vscode-1.85.md` |
+
+---
+
+## After Adding a Doc
+
+1. Run `tools/build-index.ps1` to update `windows/index.json`.
+2. Run `tools/validate-docs.ps1` — all files must pass.
+3. Add the new app to the `nav:` section in `mkdocs.yml` (alphabetical order).
+4. Add the new app to the table in `windows/index.md`.
+5. Open a PR — CI will re-run both scripts automatically.
+
+---
 
 ## Code of Conduct
 
-Please note that this project is released with a Contributor Code of Conduct. By participating in this project you agree to abide by its terms. We are committed to fostering an open and welcoming environment.
+This project follows a standard contributor code of conduct. Be respectful, be accurate, and cite your sources. Registry key values you document should be verifiable by any other contributor on a clean Windows install.
+

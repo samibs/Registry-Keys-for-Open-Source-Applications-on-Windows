@@ -31,6 +31,8 @@ theme:
 
 plugins:
   - search
+  - tags:
+      tags_file: tags.md
 
 markdown_extensions:
   - tables
@@ -41,21 +43,32 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Tags: tags.md
   - Applications:
     - 7-Zip: 7zip.md
     - Audacity: audacity.md
+    - Brave Browser: brave.md
+    - DBeaver: dbeaver.md
+    - Docker Desktop: docker-desktop.md
     - FileZilla: filezilla.md
     - Mozilla Firefox: firefox.md
     - GIMP: gimp.md
+    - Git Extensions: git-extensions.md
     - Git for Windows: git.md
     - HandBrake: handbrake.md
+    - HeidiSQL: heidisql.md
     - Inkscape: inkscape.md
     - KeePass Password Safe: keepass.md
     - LibreOffice: libreoffice.md
+    - Node.js: nodejs.md
     - Notepad++: notepadplusplus.md
     - OBS Studio: obs.md
     - PuTTY: putty.md
+    - Python: python.md
     - qBittorrent: qbittorrent.md
+    - Signal Desktop: signal.md
+    - Sublime Text: sublime-text.md
+    - Telegram Desktop: telegram.md
     - Oracle VM VirtualBox: virtualbox.md
     - VLC Media Player: vlc.md
     - Visual Studio Code: vscode.md

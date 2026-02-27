@@ -1,7 +1,24 @@
+---
+tags:
+  - office
+  - HKCU
+  - HKLM
+  - exe-installer
+---
+
 # LibreOffice
 
 **Version tested:** 7.6.5
 **Installer type:** `.msi` official installer from libreoffice.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install TheDocumentFoundation.LibreOffice` |
+| Chocolatey | `choco install libreoffice` |
+| Scoop      | `scoop install libreoffice` |
 
 ## 📁 Registry Paths
 
@@ -44,3 +61,11 @@
 - The MSI installer creates COM server registration entries under `HKLM\SOFTWARE\Classes\CLSID\` for OLE/ActiveX embedding.
 - File associations (`.odt`, `.docx`, `.xlsx`, etc.) are registered under `HKLM\SOFTWARE\Classes` during install if the user opts in.
 - The **64-bit** installer uses the standard path; **32-bit** on 64-bit Windows redirects to `HKLM\SOFTWARE\WOW6432Node\LibreOffice`.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\LibreOffice"               -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\LibreOffice"               -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\WOW6432Node\LibreOffice"   -Recurse -Force -ErrorAction SilentlyContinue
+```

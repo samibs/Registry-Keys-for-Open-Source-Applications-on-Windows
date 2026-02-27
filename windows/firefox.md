@@ -1,7 +1,25 @@
+---
+tags:
+  - browser
+  - HKCU
+  - HKLM
+  - HKCR
+  - exe-installer
+---
+
 # Mozilla Firefox
 
 **Version tested:** 123.0
 **Installer type:** `.exe` official full installer from mozilla.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install Mozilla.Firefox` |
+| Chocolatey | `choco install firefox` |
+| Scoop      | `scoop install firefox` |
 
 ## 📁 Registry Paths
 
@@ -9,6 +27,8 @@
 - `HKEY_LOCAL_MACHINE\SOFTWARE\Mozilla\Mozilla Firefox\<version> (x64 en-US)\Main`
 - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\Mozilla Firefox <version> (x64 en-US)`
 - `HKEY_CURRENT_USER\Software\Mozilla\Mozilla Firefox` *(created at first launch)*
+- `HKEY_CLASSES_ROOT\FirefoxHTML-<hash>` *(HTML file handler ProgID)*
+- `HKEY_CLASSES_ROOT\FirefoxURL-<hash>` *(http/https URL handler ProgID)*
 
 ## 🔑 Keys
 
@@ -44,3 +64,35 @@
 - Enterprise policy settings can be pushed via `HKLM\SOFTWARE\Policies\Mozilla\Firefox` — see [Firefox Enterprise Policies](https://github.com/mozilla/policy-templates).
 - The 32-bit installer on 64-bit Windows places keys under `HKLM\SOFTWARE\WOW6432Node\Mozilla`.
 - The **MSI** enterprise installer uses the same registry structure but allows per-machine deployment via Group Policy.
+- The `FirefoxHTML-<hash>` and `FirefoxURL-<hash>` ProgIDs are unique per installation (hash is derived from the install path) to support multiple Firefox installs side-by-side.
+
+## 🌐 HKCR — URL & File Handlers
+
+### HTML file handler (`HKCR\FirefoxHTML-<hash>`)
+
+| Key Path                                         | Type     | Description                                         |
+|--------------------------------------------------|----------|-----------------------------------------------------|
+| `(Default)`                                      | `REG_SZ` | `Firefox HTML Document`                             |
+| `shell\open\command\(Default)`                  | `REG_SZ` | `"C:\...\firefox.exe" -osint -url "%1"`             |
+
+### URL protocol handler (`HKCR\FirefoxURL-<hash>`)
+
+| Key Path                                         | Type     | Description                                          |
+|--------------------------------------------------|----------|------------------------------------------------------|
+| `(Default)`                                      | `REG_SZ` | `Firefox URL`                                        |
+| `URL Protocol`                                   | `REG_SZ` | Empty string — marks key as a URL protocol handler   |
+| `shell\open\command\(Default)`                  | `REG_SZ` | `"C:\...\firefox.exe" -osint -url "%1"`              |
+
+To find the exact hash on a given machine:
+
+```powershell
+Get-ChildItem "HKCR:\" | Where-Object { $_.Name -match "FirefoxHTML|FirefoxURL" }
+```
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\Mozilla\Firefox"           -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\Mozilla\Mozilla Firefox"   -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\WOW6432Node\Mozilla"       -Recurse -Force -ErrorAction SilentlyContinue
+```

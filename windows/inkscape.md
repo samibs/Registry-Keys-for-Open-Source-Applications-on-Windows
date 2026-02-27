@@ -1,7 +1,24 @@
+---
+tags:
+  - vector-graphics
+  - HKCU
+  - HKLM
+  - exe-installer
+---
+
 # Inkscape
 
 **Version tested:** 1.3.2
 **Installer type:** `.exe` (NSIS installer) from inkscape.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install Inkscape.Inkscape` |
+| Chocolatey | `choco install inkscape` |
+| Scoop      | `scoop install inkscape` |
 
 ## 📁 Registry Paths
 
@@ -36,3 +53,10 @@
 - SVG file associations (`.svg`, `.svgz`) are registered under `HKLM\SOFTWARE\Classes` during installation if the user opts in.
 - On a 64-bit Windows system, Inkscape 1.x is natively 64-bit; no WOW6432Node redirect is used.
 - The portable ZIP distribution does not create any registry entries.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\Inkscape"                  -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\Inkscape"                  -Recurse -Force -ErrorAction SilentlyContinue
+```

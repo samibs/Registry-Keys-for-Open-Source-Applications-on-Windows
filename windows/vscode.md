@@ -1,7 +1,26 @@
+---
+tags:
+  - text-editor
+  - ide
+  - HKCU
+  - HKCR
+  - exe-installer
+  - developer-tools
+---
+
 # Visual Studio Code
 
 **Version tested:** 1.85.1
 **Installer type:** User Installer `.exe`
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install Microsoft.VisualStudioCode` |
+| Chocolatey | `choco install vscode` |
+| Scoop      | `scoop install vscode` |
 
 ## 📁 Registry Paths
 
@@ -37,3 +56,23 @@
 - The uninstall GUID in the registry path (`{771FD6B0-...}`) may differ slightly between patch versions; always confirm via `Get-ChildItem HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall\ | Where-Object { $_.GetValue("DisplayName") -like "*Visual Studio Code*" }`.
 - VS Code stores all user settings (extensions, preferences, keybindings) in `%APPDATA%\Code\`, not the registry.
 - The `vscode://` URI scheme is used by extension marketplaces and external tools to trigger commands inside VS Code directly.
+
+## 🗑️ Cleanup
+
+The uninstall GUID varies per version; use the dynamic lookup below:
+
+```powershell
+# User installer (HKCU)
+Get-ChildItem "HKCU:\Software\Microsoft\Windows\CurrentVersion\Uninstall" |
+  Where-Object { $_.GetValue("DisplayName") -like "*Visual Studio Code*" } |
+  ForEach-Object { Remove-Item $_.PSPath -Recurse -Force }
+
+# URI handlers
+Remove-Item -Path "HKCU:\Software\Classes\vscode"          -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKCU:\Software\Classes\vscode-insiders"  -Recurse -Force -ErrorAction SilentlyContinue
+
+# System installer (HKLM) — run as Administrator
+Get-ChildItem "HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall" |
+  Where-Object { $_.GetValue("DisplayName") -like "*Visual Studio Code*" } |
+  ForEach-Object { Remove-Item $_.PSPath -Recurse -Force }
+```

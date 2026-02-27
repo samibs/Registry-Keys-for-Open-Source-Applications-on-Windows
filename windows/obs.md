@@ -1,7 +1,25 @@
+---
+tags:
+  - streaming
+  - recording
+  - HKCU
+  - HKLM
+  - exe-installer
+---
+
 # OBS Studio
 
 **Version tested:** 30.0.2
 **Installer type:** `.exe` official installer from obsproject.com
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install OBSProject.OBSStudio` |
+| Chocolatey | `choco install obs-studio` |
+| Scoop      | `scoop install obs` |
 
 ## 📁 Registry Paths
 
@@ -36,3 +54,10 @@
 - The **portable mode** (extracting the ZIP release) creates no registry entries at all.
 - Virtual Camera driver (`OBS-Camera`) registers a DirectShow filter under `HKLM\SOFTWARE\Classes\CLSID\` and a kernel driver under `HKLM\SYSTEM\CurrentControlSet\Services\OBSVirtualCam` when the Virtual Camera feature is installed.
 - Browser source (CEF) and other plugins do not add additional top-level registry keys.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\OBS Studio"                -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\OBS Studio"                -Recurse -Force -ErrorAction SilentlyContinue
+```

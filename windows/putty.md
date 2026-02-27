@@ -1,7 +1,26 @@
+---
+tags:
+  - ssh
+  - terminal
+  - HKCU
+  - HKLM
+  - msi-installer
+  - network
+---
+
 # PuTTY
 
 **Version tested:** 0.80
 **Installer type:** `.msi` official installer from putty.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install PuTTY.PuTTY` |
+| Chocolatey | `choco install putty` |
+| Scoop      | `scoop install putty` |
 
 ## 📁 Registry Paths
 
@@ -60,3 +79,9 @@
 - The SSH host key cache (`SshHostKeys`) is also shared by WinSCP and FileZilla when they use PuTTY's key format.
 - The **standalone `.exe` version** creates all the same `HKCU` keys but leaves no uninstall entry in ARP.
 - Session names with spaces are stored URL-encoded (spaces become `%20`) as key names.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\SimonTatham\PuTTY"         -Recurse -Force -ErrorAction SilentlyContinue
+```

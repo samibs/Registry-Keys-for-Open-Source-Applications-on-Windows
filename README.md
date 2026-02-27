@@ -52,18 +52,28 @@ Offer a community-driven knowledge base
 |-------------|---------------|----------------|
 | [7-Zip](./windows/7zip.md) | 23.01 | `.exe` |
 | [Audacity](./windows/audacity.md) | 3.4.2 | `.exe` |
+| [Brave Browser](./windows/brave.md) | 1.63.169 | `.exe` |
+| [DBeaver](./windows/dbeaver.md) | 24.0.0 | `.exe` |
+| [Docker Desktop](./windows/docker-desktop.md) | 4.29.0 | `.exe` |
 | [FileZilla](./windows/filezilla.md) | 3.66.5 | `.exe` |
 | [Mozilla Firefox](./windows/firefox.md) | 123.0 | `.exe` |
 | [GIMP](./windows/gimp.md) | 2.10.36 | `.exe` |
+| [Git Extensions](./windows/git-extensions.md) | 4.2.1 | `.msi` |
 | [Git for Windows](./windows/git.md) | 2.44.0 | `.exe` |
 | [HandBrake](./windows/handbrake.md) | 1.7.3 | `.exe` |
+| [HeidiSQL](./windows/heidisql.md) | 12.6.0 | `.exe` |
 | [Inkscape](./windows/inkscape.md) | 1.3.2 | `.exe` |
 | [KeePass Password Safe](./windows/keepass.md) | 2.55 | `.exe` |
 | [LibreOffice](./windows/libreoffice.md) | 7.6.5 | `.msi` |
+| [Node.js](./windows/nodejs.md) | 20.11.1 | `.msi` |
 | [Notepad++](./windows/notepadplusplus.md) | 8.6.2 | `.exe` |
 | [OBS Studio](./windows/obs.md) | 30.0.2 | `.exe` |
 | [PuTTY](./windows/putty.md) | 0.80 | `.msi` |
+| [Python](./windows/python.md) | 3.12.2 | `.exe` |
 | [qBittorrent](./windows/qbittorrent.md) | 4.6.3 | `.exe` |
+| [Signal Desktop](./windows/signal.md) | 7.7.0 | `.exe` |
+| [Sublime Text](./windows/sublime-text.md) | 4169 | `.exe` |
+| [Telegram Desktop](./windows/telegram.md) | 4.16.6 | `.exe` |
 | [Oracle VM VirtualBox](./windows/virtualbox.md) | 7.0.14 | `.exe` |
 | [VLC Media Player](./windows/vlc.md) | 3.0.20 | `.exe` |
 | [Visual Studio Code](./windows/vscode.md) | 1.85.1 | User `.exe` |

@@ -1,7 +1,26 @@
+---
+tags:
+  - ftp
+  - sftp
+  - HKCU
+  - HKLM
+  - exe-installer
+  - network
+---
+
 # FileZilla
 
 **Version tested:** 3.66.5
 **Installer type:** `.exe` official installer from filezilla-project.org
+
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install TimKosse.FileZilla.Client` |
+| Chocolatey | `choco install filezilla` |
+| Scoop      | `scoop install filezilla` |
 
 ## 📁 Registry Paths
 
@@ -37,3 +56,9 @@
 - On 64-bit Windows the installer places a 64-bit binary; the registry path is `HKLM\SOFTWARE\FileZilla Client` without WOW6432Node.
 - FileZilla does not store passwords in the registry; credentials in `sitemanager.xml` are obfuscated but **not encrypted** — treat that file as sensitive.
 - The portable version of FileZilla does not create any registry entries.
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\FileZilla3"                -Recurse -Force -ErrorAction SilentlyContinue
+```

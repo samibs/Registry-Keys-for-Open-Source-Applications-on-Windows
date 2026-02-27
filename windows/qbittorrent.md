@@ -1,12 +1,33 @@
+---
+tags:
+  - torrent
+  - HKCU
+  - HKLM
+  - HKCR
+  - exe-installer
+  - network
+---
+
 # qBittorrent
 
 **Version tested:** 4.6.3
 **Installer type:** `.exe` official installer from qbittorrent.org
 
+
+## 📦 Package Managers
+
+| Manager    | Install Command |
+|------------|-----------------|
+| winget     | `winget install qBittorrent.qBittorrent` |
+| Chocolatey | `choco install qbittorrent` |
+| Scoop      | `scoop install qbittorrent` |
+
 ## 📁 Registry Paths
 
 - `HKEY_CURRENT_USER\Software\qBittorrent`
 - `HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\qBittorrent`
+- `HKEY_CLASSES_ROOT\.torrent` *(if set as default .torrent handler)*
+- `HKEY_CLASSES_ROOT\magnet` *(optional magnet URI handler)*
 
 ## 🔑 Keys
 
@@ -37,3 +58,27 @@
 - Torrent metadata and the download queue are stored in `%LOCALAPPDATA%\qBittorrent\BT_backup\`.
 - The **portable version** stores its INI alongside the executable and creates no registry entries.
 - `magnet:` URI handler registration is optional during install; if enabled, it creates `HKCU\Software\Classes\magnet` (or `HKLM\SOFTWARE\Classes\magnet` for system-wide).
+
+## 🌐 HKCR — File & Protocol Handlers
+
+### Torrent file handler (`HKCR\.torrent`)
+
+| Key Path                               | Type     | Description                                           |
+|----------------------------------------|----------|-------------------------------------------------------|
+| `(Default)`                            | `REG_SZ` | ProgID pointer, e.g. `qBittorrent`                    |
+| `Content Type`                         | `REG_SZ` | `application/x-bittorrent`                            |
+
+### Magnet URI handler (`HKCR\magnet`) — optional
+
+| Key Path                               | Type     | Description                                           |
+|----------------------------------------|----------|-------------------------------------------------------|
+| `(Default)`                            | `REG_SZ` | `URL:Magnet Protocol`                                 |
+| `URL Protocol`                         | `REG_SZ` | Empty string — marks as URL protocol handler          |
+| `shell\open\command\(Default)`        | `REG_SZ` | `"C:\...\qbittorrent.exe" "%1"`                       |
+
+## 🗑️ Cleanup
+
+```powershell
+Remove-Item -Path "HKCU:\Software\qBittorrent"               -Recurse -Force -ErrorAction SilentlyContinue
+Remove-Item -Path "HKLM:\SOFTWARE\qBittorrent"               -Recurse -Force -ErrorAction SilentlyContinue
+```
