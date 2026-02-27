@@ -8,6 +8,7 @@ on:
       - 'windows/**'
       - 'mkdocs.yml'
       - 'requirements.txt'
+      - '.github/workflows/deploy-pages.yml'
   workflow_dispatch:
 
 permissions:
