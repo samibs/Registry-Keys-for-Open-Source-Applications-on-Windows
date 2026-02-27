@@ -9,10 +9,96 @@
   width: 100%;
   box-sizing: border-box;
   transition: border-color 0.2s;
+  margin-bottom: 0.5rem;
 }
 #app-filter:focus {
   outline: none;
   border-color: var(--md-primary-fg-color);
+}
+
+/* ── App table controls wrapper ──────────────────────────────── */
+#app-table-controls {
+  margin-bottom: 1rem;
+}
+
+/* ── Letter navigation ───────────────────────────────────────── */
+#letter-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.2rem;
+  margin-bottom: 0.6rem;
+}
+.letter-btn {
+  min-width: 1.9rem;
+  padding: 0.15rem 0.3rem;
+  cursor: pointer;
+  border-radius: 3px;
+  font-size: 0.8rem;
+  font-weight: normal;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: background 0.15s, color 0.15s;
+}
+.letter-btn:hover {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+}
+.letter-btn.active {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+  font-weight: bold;
+}
+
+/* ── Pagination bar ──────────────────────────────────────────── */
+#pagination-bar {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.pg-btn {
+  padding: 0.25rem 0.7rem;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 0.85rem;
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+  border: 1px solid var(--md-default-fg-color--lightest);
+  transition: background 0.15s;
+}
+.pg-btn:hover:not(:disabled) {
+  background: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+  border-color: var(--md-primary-fg-color);
+}
+.pg-btn:disabled {
+  opacity: 0.35;
+  cursor: default;
+}
+#page-indicator {
+  font-size: 0.85rem;
+  color: var(--md-default-fg-color--light);
+}
+#count-indicator {
+  margin-left: auto;
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+}
+.pg-size-label {
+  font-size: 0.82rem;
+  color: var(--md-default-fg-color--light);
+}
+.pg-size-label select {
+  font-size: 0.82rem;
+  padding: 0.1rem 0.3rem;
+  border-radius: 3px;
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-code-bg-color);
+  color: var(--md-default-fg-color);
+  cursor: pointer;
 }
 
 /* ── Minor table readability improvements ─────────────────────── */

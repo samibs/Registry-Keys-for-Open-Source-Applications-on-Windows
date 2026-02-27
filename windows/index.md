@@ -24,22 +24,110 @@ When open-source applications are installed on Windows, they write entries to th
 
 ## Verified Applications
 
-<div style="margin-bottom:1rem">
-  <input id="app-filter" type="text" placeholder="Filter by name, hive (HKCU, HKLM, HKCR), or installer type…"
-    style="width:100%;padding:0.5rem 0.75rem;font-size:1rem;border:1px solid #ccc;border-radius:4px;box-sizing:border-box" />
+<div id="app-table-controls">
+  <input id="app-filter" type="text" placeholder="Filter by name, hive (HKCU, HKLM, HKCR), or installer type…" />
+  <div id="letter-nav"></div>
+  <div id="pagination-bar">
+    <button id="prev-page" class="pg-btn">&#8592; Prev</button>
+    <span id="page-indicator"></span>
+    <button id="next-page" class="pg-btn">Next &#8594;</button>
+    <span id="count-indicator"></span>
+    <label class="pg-size-label">Show
+      <select id="page-size">
+        <option value="25" selected>25</option>
+        <option value="50">50</option>
+        <option value="10">10</option>
+        <option value="0">All</option>
+      </select>
+      per page
+    </label>
+  </div>
 </div>
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
-  var input = document.getElementById('app-filter');
+  var input       = document.getElementById('app-filter');
+  var letterNav   = document.getElementById('letter-nav');
+  var prevBtn     = document.getElementById('prev-page');
+  var nextBtn     = document.getElementById('next-page');
+  var pageInd     = document.getElementById('page-indicator');
+  var countInd    = document.getElementById('count-indicator');
+  var pageSizeSel = document.getElementById('page-size');
   if (!input) return;
-  input.addEventListener('input', function () {
-    var q = this.value.toLowerCase().trim();
-    var rows = document.querySelectorAll('table tbody tr');
-    rows.forEach(function (row) {
-      row.style.display = (!q || row.textContent.toLowerCase().includes(q)) ? '' : 'none';
-    });
+
+  var tbody = document.querySelector('#app-table-controls ~ table tbody');
+  if (!tbody) tbody = document.querySelector('table tbody');
+  if (!tbody) return;
+
+  /* Sort rows alphabetically by app name (first cell) */
+  var allRows = Array.from(tbody.querySelectorAll('tr'));
+  allRows.sort(function (a, b) {
+    var na = a.cells[0].textContent.trim().toLowerCase();
+    var nb = b.cells[0].textContent.trim().toLowerCase();
+    return na < nb ? -1 : na > nb ? 1 : 0;
   });
+  allRows.forEach(function (r) { tbody.appendChild(r); });
+
+  var currentPage  = 1;
+  var pageSize     = 25;
+  var activeLetter = '';
+
+  /* Build A–Z letter nav */
+  ['All'].concat('ABCDEFGHIJKLMNOPQRSTUVWXYZ'.split('')).forEach(function (l) {
+    var btn = document.createElement('button');
+    btn.textContent    = l;
+    btn.className      = 'letter-btn' + (l === 'All' ? ' active' : '');
+    btn.dataset.letter = l === 'All' ? '' : l;
+    btn.addEventListener('click', function () {
+      activeLetter = this.dataset.letter;
+      letterNav.querySelectorAll('.letter-btn').forEach(function (b) { b.classList.remove('active'); });
+      this.classList.add('active');
+      currentPage = 1;
+      render();
+    });
+    letterNav.appendChild(btn);
+  });
+
+  function getFiltered() {
+    var q = input.value.toLowerCase().trim();
+    return allRows.filter(function (row) {
+      var letterOk = !activeLetter || row.cells[0].textContent.trim().toUpperCase().charAt(0) === activeLetter;
+      var searchOk = !q || row.textContent.toLowerCase().includes(q);
+      return letterOk && searchOk;
+    });
+  }
+
+  function render() {
+    var filtered    = getFiltered();
+    var total       = filtered.length;
+    var ps          = pageSize === 0 ? Math.max(total, 1) : pageSize;
+    var totalPages  = Math.max(1, Math.ceil(total / ps));
+    if (currentPage > totalPages) currentPage = totalPages;
+    var start = (currentPage - 1) * ps;
+    var end   = Math.min(start + ps, total);
+
+    allRows.forEach(function (r) { r.style.display = 'none'; });
+    filtered.slice(start, end).forEach(function (r) { r.style.display = ''; });
+
+    pageInd.textContent  = 'Page ' + currentPage + ' / ' + totalPages;
+    countInd.textContent = (total === 0 ? 'No apps match' : 'Showing ' + (start + 1) + '–' + end + ' of ' + total + ' apps');
+    prevBtn.disabled = currentPage <= 1;
+    nextBtn.disabled = currentPage >= totalPages;
+  }
+
+  input.addEventListener('input', function () { currentPage = 1; render(); });
+  prevBtn.addEventListener('click', function () { if (currentPage > 1) { currentPage--; render(); } });
+  nextBtn.addEventListener('click', function () {
+    var tp = Math.max(1, Math.ceil(getFiltered().length / (pageSize || 1)));
+    if (currentPage < tp) { currentPage++; render(); }
+  });
+  pageSizeSel.addEventListener('change', function () {
+    pageSize = parseInt(this.value, 10);
+    currentPage = 1;
+    render();
+  });
+
+  render();
 });
 </script>
 
