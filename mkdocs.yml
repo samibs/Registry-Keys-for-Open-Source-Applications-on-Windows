@@ -1,0 +1,63 @@
+site_name: Registry Keys for Open-Source Windows Apps
+site_description: A community reference of Windows registry keys created by popular open-source applications.
+site_url: https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/
+repo_url: https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows
+repo_name: samibs/registry-keys-oss-windows
+edit_uri: edit/main/windows/
+
+docs_dir: windows
+
+theme:
+  name: material
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.instant
+    - navigation.top
+    - search.highlight
+    - search.suggest
+    - content.action.edit
+
+plugins:
+  - search
+
+markdown_extensions:
+  - tables
+  - admonition
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.superfences
+
+nav:
+  - Home: index.md
+  - Applications:
+    - 7-Zip: 7zip.md
+    - Audacity: audacity.md
+    - FileZilla: filezilla.md
+    - Mozilla Firefox: firefox.md
+    - GIMP: gimp.md
+    - Git for Windows: git.md
+    - HandBrake: handbrake.md
+    - Inkscape: inkscape.md
+    - KeePass Password Safe: keepass.md
+    - LibreOffice: libreoffice.md
+    - Notepad++: notepadplusplus.md
+    - OBS Studio: obs.md
+    - PuTTY: putty.md
+    - qBittorrent: qbittorrent.md
+    - Oracle VM VirtualBox: virtualbox.md
+    - VLC Media Player: vlc.md
+    - Visual Studio Code: vscode.md
+    - WinSCP: winscp.md
+    - Wireshark: wireshark.md

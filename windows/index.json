@@ -1,0 +1,290 @@
+[
+  {
+    "name": "7-Zip",
+    "slug": "7zip",
+    "file": "windows/7zip.md",
+    "version_tested": "23.01",
+    "installer_type": "`.exe` from 7-zip.org",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\7-Zip",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\7-Zip"
+    ]
+  },
+  {
+    "name": "Audacity",
+    "slug": "audacity",
+    "file": "windows/audacity.md",
+    "version_tested": "3.4.2",
+    "installer_type": "`.exe` official installer from audacityteam.org",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Audacity",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Audacity"
+    ]
+  },
+  {
+    "name": "FileZilla",
+    "slug": "filezilla",
+    "file": "windows/filezilla.md",
+    "version_tested": "3.66.5",
+    "installer_type": "`.exe` official installer from filezilla-project.org",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\FileZilla Client",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\FileZilla Client"
+    ]
+  },
+  {
+    "name": "Mozilla Firefox",
+    "slug": "firefox",
+    "file": "windows/firefox.md",
+    "version_tested": "123.0",
+    "installer_type": "`.exe` official full installer from mozilla.org",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Mozilla\\Mozilla Firefox",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Mozilla\\Mozilla Firefox\\<version> (x64 en-US)\\Main",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Mozilla Firefox <version> (x64 en-US)",
+      "HKEY_CURRENT_USER\\Software\\Mozilla\\Mozilla Firefox"
+    ]
+  },
+  {
+    "name": "GIMP",
+    "slug": "gimp",
+    "file": "windows/gimp.md",
+    "version_tested": "2.10.36",
+    "installer_type": "`.exe` official installer from gimp.org",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\GIMP\\2.0",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\GIMP-2_is1"
+    ]
+  },
+  {
+    "name": "Git for Windows",
+    "slug": "git",
+    "file": "windows/git.md",
+    "version_tested": "2.44.0",
+    "installer_type": "`.exe` official Git for Windows",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\GitForWindows",
+      "HKEY_CURRENT_USER\\Software\\GitForWindows"
+    ]
+  },
+  {
+    "name": "HandBrake",
+    "slug": "handbrake",
+    "file": "windows/handbrake.md",
+    "version_tested": "1.7.3",
+    "installer_type": "`.exe` official installer from handbrake.fr",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HandBrake"
+    ]
+  },
+  {
+    "name": "Inkscape",
+    "slug": "inkscape",
+    "file": "windows/inkscape.md",
+    "version_tested": "1.3.2",
+    "installer_type": "`.exe` (NSIS installer) from inkscape.org",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Inkscape",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Inkscape"
+    ]
+  },
+  {
+    "name": "KeePass Password Safe",
+    "slug": "keepass",
+    "file": "windows/keepass.md",
+    "version_tested": "2.55 (KeePass 2.x)",
+    "installer_type": "`.exe` official installer from keepass.info",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\KeePass Password Safe 2",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\KeePassPasswordSafe2_is1"
+    ]
+  },
+  {
+    "name": "LibreOffice",
+    "slug": "libreoffice",
+    "file": "windows/libreoffice.md",
+    "version_tested": "7.6.5",
+    "installer_type": "`.msi` official installer from libreoffice.org",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\LibreOffice\\LibreOffice\\7.6",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}",
+      "HKEY_CURRENT_USER\\Software\\LibreOffice"
+    ]
+  },
+  {
+    "name": "Notepad++",
+    "slug": "notepadplusplus",
+    "file": "windows/notepadplusplus.md",
+    "version_tested": "8.6.2",
+    "installer_type": "`.exe` (NSIS installer) from notepad-plus-plus.org",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Notepad++",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Notepad++",
+      "HKEY_CURRENT_USER\\Software\\Notepad++"
+    ]
+  },
+  {
+    "name": "OBS Studio",
+    "slug": "obs",
+    "file": "windows/obs.md",
+    "version_tested": "30.0.2",
+    "installer_type": "`.exe` official installer from obsproject.com",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\OBS Studio",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OBS Studio"
+    ]
+  },
+  {
+    "name": "PuTTY",
+    "slug": "putty",
+    "file": "windows/putty.md",
+    "version_tested": "0.80",
+    "installer_type": "`.msi` official installer from putty.org",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\SimonTatham\\PuTTY",
+      "HKEY_CURRENT_USER\\Software\\SimonTatham\\PuTTY\\Sessions",
+      "HKEY_CURRENT_USER\\Software\\SimonTatham\\PuTTY\\SshHostKeys",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\PuTTY_is1"
+    ]
+  },
+  {
+    "name": "qBittorrent",
+    "slug": "qbittorrent",
+    "file": "windows/qbittorrent.md",
+    "version_tested": "4.6.3",
+    "installer_type": "`.exe` official installer from qbittorrent.org",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\qBittorrent",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\qBittorrent"
+    ]
+  },
+  {
+    "name": "Oracle VM VirtualBox",
+    "slug": "virtualbox",
+    "file": "windows/virtualbox.md",
+    "version_tested": "7.0.14",
+    "installer_type": "`.exe` official installer from virtualbox.org",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Oracle\\VirtualBox",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Oracle VM VirtualBox <version>",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\VBoxSup",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\VBoxNetAdp",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\VBoxNetLwf"
+    ]
+  },
+  {
+    "name": "VLC Media Player",
+    "slug": "vlc",
+    "file": "windows/vlc.md",
+    "version_tested": "3.0.20",
+    "installer_type": "Official `.exe` from VideoLAN website",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\VideoLAN\\VLC",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\VideoLAN\\VLC"
+    ]
+  },
+  {
+    "name": "Visual Studio Code",
+    "slug": "vscode",
+    "file": "windows/vscode.md",
+    "version_tested": "1.85.1",
+    "installer_type": "User Installer `.exe`",
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1",
+      "HKEY_CURRENT_USER\\Software\\Classes\\vscode",
+      "HKEY_CURRENT_USER\\Software\\Classes\\vscode-insiders"
+    ]
+  },
+  {
+    "name": "WinSCP",
+    "slug": "winscp",
+    "file": "windows/winscp.md",
+    "version_tested": "6.3.3",
+    "installer_type": "`.exe` official installer from winscp.net",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\Martin Prikryl\\WinSCP 2",
+      "HKEY_CURRENT_USER\\Software\\Martin Prikryl\\WinSCP 2\\Configuration",
+      "HKEY_CURRENT_USER\\Software\\Martin Prikryl\\WinSCP 2\\Sessions",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Martin Prikryl\\WinSCP 2",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\winscp3_is1"
+    ]
+  },
+  {
+    "name": "Wireshark",
+    "slug": "wireshark",
+    "file": "windows/wireshark.md",
+    "version_tested": "4.2.3",
+    "installer_type": "`.exe` official installer from wireshark.org",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Wireshark",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Wireshark",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Npcap"
+    ]
+  }
+]

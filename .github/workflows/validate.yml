@@ -1,0 +1,30 @@
+name: Validate Registry Docs
+
+on:
+  push:
+    paths:
+      - 'windows/**'
+      - 'tools/**'
+  pull_request:
+    paths:
+      - 'windows/**'
+      - 'tools/**'
+
+jobs:
+  validate:
+    name: Validate Markdown Documentation
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Run documentation validator
+        shell: pwsh
+        run: |
+          .\tools\validate-docs.ps1
+
+      - name: Check index.json is up to date
+        shell: pwsh
+        run: |
+          .\tools\build-index.ps1 -DryRun

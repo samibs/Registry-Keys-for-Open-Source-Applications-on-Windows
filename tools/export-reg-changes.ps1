@@ -148,39 +148,41 @@ function Format-ChangesToMarkdown {
 
         # If we are inside a key path context, attempt to parse the line as a value.
         if ($currentKeyPath) {
-            $match = $null
             # This regex is designed to capture the most common key-value formats in .reg files.
             # It handles standard string values ("Key"="Value") and the default key value (@="Value").
-            if ($line -match '^"(.*)"=(.*)$' -or $line -match '^@=(.*)$') {
-                $matches = $LASTMATCH
-                $keyName = if ($matches[1]) { $matches[1] } else { "@ (Default)" }
-                $rawValue = $matches[2]
-
-                $keyType = "REG_SZ" # Default type
-                $keyValue = $rawValue.Trim('"')
-
-                # Basic type detection based on .reg file format
-                if ($rawValue.StartsWith("dword:")) {
-                    $keyType = "REG_DWORD"
-                    $keyValue = "0x" + $rawValue.Substring(6)
-                } elseif ($rawValue.StartsWith("hex:")) {
-                    $keyType = "REG_BINARY"
-                    $keyValue = $rawValue.Substring(4).Replace(",", " ")
-                } elseif ($rawValue.StartsWith("hex(2):")) {
-                    $keyType = "REG_EXPAND_SZ"
-                    $keyValue = $rawValue.Substring(7).Replace(",", " ")
-                } elseif ($rawValue.StartsWith("hex(7):")) {
-                    $keyType = "REG_MULTI_SZ"
-                    $keyValue = $rawValue.Substring(7).Replace(",", " ")
-                }
-
-                $valueObject = @{
-                    Name  = $keyName
-                    Type  = $keyType
-                    Value = $keyValue
-                }
-                [void]$registryData[$currentKeyPath].Add($valueObject)
+            if ($line -match '^"(.*)"=(.*)$') {
+                $keyName = $Matches[1]
+                $rawValue = $Matches[2]
+            } elseif ($line -match '^@=(.*)$') {
+                $keyName = "@ (Default)"
+                $rawValue = $Matches[1]
+            } else {
+                continue
             }
+            $keyType = "REG_SZ" # Default type
+            $keyValue = $rawValue.Trim('"')
+
+            # Basic type detection based on .reg file format
+            if ($rawValue.StartsWith("dword:")) {
+                $keyType = "REG_DWORD"
+                $keyValue = "0x" + $rawValue.Substring(6)
+            } elseif ($rawValue.StartsWith("hex:")) {
+                $keyType = "REG_BINARY"
+                $keyValue = $rawValue.Substring(4).Replace(",", " ")
+            } elseif ($rawValue.StartsWith("hex(2):")) {
+                $keyType = "REG_EXPAND_SZ"
+                $keyValue = $rawValue.Substring(7).Replace(",", " ")
+            } elseif ($rawValue.StartsWith("hex(7):")) {
+                $keyType = "REG_MULTI_SZ"
+                $keyValue = $rawValue.Substring(7).Replace(",", " ")
+            }
+
+            $valueObject = @{
+                Name  = $keyName
+                Type  = $keyType
+                Value = $keyValue
+            }
+            [void]$registryData[$currentKeyPath].Add($valueObject)
         }
     }
 
@@ -195,7 +197,7 @@ function Format-ChangesToMarkdown {
 "@
 
     foreach ($path in $registryData.Keys) {
-        $md += "`n- `$path`"
+        $md += "`n- ``$path``"
     }
 
     $md += @"
@@ -212,7 +214,7 @@ function Format-ChangesToMarkdown {
             # Escape pipe characters in values to not break the markdown table
             $escapedName = $value.Name.Replace("|", "\|")
             $escapedValue = $value.Value.Replace("|", "\|")
-            $md += "`n| `$escapedName` | `$($value.Type)` | `$escapedValue` | |"
+            $md += "`n| ``$escapedName`` | ``$($value.Type)`` | ``$escapedValue`` | |"
         }
     }
 
