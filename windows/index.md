@@ -79,6 +79,16 @@ When open-source applications are installed on Windows, they write entries to th
 | [Rufus](rufus.md) | 4.4 | Portable | HKCU |
 | [Syncthing](syncthing.md) | 1.27.6 | `.exe` | HKCU, HKLM |
 | [WinMerge](winmerge.md) | 2.16.38 | `.exe` | HKCU, HKLM, HKCR |
+| [FreeCAD](freecad.md) | 0.21.2 | `.exe` | HKCU, HKLM, HKCR |
+| [LMMS](lmms.md) | 1.2.2 | `.exe` | HKCU, HKLM |
+| [MediaInfo](mediainfo.md) | 24.01 | `.exe` | HKLM, HKCR |
+| [MPC-HC](mpc-hc.md) | 2.3.0 | `.exe` | HKCU, HKLM, HKCR |
+| [Nextcloud Desktop](nextcloud.md) | 3.12.3 | `.msi` | HKCU, HKLM, SYSTEM |
+| [PDFsam Basic](pdfsam.md) | 5.2.4 | `.exe` | HKCU, HKLM |
+| [ScreenToGif](screentogif.md) | 2.41 | `.exe` | HKCU, HKLM |
+| [Mozilla Thunderbird](thunderbird.md) | 115.8.0 | `.exe` | HKCU, HKLM, HKCR |
+| [WinDirStat](windirstat.md) | 2.1.0 | `.exe` | HKCU, HKLM |
+| [ZeroTier](zerotier.md) | 1.14.0 | `.msi` | HKCU, HKLM, SYSTEM |
 
 ---
 

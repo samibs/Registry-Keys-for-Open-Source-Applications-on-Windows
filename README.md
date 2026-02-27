@@ -110,6 +110,16 @@ Offer a community-driven knowledge base
 | [Rufus](./windows/rufus.md) | 4.4 | Portable |
 | [Syncthing](./windows/syncthing.md) | 1.27.6 | `.exe` |
 | [WinMerge](./windows/winmerge.md) | 2.16.38 | `.exe` |
+| [FreeCAD](./windows/freecad.md) | 0.21.2 | `.exe` |
+| [LMMS](./windows/lmms.md) | 1.2.2 | `.exe` |
+| [MediaInfo](./windows/mediainfo.md) | 24.01 | `.exe` |
+| [MPC-HC](./windows/mpc-hc.md) | 2.3.0 | `.exe` |
+| [Nextcloud Desktop](./windows/nextcloud.md) | 3.12.3 | `.msi` |
+| [PDFsam Basic](./windows/pdfsam.md) | 5.2.4 | `.exe` |
+| [ScreenToGif](./windows/screentogif.md) | 2.41 | `.exe` |
+| [Mozilla Thunderbird](./windows/thunderbird.md) | 115.8.0 | `.exe` |
+| [WinDirStat](./windows/windirstat.md) | 2.1.0 | `.exe` |
+| [ZeroTier](./windows/zerotier.md) | 1.14.0 | `.msi` |
 
 📄 Template Format
 

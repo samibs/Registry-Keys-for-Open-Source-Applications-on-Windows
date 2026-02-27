@@ -110,3 +110,14 @@ nav:
     - Rufus: rufus.md
     - Syncthing: syncthing.md
     - WinMerge: winmerge.md
+  - New in Batch 6:
+    - FreeCAD: freecad.md
+    - LMMS: lmms.md
+    - MediaInfo: mediainfo.md
+    - MPC-HC: mpc-hc.md
+    - Nextcloud Desktop: nextcloud.md
+    - PDFsam Basic: pdfsam.md
+    - ScreenToGif: screentogif.md
+    - Mozilla Thunderbird: thunderbird.md
+    - WinDirStat: windirstat.md
+    - ZeroTier: zerotier.md

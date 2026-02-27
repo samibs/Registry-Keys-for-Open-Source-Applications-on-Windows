@@ -213,6 +213,15 @@
     ]
   },
   {
+    "name": "FreeCAD",
+    "slug": "freecad",
+    "file": "windows/freecad.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "GIMP",
     "slug": "gimp",
     "file": "windows/gimp.md",
@@ -388,6 +397,24 @@
     ]
   },
   {
+    "name": "LMMS (Linux MultiMedia Studio)",
+    "slug": "lmms",
+    "file": "windows/lmms.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
+    "name": "MediaInfo",
+    "slug": "mediainfo",
+    "file": "windows/mediainfo.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "MobaXterm",
     "slug": "mobaxterm",
     "file": "windows/mobaxterm.md",
@@ -404,6 +431,15 @@
     ]
   },
   {
+    "name": "MPC-HC (Media Player Classic – Home Cinema)",
+    "slug": "mpc-hc",
+    "file": "windows/mpc-hc.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "mRemoteNG",
     "slug": "mremoteng",
     "file": "windows/mremoteng.md",
@@ -418,6 +454,15 @@
     "file": "windows/musicbee.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
+    "name": "Nextcloud Desktop",
+    "slug": "nextcloud",
+    "file": "windows/nextcloud.md",
+    "version_tested": "",
+    "installer_type": "`.msi`",
     "hives": [],
     "registry_paths": []
   },
@@ -504,6 +549,15 @@
     "file": "windows/openvpn.md",
     "version_tested": "",
     "installer_type": "`.msi`",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
+    "name": "PDFsam Basic",
+    "slug": "pdfsam",
+    "file": "windows/pdfsam.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
     "hives": [],
     "registry_paths": []
   },
@@ -622,6 +676,15 @@
     "registry_paths": []
   },
   {
+    "name": "ScreenToGif",
+    "slug": "screentogif",
+    "file": "windows/screentogif.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "ShareX",
     "slug": "sharex",
     "file": "windows/sharex.md",
@@ -704,6 +767,15 @@
     ]
   },
   {
+    "name": "Mozilla Thunderbird",
+    "slug": "thunderbird",
+    "file": "windows/thunderbird.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "Oracle VM VirtualBox",
     "slug": "virtualbox",
     "file": "windows/virtualbox.md",
@@ -752,6 +824,15 @@
       "HKEY_CURRENT_USER\\Software\\Classes\\vscode",
       "HKEY_CURRENT_USER\\Software\\Classes\\vscode-insiders"
     ]
+  },
+  {
+    "name": "WinDirStat",
+    "slug": "windirstat",
+    "file": "windows/windirstat.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "WinMerge",
@@ -815,5 +896,14 @@
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WslService",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LxssManager"
     ]
+  },
+  {
+    "name": "ZeroTier",
+    "slug": "zerotier",
+    "file": "windows/zerotier.md",
+    "version_tested": "",
+    "installer_type": "`.msi`",
+    "hives": [],
+    "registry_paths": []
   }
 ]
