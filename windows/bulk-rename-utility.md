@@ -3,6 +3,8 @@ tags:
   - rename
   - file-management
   - portable
+description: >-
+  Windows registry keys created by Bulk Rename Utility — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Bulk Rename Utility

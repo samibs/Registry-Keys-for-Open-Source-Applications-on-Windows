@@ -4,6 +4,8 @@ tags:
   - flashing
   - imaging
   - bootable
+description: >-
+  Windows registry keys created by Rufus — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Rufus

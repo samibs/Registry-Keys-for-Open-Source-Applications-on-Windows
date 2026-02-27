@@ -5,6 +5,8 @@ tags:
   - SYSTEM-services
   - exe-installer
   - developer-tools
+description: >-
+  Windows registry keys created by Docker Desktop — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Docker Desktop

@@ -6,6 +6,8 @@ tags:
   - HKCR
   - exe-installer
   - network
+description: >-
+  Windows registry keys created by qBittorrent — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # qBittorrent

@@ -4,6 +4,8 @@ tags:
   - gif
   - recording
   - productivity
+description: >-
+  Windows registry keys created by ScreenToGif — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # ScreenToGif

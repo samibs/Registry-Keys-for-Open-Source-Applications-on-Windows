@@ -5,6 +5,8 @@ tags:
   - diagnostics
   - sysadmin
   - system
+description: >-
+  Windows registry keys created by Process Hacker (System Informer) — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Process Hacker (System Informer)

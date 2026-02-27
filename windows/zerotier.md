@@ -4,6 +4,8 @@ tags:
   - networking
   - mesh
   - sdn
+description: >-
+  Windows registry keys created by ZeroTier — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # ZeroTier

@@ -5,6 +5,8 @@ tags:
   - ssh
   - sysadmin
   - multi-protocol
+description: >-
+  Windows registry keys created by mRemoteNG — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # mRemoteNG

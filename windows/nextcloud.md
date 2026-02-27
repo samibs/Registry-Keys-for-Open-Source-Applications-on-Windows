@@ -4,6 +4,8 @@ tags:
   - cloud
   - backup
   - nextcloud
+description: >-
+  Windows registry keys created by Nextcloud Desktop — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Nextcloud Desktop

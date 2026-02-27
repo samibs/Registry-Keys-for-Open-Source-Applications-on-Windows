@@ -3,6 +3,8 @@ tags:
   - backup
   - cloud
   - service
+description: >-
+  Windows registry keys created by Duplicati — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Duplicati

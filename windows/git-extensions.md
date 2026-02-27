@@ -7,6 +7,8 @@ tags:
   - HKCR
   - msi-installer
   - developer-tools
+description: >-
+  Windows registry keys created by Git Extensions — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Git Extensions

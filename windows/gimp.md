@@ -4,6 +4,8 @@ tags:
   - HKCU
   - HKLM
   - exe-installer
+description: >-
+  Windows registry keys created by GIMP — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # GIMP

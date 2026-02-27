@@ -4,6 +4,8 @@ tags:
   - flashing
   - bootable
   - multiboot
+description: >-
+  Windows registry keys created by Ventoy — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Ventoy

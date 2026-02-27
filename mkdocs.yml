@@ -1,14 +1,21 @@
 site_name: Registry Keys for Open-Source Windows Apps
-site_description: A community reference of Windows registry keys created by popular open-source applications.
+site_description: >-
+  Community reference of Windows registry keys for 100+ open-source applications.
+  Covers HKCU, HKLM, HKCR paths for sysadmins, automation developers, and power users.
 site_url: https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/
+site_author: Sami BS and contributors
 repo_url: https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows
 repo_name: samibs/registry-keys-oss-windows
 edit_uri: edit/main/windows/
+copyright: >-
+  &copy; 2024–2026 Sami BS and contributors &mdash;
+  <a href="https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/blob/main/LICENSE">MIT License</a>
 
 docs_dir: windows
 
 theme:
   name: material
+  custom_dir: overrides
   palette:
     - scheme: default
       primary: indigo
@@ -28,10 +35,22 @@ theme:
     - search.highlight
     - search.suggest
     - content.action.edit
+  language: en
 
 plugins:
-  - search
+  - search:
+      lang: en
   - tags
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows
+      name: View on GitHub
+  generator: false
+
+extra_css:
+  - assets/extra.css
 
 markdown_extensions:
   - tables
@@ -47,6 +66,7 @@ nav:
     - Automation Cookbook: cookbook.md
     - Project Statistics: stats.md
     - Machine-Readable API: api.md
+    - 404: 404.md
   - Applications:
     - 7-Zip: 7zip.md
     - Android Studio: android-studio.md

@@ -4,6 +4,8 @@ tags:
   - ssh
   - remote
   - tabbed
+description: >-
+  Windows registry keys created by Windows Terminal — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Windows Terminal

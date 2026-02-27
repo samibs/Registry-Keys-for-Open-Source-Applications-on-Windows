@@ -6,6 +6,8 @@ tags:
   - HKLM
   - HKCR
   - exe-installer
+description: >-
+  Windows registry keys created by Everything (voidtools) — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Everything (voidtools)

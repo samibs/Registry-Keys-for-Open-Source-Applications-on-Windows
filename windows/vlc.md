@@ -5,6 +5,8 @@ tags:
   - HKLM
   - HKCR
   - exe-installer
+description: >-
+  Windows registry keys created by VLC Media Player — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # VLC Media Player

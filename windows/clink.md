@@ -3,6 +3,8 @@ tags:
   - terminal
   - shell
   - productivity
+description: >-
+  Windows registry keys created by Clink — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Clink

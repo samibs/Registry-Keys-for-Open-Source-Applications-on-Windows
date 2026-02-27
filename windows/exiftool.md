@@ -4,6 +4,8 @@ tags:
   - metadata
   - cli
   - portable
+description: >-
+  Windows registry keys created by ExifTool — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # ExifTool

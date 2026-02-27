@@ -5,6 +5,8 @@ tags:
   - HKCU
   - HKLM
   - exe-installer
+description: >-
+  Windows registry keys created by OBS Studio — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # OBS Studio

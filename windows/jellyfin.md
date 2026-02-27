@@ -3,6 +3,8 @@ tags:
   - video
   - streaming
   - media-server
+description: >-
+  Windows registry keys created by Jellyfin — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Jellyfin

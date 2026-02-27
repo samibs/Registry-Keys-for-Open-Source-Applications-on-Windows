@@ -4,6 +4,8 @@ tags:
   - networking
   - security
   - privacy
+description: >-
+  Windows registry keys created by OpenVPN — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # OpenVPN

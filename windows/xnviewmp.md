@@ -4,6 +4,8 @@ tags:
   - graphics
   - photo
   - batch
+description: >-
+  Windows registry keys created by XnView MP — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # XnView MP

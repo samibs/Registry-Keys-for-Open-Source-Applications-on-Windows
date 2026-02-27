@@ -5,6 +5,8 @@ tags:
   - HKCU
   - HKLM
   - exe-installer
+description: >-
+  Windows registry keys created by KeePass Password Safe — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # KeePass Password Safe

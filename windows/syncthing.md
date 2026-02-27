@@ -4,6 +4,8 @@ tags:
   - file-sync
   - backup
   - networking
+description: >-
+  Windows registry keys created by Syncthing — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Syncthing

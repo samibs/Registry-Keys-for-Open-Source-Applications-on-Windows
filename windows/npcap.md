@@ -3,6 +3,8 @@ tags:
   - network
   - driver
   - packet-capture
+description: >-
+  Windows registry keys created by Npcap — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Npcap

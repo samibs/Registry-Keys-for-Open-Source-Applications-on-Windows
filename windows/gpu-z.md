@@ -4,6 +4,8 @@ tags:
   - gpu
   - monitoring
   - portable
+description: >-
+  Windows registry keys created by GPU-Z — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # GPU-Z

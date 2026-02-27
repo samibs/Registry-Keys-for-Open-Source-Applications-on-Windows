@@ -4,6 +4,8 @@ tags:
   - rdp
   - remote-access
   - sysadmin
+description: >-
+  Windows registry keys created by RustDesk — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # RustDesk

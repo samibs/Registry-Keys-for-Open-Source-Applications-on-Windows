@@ -4,6 +4,8 @@ tags:
   - library
   - reader
   - conversion
+description: >-
+  Windows registry keys created by Calibre — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Calibre

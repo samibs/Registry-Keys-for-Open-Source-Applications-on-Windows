@@ -6,6 +6,8 @@ tags:
   - HKCR
   - SYSTEM-services
   - exe-installer
+description: >-
+  Windows registry keys created by Wireshark — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Wireshark

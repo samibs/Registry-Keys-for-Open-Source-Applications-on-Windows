@@ -1,3 +1,9 @@
+---
+description: >-
+  PowerShell automation cookbook for querying the Windows registry keys dataset —
+  filter by app, hive, or installer; export to CSV; use in deployment scripts and audits.
+---
+
 # Automation Cookbook
 
 Practical PowerShell recipes for working with this registry key collection and `windows/index.json`.

@@ -3,6 +3,8 @@ tags:
   - hardware
   - benchmark
   - gpu
+description: >-
+  Windows registry keys created by FurMark — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # FurMark

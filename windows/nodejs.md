@@ -5,6 +5,8 @@ tags:
   - HKLM
   - msi-installer
   - developer-tools
+description: >-
+  Windows registry keys created by Node.js — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Node.js

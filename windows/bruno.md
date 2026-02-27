@@ -4,6 +4,8 @@ tags:
   - api
   - rest
   - testing
+description: >-
+  Windows registry keys created by Bruno — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Bruno

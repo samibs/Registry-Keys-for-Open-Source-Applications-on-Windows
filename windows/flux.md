@@ -4,6 +4,8 @@ tags:
   - color-temperature
   - blue-light
   - productivity
+description: >-
+  Windows registry keys created by f.lux — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # f.lux

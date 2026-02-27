@@ -5,6 +5,8 @@ tags:
   - HKLM
   - exe-installer
   - developer-tools
+description: >-
+  Windows registry keys created by DBeaver Community Edition — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # DBeaver Community Edition

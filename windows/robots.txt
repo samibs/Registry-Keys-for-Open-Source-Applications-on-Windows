@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/sitemap.xml

@@ -6,6 +6,8 @@ tags:
   - HKLM
   - msi-installer
   - network
+description: >-
+  Windows registry keys created by PuTTY — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # PuTTY

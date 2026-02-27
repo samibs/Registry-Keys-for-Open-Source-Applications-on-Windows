@@ -4,6 +4,8 @@ tags:
   - monitoring
   - portable
   - freeware
+description: >-
+  Windows registry keys created by CPU-Z — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # CPU-Z

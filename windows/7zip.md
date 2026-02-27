@@ -6,6 +6,8 @@ tags:
   - HKCR
   - shell-extension
   - exe-installer
+description: >-
+  Windows registry keys created by 7-Zip — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # 7-Zip

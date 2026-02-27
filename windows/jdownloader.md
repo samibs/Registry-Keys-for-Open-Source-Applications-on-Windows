@@ -3,6 +3,8 @@ tags:
   - download
   - manager
   - java
+description: >-
+  Windows registry keys created by JDownloader 2 — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # JDownloader 2

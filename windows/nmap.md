@@ -4,6 +4,8 @@ tags:
   - security
   - scanning
   - sysadmin
+description: >-
+  Windows registry keys created by Nmap — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Nmap

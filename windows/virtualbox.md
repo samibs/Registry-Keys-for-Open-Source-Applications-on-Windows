@@ -4,6 +4,8 @@ tags:
   - HKLM
   - SYSTEM-services
   - exe-installer
+description: >-
+  Windows registry keys created by Oracle VM VirtualBox — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Oracle VM VirtualBox

@@ -4,6 +4,8 @@ tags:
   - graphics
   - lightweight
   - photo
+description: >-
+  Windows registry keys created by IrfanView — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # IrfanView

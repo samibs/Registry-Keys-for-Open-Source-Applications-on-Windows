@@ -4,6 +4,8 @@ tags:
   - mozilla
   - calendar
   - communication
+description: >-
+  Windows registry keys created by Mozilla Thunderbird — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Mozilla Thunderbird

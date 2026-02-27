@@ -3,6 +3,8 @@ tags:
   - screenshot
   - annotation
   - linux-port
+description: >-
+  Windows registry keys created by Flameshot — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Flameshot

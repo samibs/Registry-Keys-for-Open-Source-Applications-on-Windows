@@ -4,6 +4,8 @@ tags:
   - monitoring
   - diagnostics
   - sensors
+description: >-
+  Windows registry keys created by HWiNFO — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # HWiNFO

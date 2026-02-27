@@ -4,6 +4,8 @@ tags:
   - compression
   - zip
   - file-manager
+description: >-
+  Windows registry keys created by PeaZip — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # PeaZip

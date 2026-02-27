@@ -6,6 +6,8 @@ tags:
   - HKLM
   - exe-installer
   - network
+description: >-
+  Windows registry keys created by WinSCP — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # WinSCP

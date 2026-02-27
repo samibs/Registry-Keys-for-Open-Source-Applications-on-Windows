@@ -4,6 +4,8 @@ tags:
   - merge
   - development
   - version-control
+description: >-
+  Windows registry keys created by WinMerge — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # WinMerge

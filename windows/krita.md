@@ -4,6 +4,8 @@ tags:
   - painting
   - creative
   - raster
+description: >-
+  Windows registry keys created by Krita — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Krita

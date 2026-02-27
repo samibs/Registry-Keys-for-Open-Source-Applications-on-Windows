@@ -4,6 +4,8 @@ tags:
   - 3d-modeling
   - engineering
   - design
+description: >-
+  Windows registry keys created by FreeCAD — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # FreeCAD

@@ -6,6 +6,8 @@ tags:
   - HKLM
   - exe-installer
   - developer-tools
+description: >-
+  Windows registry keys created by HeidiSQL — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # HeidiSQL

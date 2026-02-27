@@ -3,6 +3,8 @@ tags:
   - network
   - scanner
   - portable
+description: >-
+  Windows registry keys created by Angry IP Scanner — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Angry IP Scanner

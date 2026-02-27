@@ -4,6 +4,8 @@ tags:
   - usb
   - flashing
   - electron
+description: >-
+  Windows registry keys created by balenaEtcher — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # balenaEtcher

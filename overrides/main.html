@@ -1,0 +1,71 @@
+{% extends "base.html" %}
+
+{% block extrahead %}
+  {% if page %}
+  {# ── Canonical URL ─────────────────────────────────────────────────── #}
+  <link rel="canonical" href="{{ page.canonical_url }}" />
+
+  {# ── Per-page description / fallback to site description ──────────── #}
+  {% set page_desc = page.meta.description if page.meta and page.meta.description else config.site_description %}
+
+  {# ── Open Graph ────────────────────────────────────────────────────── #}
+  <meta property="og:type"        content="website" />
+  <meta property="og:site_name"   content="{{ config.site_name }}" />
+  <meta property="og:title"       content="{{ page.title }} – {{ config.site_name }}" />
+  <meta property="og:description" content="{{ page_desc }}" />
+  <meta property="og:url"         content="{{ page.canonical_url }}" />
+  <meta property="og:image"       content="{{ config.site_url }}assets/social-preview.png" />
+  <meta property="og:image:width"  content="1200" />
+  <meta property="og:image:height" content="630" />
+  <meta property="og:locale"      content="en_US" />
+
+  {# ── Twitter Card ──────────────────────────────────────────────────── #}
+  <meta name="twitter:card"        content="summary_large_image" />
+  <meta name="twitter:title"       content="{{ page.title }} – {{ config.site_name }}" />
+  <meta name="twitter:description" content="{{ page_desc }}" />
+  <meta name="twitter:image"       content="{{ config.site_url }}assets/social-preview.png" />
+
+  {# ── Standard meta ─────────────────────────────────────────────────── #}
+  <meta name="description"   content="{{ page_desc }}" />
+  <meta name="author"        content="{{ config.site_author }}" />
+  <meta name="robots"        content="index, follow" />
+  <meta name="keywords"      content="Windows registry, open source, sysadmin, HKCU, HKLM, registry keys, automation, PowerShell, deployment" />
+
+  {# ── JSON-LD structured data ───────────────────────────────────────── #}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "{{ config.site_url }}#website",
+        "url": "{{ config.site_url }}",
+        "name": "{{ config.site_name }}",
+        "description": "{{ config.site_description }}",
+        "publisher": {
+          "@type": "Organization",
+          "@id": "{{ config.site_url }}#organization",
+          "name": "Registry Keys for OSS Windows Apps",
+          "url": "{{ config.site_url }}",
+          "sameAs": ["{{ config.repo_url }}"]
+        },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": "{{ config.site_url }}?q={search_term_string}",
+          "query-input": "required name=search_term_string"
+        }
+      },
+      {
+        "@type": "WebPage",
+        "@id": "{{ page.canonical_url }}#webpage",
+        "url": "{{ page.canonical_url }}",
+        "name": "{{ page.title }}",
+        "description": "{{ page_desc }}",
+        "isPartOf": { "@id": "{{ config.site_url }}#website" },
+        "inLanguage": "en-US"
+      }
+    ]
+  }
+  </script>
+  {% endif %}
+{% endblock %}

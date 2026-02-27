@@ -1,4 +1,7 @@
 ---
+description: >-
+  Machine-readable JSON API for the Windows registry keys dataset — schema reference,
+  field descriptions, and example queries in PowerShell, curl/jq, and Python.
 tags:
   - meta
   - api

@@ -4,6 +4,8 @@ tags:
   - flowchart
   - design
   - electron
+description: >-
+  Windows registry keys created by draw.io (diagrams.net) — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # draw.io (diagrams.net)

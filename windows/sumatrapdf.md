@@ -4,6 +4,8 @@ tags:
   - viewer
   - reader
   - lightweight
+description: >-
+  Windows registry keys created by Sumatra PDF — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Sumatra PDF

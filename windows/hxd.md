@@ -3,6 +3,8 @@ tags:
   - hex-editor
   - developer
   - portable
+description: >-
+  Windows registry keys created by HxD Hex Editor — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # HxD Hex Editor

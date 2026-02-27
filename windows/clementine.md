@@ -3,6 +3,8 @@ tags:
   - audio
   - podcast
   - media-player
+description: >-
+  Windows registry keys created by Clementine — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Clementine

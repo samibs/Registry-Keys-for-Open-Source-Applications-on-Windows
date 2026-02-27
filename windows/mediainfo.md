@@ -5,6 +5,8 @@ tags:
   - diagnostics
   - video
   - audio
+description: >-
+  Windows registry keys created by MediaInfo — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # MediaInfo

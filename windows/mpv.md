@@ -5,6 +5,8 @@ tags:
   - audio
   - lightweight
   - cli
+description: >-
+  Windows registry keys created by mpv — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # mpv

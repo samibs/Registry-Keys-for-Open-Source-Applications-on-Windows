@@ -3,6 +3,8 @@ tags:
   - disk
   - analysis
   - portable
+description: >-
+  Windows registry keys created by WizTree — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # WizTree

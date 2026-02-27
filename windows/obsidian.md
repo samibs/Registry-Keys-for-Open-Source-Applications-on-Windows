@@ -4,6 +4,8 @@ tags:
   - markdown
   - knowledge-base
   - electron
+description: >-
+  Windows registry keys created by Obsidian — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Obsidian

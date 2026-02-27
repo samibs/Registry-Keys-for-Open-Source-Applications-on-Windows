@@ -5,6 +5,8 @@ tags:
   - HKCR
   - exe-installer
   - developer-tools
+description: >-
+  Windows registry keys created by Sublime Text — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Sublime Text

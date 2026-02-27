@@ -4,6 +4,8 @@ tags:
   - security
   - credentials
   - electron
+description: >-
+  Windows registry keys created by Bitwarden — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Bitwarden

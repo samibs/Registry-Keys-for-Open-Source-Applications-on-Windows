@@ -4,6 +4,8 @@ tags:
   - video
   - audio
   - lightweight
+description: >-
+  Windows registry keys created by MPC-HC (Media Player Classic – Home Cinema) — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # MPC-HC (Media Player Classic – Home Cinema)

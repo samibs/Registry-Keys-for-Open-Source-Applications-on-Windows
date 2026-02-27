@@ -6,6 +6,8 @@ tags:
   - HKLM
   - exe-installer
   - developer-tools
+description: >-
+  Windows registry keys created by Git for Windows — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Git for Windows

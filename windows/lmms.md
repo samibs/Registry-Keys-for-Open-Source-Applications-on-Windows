@@ -4,6 +4,8 @@ tags:
   - music-production
   - daw
   - midi
+description: >-
+  Windows registry keys created by LMMS (Linux MultiMedia Studio) — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # LMMS (Linux MultiMedia Studio)

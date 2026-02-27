@@ -1,3 +1,10 @@
+---
+description: >-
+  Community reference of Windows registry keys for 100+ open-source applications.
+  Covers HKCU, HKLM, and HKCR paths for sysadmins, automation developers, and power users.
+  Includes install paths, uninstall keys, and per-user settings for tools like 7-Zip, Git, VLC, and more.
+---
+
 # Registry Keys for Open-Source Windows Apps
 
 A community-driven reference of Windows registry keys created by popular open-source applications — for sysadmins, power users, and automation developers.

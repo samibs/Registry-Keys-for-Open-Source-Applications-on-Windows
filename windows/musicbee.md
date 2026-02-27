@@ -4,6 +4,8 @@ tags:
   - music-player
   - media
   - library
+description: >-
+  Windows registry keys created by MusicBee — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # MusicBee

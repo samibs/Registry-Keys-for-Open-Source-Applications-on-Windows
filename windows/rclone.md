@@ -5,6 +5,8 @@ tags:
   - backup
   - cli
   - storage
+description: >-
+  Windows registry keys created by Rclone — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Rclone

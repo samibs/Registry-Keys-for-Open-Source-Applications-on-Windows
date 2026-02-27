@@ -5,6 +5,8 @@ tags:
   - development
   - java
   - kotlin
+description: >-
+  Windows registry keys created by Android Studio — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Android Studio

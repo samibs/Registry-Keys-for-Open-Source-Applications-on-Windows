@@ -4,6 +4,8 @@ tags:
   - security
   - credentials
   - open-source
+description: >-
+  Windows registry keys created by KeePassXC — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # KeePassXC

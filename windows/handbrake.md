@@ -5,6 +5,8 @@ tags:
   - HKCU
   - HKLM
   - exe-installer
+description: >-
+  Windows registry keys created by HandBrake — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # HandBrake

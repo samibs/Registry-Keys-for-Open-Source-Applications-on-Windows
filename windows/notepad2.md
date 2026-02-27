@@ -4,6 +4,8 @@ tags:
   - HKLM
   - HKCR
   - exe-installer
+description: >-
+  Windows registry keys created by Notepad2 — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Notepad2

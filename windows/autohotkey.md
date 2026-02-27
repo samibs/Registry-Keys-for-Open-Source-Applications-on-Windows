@@ -4,6 +4,8 @@ tags:
   - scripting
   - hotkeys
   - productivity
+description: >-
+  Windows registry keys created by AutoHotkey — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # AutoHotkey

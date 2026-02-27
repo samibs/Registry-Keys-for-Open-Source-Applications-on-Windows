@@ -1,0 +1,22 @@
+/* ── Search filter input styling ─────────────────────────────── */
+#app-filter {
+  border: 1px solid var(--md-default-fg-color--lightest);
+  background: var(--md-default-bg-color);
+  color: var(--md-default-fg-color);
+  border-radius: 4px;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  width: 100%;
+  box-sizing: border-box;
+  transition: border-color 0.2s;
+}
+#app-filter:focus {
+  outline: none;
+  border-color: var(--md-primary-fg-color);
+}
+
+/* ── Minor table readability improvements ─────────────────────── */
+.md-typeset table:not([class]) th {
+  background-color: var(--md-primary-fg-color);
+  color: var(--md-primary-bg-color);
+}

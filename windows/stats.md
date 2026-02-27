@@ -1,4 +1,7 @@
 ---
+description: >-
+  Coverage statistics for the Windows Registry Keys reference — 100 open-source apps,
+  323 documented registry paths, hive distribution breakdown, and project growth history.
 tags:
   - meta
   - stats

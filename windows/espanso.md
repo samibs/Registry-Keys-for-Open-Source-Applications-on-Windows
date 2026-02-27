@@ -4,6 +4,8 @@ tags:
   - automation
   - productivity
   - snippets
+description: >-
+  Windows registry keys created by Espanso — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Espanso

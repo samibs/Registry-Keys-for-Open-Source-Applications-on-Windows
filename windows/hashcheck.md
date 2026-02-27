@@ -4,6 +4,8 @@ tags:
   - file
   - hash
   - shell-extension
+description: >-
+  Windows registry keys created by HashCheck Shell Extension — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # HashCheck Shell Extension

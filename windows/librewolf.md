@@ -3,6 +3,8 @@ tags:
   - browser
   - privacy
   - firefox-based
+description: >-
+  Windows registry keys created by LibreWolf — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # LibreWolf

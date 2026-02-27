@@ -4,6 +4,8 @@ tags:
   - cleaning
   - maintenance
   - system
+description: >-
+  Windows registry keys created by BleachBit — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # BleachBit

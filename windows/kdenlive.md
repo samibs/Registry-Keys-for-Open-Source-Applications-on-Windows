@@ -4,6 +4,8 @@ tags:
   - multimedia
   - kde
   - production
+description: >-
+  Windows registry keys created by Kdenlive — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Kdenlive

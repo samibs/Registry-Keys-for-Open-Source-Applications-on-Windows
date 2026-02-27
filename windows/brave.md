@@ -6,6 +6,8 @@ tags:
   - HKCR
   - exe-installer
   - chromium
+description: >-
+  Windows registry keys created by Brave Browser — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Brave Browser

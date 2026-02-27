@@ -1,3 +1,9 @@
+---
+description: >-
+  Reference guide to Windows registry value types — REG_SZ, REG_DWORD, REG_BINARY,
+  REG_MULTI_SZ, REG_EXPAND_SZ, and more — with descriptions and usage examples.
+---
+
 # Windows Registry Value Types Reference
 
 A quick reference for the registry value types (`REG_*`) you'll encounter in this documentation.

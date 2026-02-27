@@ -4,6 +4,8 @@ tags:
   - storage
   - analysis
   - visualization
+description: >-
+  Windows registry keys created by WinDirStat — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # WinDirStat

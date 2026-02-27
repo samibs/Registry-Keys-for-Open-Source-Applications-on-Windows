@@ -6,6 +6,8 @@ tags:
   - HKCR
   - exe-installer
   - developer-tools
+description: >-
+  Windows registry keys created by Python — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Python

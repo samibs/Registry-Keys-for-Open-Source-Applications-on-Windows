@@ -4,6 +4,8 @@ tags:
   - health
   - monitoring
   - diagnostics
+description: >-
+  Windows registry keys created by CrystalDiskInfo — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # CrystalDiskInfo

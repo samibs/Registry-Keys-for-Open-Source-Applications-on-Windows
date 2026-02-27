@@ -3,6 +3,8 @@ tags:
   - gaming
   - benchmark
   - performance
+description: >-
+  Windows registry keys created by CapFrameX — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # CapFrameX

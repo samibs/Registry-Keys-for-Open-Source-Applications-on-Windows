@@ -4,6 +4,8 @@ tags:
   - split
   - merge
   - document
+description: >-
+  Windows registry keys created by PDFsam Basic — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # PDFsam Basic

@@ -6,6 +6,8 @@ tags:
   - HKLM
   - SYSTEM-services
   - exe-installer
+description: >-
+  Windows registry keys created by Windows Subsystem for Linux (WSL) — install paths, uninstall keys, HKCU and HKLM entries for sysadmin automation and cleanup.
 ---
 
 # Windows Subsystem for Linux (WSL)
