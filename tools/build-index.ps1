@@ -42,7 +42,13 @@ if (-not (Test-Path $windowsDir)) {
     exit 1
 }
 
-$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object { $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md', 'stats.md', 'api.md') } | Sort-Object Name
+$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object {
+    $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md', 'stats.md', 'api.md', '404.md')
+} | Where-Object {
+    # Skip stub files (stub: true frontmatter) — not yet community-verified
+    $c = Get-Content $_.FullName -Raw
+    $c -notmatch '(?m)^stub:\s*true'
+} | Sort-Object Name
 
 $entries = [System.Collections.Generic.List[object]]::new()
 

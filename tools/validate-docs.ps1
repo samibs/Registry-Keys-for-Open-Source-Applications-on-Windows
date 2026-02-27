@@ -30,12 +30,22 @@ if (-not (Test-Path $windowsDir)) {
     exit 1
 }
 
-$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object { $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md', 'stats.md', 'api.md') }
+$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object { $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md', 'stats.md', 'api.md', '404.md') }
 
 if ($files.Count -eq 0) {
     Write-Warning "No markdown files found in: $windowsDir"
     exit 0
 }
+
+# Separate stubs (stub: true frontmatter) from full docs
+$stubFiles = @($files | Where-Object {
+    $c = Get-Content $_.FullName -Raw
+    $c -match '(?m)^stub:\s*true'
+})
+$files = @($files | Where-Object {
+    $c = Get-Content $_.FullName -Raw
+    $c -notmatch '(?m)^stub:\s*true'
+})
 
 $requiredSections = @(
     "## 📁 Registry Paths",
@@ -96,5 +106,9 @@ if ($failCount -gt 0) {
 }
 else {
     Write-Host "All $($files.Count) file(s) passed validation." -ForegroundColor Green
+    if ($stubFiles.Count -gt 0) {
+        Write-Host "$($stubFiles.Count) stub file(s) skipped (stub: true) — awaiting community contribution:" -ForegroundColor Yellow
+        foreach ($s in $stubFiles) { Write-Host "   ⏳ $($s.Name)" -ForegroundColor Yellow }
+    }
     exit 0
 }

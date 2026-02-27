@@ -1,0 +1,221 @@
+# App Documentation Backlog
+#
+# This file is the queue for new app documentation stubs.
+# The weekly add-apps.yml workflow reads this file, picks the first N apps
+# with status: queued, generates stub docs, and opens a draft PR.
+#
+# Status values:
+#   queued  - not yet generated; will be picked up by the workflow
+#   stub    - stub doc exists in windows/; awaiting human verification
+#   done    - fully verified and merged into main
+#
+# Fields:
+#   name           Display name (matches the H1 heading in the doc)
+#   slug           Filename without .md (lowercase, hyphens)
+#   winget_id      Winget package identifier (used for version checks)
+#   installer_type exe | msi | winget | portable | msix
+#   tags           YAML list of frontmatter tags
+#   hives          Registry hives expected: HKCU, HKLM, HKCR
+#   status         queued | stub | done
+
+apps:
+
+  - name: "Blender"
+    slug: "blender"
+    winget_id: "BlenderFoundation.Blender"
+    installer_type: "msi"
+    tags: ["3d-graphics", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "DB Browser for SQLite"
+    slug: "db-browser-for-sqlite"
+    winget_id: "DBBrowserForSQLite.DBBrowserForSQLite"
+    installer_type: "msi"
+    tags: ["database", "sqlite", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Joplin"
+    slug: "joplin"
+    winget_id: "Joplin.Joplin"
+    installer_type: "exe"
+    tags: ["note-taking", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "VeraCrypt"
+    slug: "veracrypt"
+    winget_id: "IDRIX.VeraCrypt"
+    installer_type: "exe"
+    tags: ["encryption", "security", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Mp3tag"
+    slug: "mp3tag"
+    winget_id: "Mp3tag.Mp3tag"
+    installer_type: "exe"
+    tags: ["audio", "tag-editor", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "MusicBrainz Picard"
+    slug: "musicbrainz-picard"
+    winget_id: "MusicBrainz.Picard"
+    installer_type: "msi"
+    tags: ["audio", "tag-editor", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "FreeFileSync"
+    slug: "freefilesync"
+    winget_id: "FreeFileSync.FreeFileSync"
+    installer_type: "exe"
+    tags: ["file-sync", "backup", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "ImageGlass"
+    slug: "imageglass"
+    winget_id: "DuongDieuPhap.ImageGlass"
+    installer_type: "msi"
+    tags: ["image-viewer", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Darktable"
+    slug: "darktable"
+    winget_id: "darktable.darktable"
+    installer_type: "exe"
+    tags: ["photo-editing", "raw-processing", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "RawTherapee"
+    slug: "rawtherapee"
+    winget_id: "RawTherapee.RawTherapee"
+    installer_type: "exe"
+    tags: ["photo-editing", "raw-processing", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Shotcut"
+    slug: "shotcut"
+    winget_id: "Meltytech.Shotcut"
+    installer_type: "exe"
+    tags: ["video-editing", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Mixxx"
+    slug: "mixxx"
+    winget_id: "Mixxx.Mixxx"
+    installer_type: "msi"
+    tags: ["audio", "dj-software", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "MuseScore"
+    slug: "musescore"
+    winget_id: "MuseScore.MuseScore"
+    installer_type: "msi"
+    tags: ["music-notation", "audio", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Deluge"
+    slug: "deluge"
+    winget_id: "DelugeTeam.Deluge"
+    installer_type: "exe"
+    tags: ["bittorrent", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "CopyQ"
+    slug: "copyq"
+    winget_id: "hluk.CopyQ"
+    installer_type: "exe"
+    tags: ["clipboard-manager", "productivity", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Ditto"
+    slug: "ditto"
+    winget_id: "Kevin.Ditto"
+    installer_type: "exe"
+    tags: ["clipboard-manager", "productivity", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Open-Shell"
+    slug: "open-shell"
+    winget_id: "Open-Shell.Open-Shell-Menu"
+    installer_type: "msi"
+    tags: ["shell", "start-menu", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "TreeSize Free"
+    slug: "treesize-free"
+    winget_id: "JAMSoftware.TreeSize.Free"
+    installer_type: "exe"
+    tags: ["disk-usage", "utilities", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "FastCopy"
+    slug: "fastcopy"
+    winget_id: "FastCopy.FastCopy"
+    installer_type: "exe"
+    tags: ["file-copy", "utilities", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Geek Uninstaller"
+    slug: "geek-uninstaller"
+    winget_id: "GeekUninstaller.GeekUninstaller"
+    installer_type: "portable"
+    tags: ["uninstaller", "utilities", "HKLM", "portable"]
+    hives: ["HKLM"]
+    status: queued
+
+  - name: "Bulk Crap Uninstaller"
+    slug: "bulk-crap-uninstaller"
+    winget_id: "Klocman.BulkCrapUninstaller"
+    installer_type: "exe"
+    tags: ["uninstaller", "utilities", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "CMake"
+    slug: "cmake"
+    winget_id: "Kitware.CMake"
+    installer_type: "msi"
+    tags: ["build-system", "developer-tools", "HKCU", "HKLM", "msi-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "x64dbg"
+    slug: "x64dbg"
+    winget_id: "x64dbg.x64dbg"
+    installer_type: "portable"
+    tags: ["debugger", "security", "HKCU", "portable"]
+    hives: ["HKCU"]
+    status: queued
+
+  - name: "Fiddler Classic"
+    slug: "fiddler-classic"
+    winget_id: "Telerik.Fiddler"
+    installer_type: "exe"
+    tags: ["network", "debugging", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued
+
+  - name: "Strawberry Music Player"
+    slug: "strawberry"
+    winget_id: "StrawberryMusicPlayer.Strawberry"
+    installer_type: "exe"
+    tags: ["media-player", "audio", "HKCU", "HKLM", "exe-installer"]
+    hives: ["HKCU", "HKLM"]
+    status: queued

@@ -1,0 +1,189 @@
+name: Add Apps from Backlog
+
+on:
+  schedule:
+    # Every Monday at 09:00 UTC
+    - cron: '0 9 * * 1'
+  workflow_dispatch:
+    inputs:
+      batch_size:
+        description: 'Number of apps to stub in this run (default: 5)'
+        required: false
+        default: '5'
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  add-apps:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Read backlog and select queued apps
+        id: pick-apps
+        shell: pwsh
+        run: |
+          # Install powershell-yaml module for parsing
+          if (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
+            Install-Module -Name powershell-yaml -Force -Scope CurrentUser -AllowClobber
+          }
+          Import-Module powershell-yaml
+
+          $backlogPath = "tools/app-backlog.yml"
+          $content     = Get-Content $backlogPath -Raw
+          $backlog     = ConvertFrom-Yaml $content
+
+          $batchSize = [int]("${{ github.event.inputs.batch_size }}" -replace '^\s*$','5')
+
+          $queued = $backlog.apps | Where-Object { $_.status -eq 'queued' } | Select-Object -First $batchSize
+
+          if ($queued.Count -eq 0) {
+            Write-Host "No queued apps found in backlog."
+            "has_apps=false" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+            exit 0
+          }
+
+          Write-Host "Selected $($queued.Count) app(s) to stub:"
+          $queued | ForEach-Object { Write-Host "  - $($_.name) ($($_.slug))" }
+
+          # Serialize selected apps as JSON for downstream steps
+          $json = $queued | ConvertTo-Json -Compress -Depth 5
+          "apps_json=$json" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          "has_apps=true"   | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+
+      - name: Generate stub docs and update nav
+        if: steps.pick-apps.outputs.has_apps == 'true'
+        id: generate
+        shell: pwsh
+        run: |
+          if (-not (Get-Module -ListAvailable -Name powershell-yaml)) {
+            Install-Module -Name powershell-yaml -Force -Scope CurrentUser -AllowClobber
+          }
+          Import-Module powershell-yaml
+
+          $appsJson = '${{ steps.pick-apps.outputs.apps_json }}'
+          # Handle both single object and array
+          $apps = $appsJson | ConvertFrom-Json
+          if ($apps -isnot [array]) { $apps = @($apps) }
+
+          $generatedNames = [System.Collections.Generic.List[string]]::new()
+
+          foreach ($app in $apps) {
+            $tags  = ($app.tags  -join ',')
+            $hives = ($app.hives -join ',')
+
+            Write-Host "Generating stub for: $($app.name)"
+            & "tools/generate-stub.ps1" `
+              -Name          $app.name `
+              -Slug          $app.slug `
+              -WingetId      $app.winget_id `
+              -InstallerType $app.installer_type `
+              -Tags          $tags `
+              -Hives         $hives
+
+            Write-Host "Updating nav for: $($app.name)"
+            & "tools/update-nav.ps1" -Name $app.name -Slug $app.slug
+
+            $generatedNames.Add($app.name)
+          }
+
+          # Mark apps as 'stub' in backlog
+          $backlogPath = "tools/app-backlog.yml"
+          $backlogContent = Get-Content $backlogPath -Raw
+          foreach ($app in $apps) {
+            $old = "slug: `"$($app.slug)`"`n    winget_id"
+            if ($backlogContent -match "slug: `"$($app.slug)`"") {
+              # Replace status: queued with status: stub for this entry
+              $pattern = "(?s)(slug: `"$([regex]::Escape($app.slug))`".*?status:)\s*queued"
+              $backlogContent = [regex]::Replace($backlogContent, $pattern, '$1 stub')
+            }
+          }
+          Set-Content $backlogPath -Value $backlogContent -Encoding UTF8 -NoNewline
+
+          # Output list for PR body
+          $listMd = ($generatedNames | ForEach-Object { "- $_" }) -join "`n"
+          "generated_list<<EOF`n$listMd`nEOF" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+          "count=$($generatedNames.Count)" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+
+      - name: Create branch and commit
+        if: steps.pick-apps.outputs.has_apps == 'true'
+        id: commit
+        shell: pwsh
+        run: |
+          $date   = (Get-Date -Format 'yyyy-MM-dd')
+          $branch = "add-apps-$date"
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          git checkout -b $branch
+
+          git add windows/*.md tools/app-backlog.yml mkdocs.yml
+          git commit -m "feat(stubs): add ${{ steps.generate.outputs.count }} app stubs from backlog [$date]
+
+          Apps added as community contribution stubs:
+          ${{ steps.generate.outputs.generated_list }}
+
+          Each stub file has stub: true in frontmatter.
+          A contributor needs to install each app, verify the registry paths,
+          fill in the Keys table, and remove stub: true to promote to a full doc.
+
+          Co-authored-by: Copilot <223556219+Copilot@users.noreply.github.com>"
+
+          git push origin $branch
+
+          "branch=$branch" | Out-File -FilePath $env:GITHUB_OUTPUT -Append
+
+      - name: Open draft pull request
+        if: steps.pick-apps.outputs.has_apps == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const branch     = '${{ steps.commit.outputs.branch }}';
+            const count      = '${{ steps.generate.outputs.count }}';
+            const appsList   = `${{ steps.generate.outputs.generated_list }}`;
+
+            const body = [
+              `## 🤖 Auto-generated App Stubs`,
+              ``,
+              `This draft PR was created by the **Add Apps from Backlog** scheduled workflow.`,
+              `It contains **${count} stub doc(s)** that need human verification before merging.`,
+              ``,
+              `### Apps added`,
+              appsList,
+              ``,
+              `### What each stub needs`,
+              `Each stub file has \`stub: true\` in its frontmatter and is excluded from`,
+              `validation and the JSON index until completed. To promote a stub to a full doc:`,
+              ``,
+              `1. **Install the app** on a clean Windows environment`,
+              `2. **Export the registry** before/after installation using \`reg export\` or Regshot`,
+              `3. **Update the Keys table** with real value names and types`,
+              `4. **Verify all paths** in the Registry Paths table`,
+              `5. **Set \`version_tested\`** to the installed version`,
+              `6. **Remove \`stub: true\`** from the frontmatter`,
+              `7. **Run** \`tools/validate-docs.ps1\` locally to confirm it passes`,
+              ``,
+              `See [CONTRIBUTING.md](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/CONTRIBUTING.md) for the full guide.`,
+              ``,
+              `---`,
+              `*This PR was opened automatically by [add-apps.yml](.github/workflows/add-apps.yml).*`,
+            ].join('\n');
+
+            await github.rest.pulls.create({
+              owner: context.repo.owner,
+              repo:  context.repo.repo,
+              title: `feat(stubs): add ${count} app stubs from backlog`,
+              head:  branch,
+              base:  'main',
+              body:  body,
+              draft: true,
+            });
+
+            console.log(`Draft PR created for branch: ${branch}`);
