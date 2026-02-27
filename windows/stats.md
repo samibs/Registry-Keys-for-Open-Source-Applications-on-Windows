@@ -127,4 +127,44 @@ These apps can run with zero registry footprint (useful for restricted environme
 
 ---
 
+## 🔄 Keeping Docs Current
+
+Registry keys can change between major app versions. This project uses two mechanisms to stay up to date:
+
+### Automated Staleness Detection
+
+A [weekly GitHub Actions workflow](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/version-check.yml) runs every Monday. It:
+
+1. Queries **winget** for the latest version of each documented app
+2. Compares it against the version recorded in each `.md` file
+3. Opens a **GitHub Issue** automatically listing any docs that appear stale
+
+You can also run the check locally:
+
+```powershell
+# Check all apps — show table of current vs. latest
+pwsh -File tools/check-versions.ps1
+
+# Show only stale apps
+pwsh -File tools/check-versions.ps1 -StaleOnly
+
+# Output GitHub issue-ready markdown
+pwsh -File tools/check-versions.ps1 -OutputFormat issues
+```
+
+### `last_verified` Tracking
+
+Every entry in `index.json` includes a `last_verified` date derived from the last git commit to that file. This makes it easy to identify docs that haven't been touched in a long time.
+
+### How to Update a Stale Doc
+
+1. Install the latest app version on a test system
+2. Use `regedit` or `reg query` to verify current registry structure
+3. Update the version number and any changed keys in `windows/<app>.md`
+4. Run `pwsh -File tools/validate-docs.ps1` to verify
+5. Run `pwsh -File tools/build-index.ps1` to rebuild the index
+6. Submit a PR — see [CONTRIBUTING.md](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/blob/main/CONTRIBUTING.md)
+
+---
+
 *Want to add an app? See [CONTRIBUTING.md](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/blob/main/CONTRIBUTING.md).*

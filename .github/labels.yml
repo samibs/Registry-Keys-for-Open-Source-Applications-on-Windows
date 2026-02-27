@@ -1,0 +1,22 @@
+# GitHub repository labels
+# Used by automated workflows
+
+- name: "stale-docs"
+  color: "e4e669"
+  description: "App documentation is behind the latest release"
+
+- name: "automated"
+  color: "0075ca"
+  description: "Created automatically by a GitHub Actions workflow"
+
+- name: "documentation"
+  color: "0075ca"
+  description: "Improvements or additions to documentation"
+
+- name: "good first issue"
+  color: "7057ff"
+  description: "Good for newcomers"
+
+- name: "help wanted"
+  color: "008672"
+  description: "Extra attention is needed"

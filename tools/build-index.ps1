@@ -9,6 +9,7 @@
       - Installer type
       - Registry paths (from the "Registry Paths" section bullet list)
       - Hives (HKCU / HKLM / HKCR / HKU — derived from paths)
+      - Last verified date (from git log — date of last commit to the file)
 
     Writes the result to windows/index.json sorted alphabetically by slug.
 
@@ -126,6 +127,10 @@ foreach ($file in $files) {
         }
     }
 
+    # --- Last verified: git log date for this file, or today if untracked ---
+    $gitDate = git -C $repoRoot log --follow -1 --format="%as" -- $file.FullName 2>$null
+    $lastVerified = if ($gitDate) { $gitDate.Trim() } else { (Get-Date -Format 'yyyy-MM-dd') }
+
     $entries.Add([PSCustomObject]@{
         name             = $appName
         slug             = $slug
@@ -134,6 +139,7 @@ foreach ($file in $files) {
         installer_type   = $installerType
         hives            = @($hives)
         registry_paths   = @($paths)
+        last_verified    = $lastVerified
     })
 
     Write-Host "  Parsed: $($file.Name) → $appName ($($paths.Count) paths)" -ForegroundColor Cyan

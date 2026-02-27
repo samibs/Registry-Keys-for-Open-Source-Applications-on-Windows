@@ -15,7 +15,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\7-Zip",
       "HKEY_CLASSES_ROOT\\*\\shellex\\ContextMenuHandlers\\7-Zip",
       "HKEY_CLASSES_ROOT\\7-Zip.*"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Android Studio",
@@ -31,7 +32,8 @@
       "HKCU\\SOFTWARE\\Android Studio",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Android Studio",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Angry IP Scanner",
@@ -46,7 +48,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\Angry IP Scanner",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Angry IP Scanner"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Audacity",
@@ -60,7 +63,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Audacity",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Audacity"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "AutoHotkey",
@@ -79,7 +83,8 @@
       "HKCR\\AutoHotkeyScript",
       "HKCR\\AutoHotkeyScript\\Shell\\Run",
       "HKCR\\AutoHotkeyScript\\Shell\\Edit"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "balenaEtcher",
@@ -95,7 +100,8 @@
       "HKCU\\SOFTWARE\\balena\\balenaEtcher",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\balenaEtcher"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Bitwarden",
@@ -111,7 +117,8 @@
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Bitwarden",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKCU\\SOFTWARE\\Classes\\bitwarden"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "BleachBit",
@@ -127,7 +134,8 @@
       "HKLM\\SOFTWARE\\BleachBit",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\BleachBit",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Brave Browser",
@@ -146,7 +154,8 @@
       "HKEY_CURRENT_USER\\Software\\BraveSoftware\\Brave-Browser",
       "HKEY_CLASSES_ROOT\\BraveHTML",
       "HKEY_CLASSES_ROOT\\brave"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Calibre",
@@ -165,7 +174,8 @@
       "HKCR\\.epub\\OpenWithProgIds\\calibre.epub",
       "HKCR\\.mobi\\OpenWithProgIds\\calibre.mobi",
       "HKCR\\calibre.epub"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Clementine",
@@ -182,7 +192,8 @@
       "HKCU\\SOFTWARE\\Clementine Music Player",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Clementine Music Player",
       "HKCR\\.mp3\\OpenWithProgids"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Clink",
@@ -198,7 +209,8 @@
       "HKCU\\SOFTWARE\\Clink",
       "HKLM\\SOFTWARE\\Clink",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Clink"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "CPU-Z",
@@ -214,7 +226,8 @@
       "HKCU\\SOFTWARE\\CPUID\\CPU-Z",
       "HKLM\\SOFTWARE\\CPUID\\CPU-Z",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\CPU-Z"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "CrystalDiskInfo",
@@ -228,7 +241,8 @@
     "registry_paths": [
       "HKLM\\SOFTWARE\\CrystalDewWorld\\CrystalDiskInfo",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\CrystalDiskInfo_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "DBeaver Community Edition",
@@ -243,7 +257,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\DBeaver Community_is1",
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\DBeaver Community_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Docker Desktop",
@@ -259,7 +274,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Docker Desktop",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\com.docker.service",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\DockerDesktopBackend"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "draw.io (diagrams.net)",
@@ -274,7 +290,8 @@
       "HKCU\\SOFTWARE\\draw.io",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\draw.io",
       "HKCU\\SOFTWARE\\Classes\\drawio"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Espanso",
@@ -290,7 +307,8 @@
       "HKCU\\SOFTWARE\\espanso",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Espanso"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Everything (voidtools)",
@@ -308,7 +326,8 @@
       "HKEY_CURRENT_USER\\Software\\Voidtools\\Everything",
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKEY_CLASSES_ROOT\\es"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "ExifTool",
@@ -321,7 +340,8 @@
     ],
     "registry_paths": [
       "HKCU\\SOFTWARE\\Classes\\*\\shell\\ExifTool"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "FileZilla",
@@ -335,7 +355,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\FileZilla Client",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\FileZilla Client"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Mozilla Firefox",
@@ -355,7 +376,8 @@
       "HKEY_CURRENT_USER\\Software\\Mozilla\\Mozilla Firefox",
       "HKEY_CLASSES_ROOT\\FirefoxHTML-<hash>",
       "HKEY_CLASSES_ROOT\\FirefoxURL-<hash>"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "f.lux",
@@ -370,7 +392,8 @@
       "HKCU\\SOFTWARE\\Michael Herf\\f.lux",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\flux"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "foobar2000",
@@ -386,7 +409,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\foobar2000",
       "HKEY_CLASSES_ROOT\\foobar2000",
       "HKEY_CLASSES_ROOT\\.mp3`, `.flac`, `.ogg"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "FreeCAD",
@@ -404,7 +428,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\FreeCAD 0.21.2",
       "HKCR\\.FCStd",
       "HKCR\\FreeCAD.FCStd"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "GIMP",
@@ -418,7 +443,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\GIMP\\2.0",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\GIMP-2_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Git for Windows",
@@ -433,7 +459,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\GitForWindows",
       "HKEY_CURRENT_USER\\Software\\GitForWindows"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Git Extensions",
@@ -449,7 +476,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\GitExtensions\\GitExtensions",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}",
       "HKEY_CURRENT_USER\\Software\\GitExtensions"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Greenshot",
@@ -465,7 +493,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Greenshot_is1",
       "HKEY_CURRENT_USER\\Software\\Greenshot",
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "HandBrake",
@@ -478,7 +507,8 @@
     ],
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HandBrake"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "HeidiSQL",
@@ -493,7 +523,8 @@
     "registry_paths": [
       "HKEY_CURRENT_USER\\Software\\HeidiSQL",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HeidiSQL_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "HWiNFO",
@@ -508,7 +539,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\HWiNFO64",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HWiNFO64_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Inkscape",
@@ -522,7 +554,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Inkscape",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Inkscape"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Insomnia",
@@ -537,7 +570,8 @@
     "registry_paths": [
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\insomnia",
       "HKEY_CLASSES_ROOT\\insomnia"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "IrfanView",
@@ -557,7 +591,8 @@
       "HKCR\\.png\\OpenWithProgIds\\IrfanView.png",
       "HKCR\\.bmp\\OpenWithProgIds\\IrfanView.bmp",
       "HKCR\\IrfanView.jpg"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "JDownloader 2",
@@ -572,7 +607,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\AppDataLow\\Software\\JDownloader 2.0",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\JDownloader 2"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Jellyfin",
@@ -586,7 +622,8 @@
     "registry_paths": [
       "HKLM\\SOFTWARE\\Jellyfin\\Server",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{A4E50EA8-7E2A-4B6A-9C3B-5C5A4B3B7A3E}_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Kdenlive",
@@ -601,7 +638,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\kdenlive",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\kdenlive"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "KeePass Password Safe",
@@ -615,7 +653,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\KeePass Password Safe 2",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\KeePassPasswordSafe2_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "KeePassXC",
@@ -633,7 +672,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\KeePassXC",
       "HKCR\\.kdbx",
       "HKCR\\KeePassXC.Database"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Krita",
@@ -651,7 +691,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\krita",
       "HKCR\\.kra",
       "HKCR\\.krz"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "LibreOffice",
@@ -667,7 +708,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\LibreOffice\\LibreOffice\\7.6",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}",
       "HKEY_CURRENT_USER\\Software\\LibreOffice"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "LibreWolf",
@@ -687,7 +729,8 @@
       "HKCR\\LibreWolfURL",
       "HKCR\\LibreWolfHTML",
       "HKLM\\SOFTWARE\\RegisteredApplications"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "LMMS (Linux MultiMedia Studio)",
@@ -702,7 +745,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\LMMS",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\LMMS_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "MediaInfo",
@@ -718,7 +762,8 @@
       "HKLM\\SOFTWARE\\MediaInfo",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\MediaInfo",
       "HKCR\\*\\shell\\MediaInfo"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "MobaXterm",
@@ -734,7 +779,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Mobatek\\MobaXterm",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}",
       "HKEY_CURRENT_USER\\Software\\Mobatek\\MobaXterm"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "MPC-HC (Media Player Classic – Home Cinema)",
@@ -754,7 +800,8 @@
       "HKCR\\.mp4\\OpenWithProgIds\\MPC-HC.mp4",
       "HKCR\\.avi\\OpenWithProgIds\\MPC-HC.avi",
       "HKCR\\MPC-HC.mkv"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "mpv",
@@ -768,7 +815,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\mpv",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\mpv-net"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "mRemoteNG",
@@ -783,7 +831,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\mRemoteNG",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "MusicBee",
@@ -802,7 +851,8 @@
       "HKCR\\.mp3\\OpenWithProgIds\\MusicBee.mp3",
       "HKCR\\.flac\\OpenWithProgIds\\MusicBee.flac",
       "HKCR\\MusicBee.mp3"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Nextcloud Desktop",
@@ -819,7 +869,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Nextcloud",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKLM\\SYSTEM\\CurrentControlSet\\Services\\nextcloud"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Nmap",
@@ -836,7 +887,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Nmap",
       "HKCR\\.nmap",
       "HKCR\\.xml\\OpenWithProgIds\\Zenmap.xml"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Node.js",
@@ -850,7 +902,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Node.js",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Notepad2",
@@ -865,7 +918,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Notepad2",
       "HKEY_CLASSES_ROOT\\*\\shell\\Open with Notepad2"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Notepad++",
@@ -881,7 +935,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Notepad++",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Notepad++",
       "HKEY_CURRENT_USER\\Software\\Notepad++"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Npcap",
@@ -895,7 +950,8 @@
     "registry_paths": [
       "HKLM\\SOFTWARE\\Npcap",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\NpcapInst"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "OBS Studio",
@@ -909,7 +965,8 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\OBS Studio",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OBS Studio"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Obsidian",
@@ -924,7 +981,8 @@
       "HKCU\\SOFTWARE\\obsidian",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\obsidian",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "OpenVPN",
@@ -942,7 +1000,8 @@
       "HKLM\\SYSTEM\\CurrentControlSet\\Services\\OpenVPNService",
       "HKLM\\SYSTEM\\CurrentControlSet\\Services\\tap0901",
       "HKCU\\SOFTWARE\\OpenVPN-GUI"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "PDFsam Basic",
@@ -957,7 +1016,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\pdfsam",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\pdfsam_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "PeaZip",
@@ -977,7 +1037,8 @@
       "HKCR\\.tar\\OpenWithProgIds\\PeaZip",
       "HKCR\\PeaZip",
       "HKCR\\*\\shell\\PeaZip"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Postman",
@@ -992,7 +1053,8 @@
     "registry_paths": [
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\postman",
       "HKEY_CLASSES_ROOT\\postman"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Microsoft PowerToys",
@@ -1009,7 +1071,8 @@
       "HKEY_CURRENT_USER\\Software\\Microsoft\\PowerToys",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft PowerToys - x64",
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Process Hacker (System Informer)",
@@ -1026,7 +1089,8 @@
       "HKCU\\SOFTWARE\\Process Hacker 2",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Process_Hacker2_is1",
       "HKLM\\SYSTEM\\CurrentControlSet\\Services\\KProcessHacker3"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "PuTTY",
@@ -1043,7 +1107,8 @@
       "HKEY_CURRENT_USER\\Software\\SimonTatham\\PuTTY\\Sessions",
       "HKEY_CURRENT_USER\\Software\\SimonTatham\\PuTTY\\SshHostKeys",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\PuTTY_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Python",
@@ -1063,7 +1128,8 @@
       "HKEY_CLASSES_ROOT\\.py",
       "HKEY_CLASSES_ROOT\\Python.File",
       "HKEY_CLASSES_ROOT\\Python.CompiledFile"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "qBittorrent",
@@ -1081,7 +1147,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\qBittorrent",
       "HKEY_CLASSES_ROOT\\.torrent",
       "HKEY_CLASSES_ROOT\\magnet"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Rclone",
@@ -1095,7 +1162,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\rclone-browser",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\rclone-browser"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Rufus",
@@ -1108,7 +1176,8 @@
     ],
     "registry_paths": [
       "HKCU\\SOFTWARE\\Akeo\\Rufus"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "RustDesk",
@@ -1125,7 +1194,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\RustDesk",
       "HKLM\\SYSTEM\\CurrentControlSet\\Services\\RustDesk",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "ScreenToGif",
@@ -1140,7 +1210,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\ScreenToGif",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ScreenToGif_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "ShareX",
@@ -1157,7 +1228,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ShareX_is1",
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKEY_CLASSES_ROOT\\sharex"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Signal Desktop",
@@ -1173,7 +1245,8 @@
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\signal-desktop",
       "HKEY_CLASSES_ROOT\\sgnl",
       "HKEY_CLASSES_ROOT\\signalcaptcha"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Sublime Text",
@@ -1189,7 +1262,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Sublime Text_is1",
       "HKEY_CLASSES_ROOT\\sublime_auto_file",
       "HKEY_CLASSES_ROOT\\*\\shell\\Open with Sublime Text"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Sumatra PDF",
@@ -1209,7 +1283,8 @@
       "HKCR\\SumatraPDF",
       "HKCR\\.epub\\OpenWithProgIds\\SumatraPDF",
       "HKCR\\.cbz\\OpenWithProgIds\\SumatraPDF"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Syncthing",
@@ -1226,7 +1301,8 @@
       "HKCU\\SOFTWARE\\SyncTrayzor",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\SyncTrayzor",
       "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SyncTrayzor"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Telegram Desktop",
@@ -1241,7 +1317,8 @@
     "registry_paths": [
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{53F49750-6209-4FBF-9CA8-7A333C87D1ED}_is1",
       "HKEY_CLASSES_ROOT\\tg"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Mozilla Thunderbird",
@@ -1260,7 +1337,8 @@
       "HKCR\\mailto",
       "HKCR\\ThunderbirdEML",
       "HKCR\\.eml"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Ventoy",
@@ -1273,7 +1351,8 @@
     ],
     "registry_paths": [
       "HKCU\\SOFTWARE\\Ventoy"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Oracle VM VirtualBox",
@@ -1290,7 +1369,8 @@
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\VBoxSup",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\VBoxNetAdp",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\VBoxNetLwf"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "VLC Media Player",
@@ -1308,7 +1388,8 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\VideoLAN\\VLC",
       "HKEY_CLASSES_ROOT\\VLC.*",
       "HKEY_CLASSES_ROOT\\.mp4`, `.mkv`, `.avi`, `.mp3"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Visual Studio Code",
@@ -1323,7 +1404,8 @@
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{771FD6B0-FA20-440A-A002-3B3BAC16DC50}_is1",
       "HKEY_CURRENT_USER\\Software\\Classes\\vscode",
       "HKEY_CURRENT_USER\\Software\\Classes\\vscode-insiders"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "WinDirStat",
@@ -1338,7 +1420,8 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\WinDirStat",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\WinDirStat"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Windows Terminal",
@@ -1355,7 +1438,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe",
       "HKLM\\SOFTWARE\\Classes\\Directory\\shell\\Open with Windows Terminal",
       "HKLM\\SOFTWARE\\Classes\\Directory\\Background\\shell\\Open with Windows Terminal"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "WinMerge",
@@ -1373,7 +1457,8 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\WinMerge_is1",
       "HKCR\\*\\shell\\WinMerge",
       "HKCR\\Directory\\shell\\WinMerge"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "WinSCP",
@@ -1391,7 +1476,8 @@
       "HKEY_CURRENT_USER\\Software\\Martin Prikryl\\WinSCP 2\\Sessions",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Martin Prikryl\\WinSCP 2",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\winscp3_is1"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Wireshark",
@@ -1410,7 +1496,8 @@
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\npcap",
       "HKEY_CLASSES_ROOT\\.pcap",
       "HKEY_CLASSES_ROOT\\.pcapng"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "Windows Subsystem for Linux (WSL)",
@@ -1427,7 +1514,8 @@
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Lxss",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WslService",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LxssManager"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "XnView MP",
@@ -1447,7 +1535,8 @@
       "HKCR\\.png\\OpenWithProgIds\\XnViewMP",
       "HKCR\\.gif\\OpenWithProgIds\\XnViewMP",
       "HKCR\\XnViewMP"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   },
   {
     "name": "ZeroTier",
@@ -1464,6 +1553,7 @@
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ZeroTier One",
       "HKLM\\SYSTEM\\CurrentControlSet\\Services\\ZeroTierOneService",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
-    ]
+    ],
+    "last_verified": "2026-02-27"
   }
 ]
