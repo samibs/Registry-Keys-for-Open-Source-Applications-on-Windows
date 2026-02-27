@@ -46,6 +46,7 @@ nav:
     - Registry Value Types: registry-types.md
     - Automation Cookbook: cookbook.md
     - Project Statistics: stats.md
+    - Machine-Readable API: api.md
   - Applications:
     - 7-Zip: 7zip.md
     - Android Studio: android-studio.md

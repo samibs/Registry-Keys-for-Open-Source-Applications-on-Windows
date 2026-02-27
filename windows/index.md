@@ -17,6 +17,25 @@ When open-source applications are installed on Windows, they write entries to th
 
 ## Verified Applications
 
+<div style="margin-bottom:1rem">
+  <input id="app-filter" type="text" placeholder="Filter by name, hive (HKCU, HKLM, HKCR), or installer type…"
+    style="width:100%;padding:0.5rem 0.75rem;font-size:1rem;border:1px solid #ccc;border-radius:4px;box-sizing:border-box" />
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+  var input = document.getElementById('app-filter');
+  if (!input) return;
+  input.addEventListener('input', function () {
+    var q = this.value.toLowerCase().trim();
+    var rows = document.querySelectorAll('table tbody tr');
+    rows.forEach(function (row) {
+      row.style.display = (!q || row.textContent.toLowerCase().includes(q)) ? '' : 'none';
+    });
+  });
+});
+</script>
+
 | Application | Version | Installer | Hives |
 |-------------|---------|-----------|-------|
 | [7-Zip](7zip.md) | 23.01 | `.exe` | HKCU, HKLM, HKCR |
