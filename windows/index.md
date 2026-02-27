@@ -22,14 +22,19 @@ When open-source applications are installed on Windows, they write entries to th
 | [7-Zip](7zip.md) | 23.01 | `.exe` | HKCU, HKLM, HKCR |
 | [Audacity](audacity.md) | 3.4.2 | `.exe` | HKCU, HKLM |
 | [Brave Browser](brave.md) | 1.63.169 | `.exe` | HKCU, HKLM, HKCR |
+| [Bruno](bruno.md) | 1.21.0 | `.exe` | HKCU, HKLM |
+| [Bulk Rename Utility](bulk-rename-utility.md) | 3.4.4.4 | `.exe` / Portable | HKCU, HKLM |
 | [DBeaver](dbeaver.md) | 24.0.0 | `.exe` | HKLM |
 | [Docker Desktop](docker-desktop.md) | 4.29.0 | `.exe` | HKLM, SYSTEM |
 | [FileZilla](filezilla.md) | 3.66.5 | `.exe` | HKCU, HKLM |
+| [Flameshot](flameshot.md) | 12.1.0 | `.exe` / `.msi` | HKCU, HKLM |
 | [Mozilla Firefox](firefox.md) | 123.0 | `.exe` | HKCU, HKLM, HKCR |
 | [GIMP](gimp.md) | 2.10.36 | `.exe` | HKCU, HKLM |
 | [Git Extensions](git-extensions.md) | 4.2.1 | `.msi` | HKCU, HKLM, HKCR |
 | [Git for Windows](git.md) | 2.44.0 | `.exe` | HKCU, HKLM |
+| [GPU-Z](gpu-z.md) | 2.59.0 | Portable | HKCU |
 | [HandBrake](handbrake.md) | 1.7.3 | `.exe` | HKCU, HKLM |
+| [HashCheck Shell Extension](hashcheck.md) | 2.4.0 | `.exe` | HKCU, HKLM, HKCR |
 | [HeidiSQL](heidisql.md) | 12.6.0 | `.exe` | HKCU, HKLM |
 | [Inkscape](inkscape.md) | 1.3.2 | `.exe` | HKCU, HKLM |
 | [KeePass Password Safe](keepass.md) | 2.55 | `.exe` | HKCU, HKLM |
@@ -48,6 +53,7 @@ When open-source applications are installed on Windows, they write entries to th
 | [Visual Studio Code](vscode.md) | 1.85.1 | User `.exe` | HKCU, HKCR |
 | [WinSCP](winscp.md) | 6.3.3 | `.exe` | HKCU, HKLM |
 | [Wireshark](wireshark.md) | 4.2.3 | `.exe` | HKLM, HKCR, SYSTEM |
+| [WizTree](wiztree.md) | 4.18 | `.exe` / Portable | HKCU, HKLM |
 | [Everything](everything.md) | 1.4.1.1024 | `.exe` | HKLM, HKCU |
 | [foobar2000](foobar2000.md) | 2.1.5 | `.exe` | HKLM, HKCU |
 | [Greenshot](greenshot.md) | 1.3.274 | `.exe` | HKLM, HKCU |
@@ -60,6 +66,7 @@ When open-source applications are installed on Windows, they write entries to th
 | [WSL](wsl.md) | 2.x | Built-in | HKLM, HKCU |
 | [balenaEtcher](balenaetcher.md) | 1.19.21 | `.exe` | HKCU, HKLM |
 | [Calibre](calibre.md) | 7.6.0 | `.msi`/`.exe` | HKCU, HKLM, HKCR |
+| [CapFrameX](capframex.md) | 1.8.1 | `.exe` | HKCU, HKLM |
 | [CrystalDiskInfo](crystaldiskinfo.md) | 9.3.0 | `.exe` | HKLM |
 | [Espanso](espanso.md) | 2.2.1 | `.exe` | HKCU, HKLM |
 | [f.lux](flux.md) | 4.120 | `.exe` | HKCU |
@@ -72,6 +79,7 @@ When open-source applications are installed on Windows, they write entries to th
 | [AutoHotkey](autohotkey.md) | 2.0.11 | `.exe` | HKCU, HKLM, HKCR |
 | [Bitwarden](bitwarden.md) | 2024.2.1 | `.exe` | HKCU |
 | [HWiNFO](hwinfo.md) | 7.72 | `.exe` | HKCU, HKLM |
+| [HxD Hex Editor](hxd.md) | 2.5.0.0 | `.exe` / Portable | HKCU, HKLM |
 | [IrfanView](irfanview.md) | 4.66 | `.exe` | HKCU, HKLM, HKCR |
 | [mRemoteNG](mremoteng.md) | 1.77.3 | `.msi` | HKCU, HKLM |
 | [OpenVPN](openvpn.md) | 2.6.9 | `.msi` | HKCU, HKLM, SYSTEM |
@@ -80,6 +88,7 @@ When open-source applications are installed on Windows, they write entries to th
 | [Syncthing](syncthing.md) | 1.27.6 | `.exe` | HKCU, HKLM |
 | [WinMerge](winmerge.md) | 2.16.38 | `.exe` | HKCU, HKLM, HKCR |
 | [FreeCAD](freecad.md) | 0.21.2 | `.exe` | HKCU, HKLM, HKCR |
+| [FurMark](furmark.md) | 2.3.0 | `.exe` | HKCU, HKLM |
 | [LMMS](lmms.md) | 1.2.2 | `.exe` | HKCU, HKLM |
 | [MediaInfo](mediainfo.md) | 24.01 | `.exe` | HKLM, HKCR |
 | [MPC-HC](mpc-hc.md) | 2.3.0 | `.exe` | HKCU, HKLM, HKCR |
@@ -92,6 +101,7 @@ When open-source applications are installed on Windows, they write entries to th
 | [Android Studio](android-studio.md) | 2023.3.1 | `.exe` | HKCU, HKLM |
 | [BleachBit](bleachbit.md) | 4.6.2 | `.exe` | HKCU, HKLM |
 | [draw.io](drawio.md) | 24.2.5 | `.exe` | HKCU |
+| [Duplicati](duplicati.md) | 2.0.8.1 | `.exe` / `.msi` | HKCU, HKLM, SYSTEM |
 | [Kdenlive](kdenlive.md) | 24.02.1 | `.exe` | HKCU, HKLM |
 | [mpv](mpv.md) | 0.37.0 | Portable | HKCU |
 | [PeaZip](peazip.md) | 9.7.0 | `.exe` | HKCU, HKLM, HKCR |

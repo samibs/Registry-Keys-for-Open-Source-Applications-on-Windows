@@ -4,6 +4,22 @@ All notable additions to this registry reference are documented here.
 
 ---
 
+## [100 apps] — 2026-02-27
+
+### Batch 9 — Hardware, Utilities & Developer Tools
+- **Bruno** 1.21.0 — API client (Git-native)
+- **Bulk Rename Utility** 3.4.4.4 — file renamer
+- **CapFrameX** 1.8.1 — frame capture & analysis
+- **Duplicati** 2.0.8.1 — encrypted backup (service)
+- **Flameshot** 12.1.0 — screenshot & annotation
+- **FurMark** 2.3.0 — GPU stress test
+- **GPU-Z** 2.59.0 — GPU information
+- **HashCheck** 2.4.0 — file hash shell extension
+- **HxD** 2.5.0.0 — hex editor
+- **WizTree** 4.18 — fast disk analyser
+
+---
+
 ## [90 apps] — 2026-02-27
 
 ### Batch 8 — Network, Media & Dev Tools

@@ -1,8 +1,8 @@
 Registry Keys for Open-Source Applications on Windows
 
 [![Documentation Site](https://img.shields.io/badge/docs-live%20site-blue?logo=materialformkdocs)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/)
-[![Apps Documented](https://img.shields.io/badge/apps%20documented-90-brightgreen)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/)
-[![Registry Paths](https://img.shields.io/badge/registry%20paths-300%2B-orange)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/stats/)
+[![Apps Documented](https://img.shields.io/badge/apps%20documented-100-brightgreen)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/)
+[![Registry Paths](https://img.shields.io/badge/registry%20paths-323%2B-orange)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/stats/)
 [![Validate Docs](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/validate.yml/badge.svg)](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/validate.yml)
 [![Deploy Pages](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/deploy-pages.yml)
 
@@ -55,14 +55,19 @@ Offer a community-driven knowledge base
 | [7-Zip](./windows/7zip.md) | 23.01 | `.exe` |
 | [Audacity](./windows/audacity.md) | 3.4.2 | `.exe` |
 | [Brave Browser](./windows/brave.md) | 1.63.169 | `.exe` |
+| [Bruno](./windows/bruno.md) | 1.21.0 | `.exe` |
+| [Bulk Rename Utility](./windows/bulk-rename-utility.md) | 3.4.4.4 | `.exe` / Portable |
 | [DBeaver](./windows/dbeaver.md) | 24.0.0 | `.exe` |
 | [Docker Desktop](./windows/docker-desktop.md) | 4.29.0 | `.exe` |
 | [FileZilla](./windows/filezilla.md) | 3.66.5 | `.exe` |
+| [Flameshot](./windows/flameshot.md) | 12.1.0 | `.exe` / `.msi` |
 | [Mozilla Firefox](./windows/firefox.md) | 123.0 | `.exe` |
 | [GIMP](./windows/gimp.md) | 2.10.36 | `.exe` |
 | [Git Extensions](./windows/git-extensions.md) | 4.2.1 | `.msi` |
 | [Git for Windows](./windows/git.md) | 2.44.0 | `.exe` |
+| [GPU-Z](./windows/gpu-z.md) | 2.59.0 | Portable |
 | [HandBrake](./windows/handbrake.md) | 1.7.3 | `.exe` |
+| [HashCheck Shell Extension](./windows/hashcheck.md) | 2.4.0 | `.exe` |
 | [HeidiSQL](./windows/heidisql.md) | 12.6.0 | `.exe` |
 | [Inkscape](./windows/inkscape.md) | 1.3.2 | `.exe` |
 | [KeePass Password Safe](./windows/keepass.md) | 2.55 | `.exe` |
@@ -81,6 +86,7 @@ Offer a community-driven knowledge base
 | [Visual Studio Code](./windows/vscode.md) | 1.85.1 | User `.exe` |
 | [WinSCP](./windows/winscp.md) | 6.3.3 | `.exe` |
 | [Wireshark](./windows/wireshark.md) | 4.2.3 | `.exe` |
+| [WizTree](./windows/wiztree.md) | 4.18 | `.exe` / Portable |
 | [Everything](./windows/everything.md) | 1.4.1.1024 | `.exe` |
 | [foobar2000](./windows/foobar2000.md) | 2.1.5 | `.exe` |
 | [Greenshot](./windows/greenshot.md) | 1.3.274 | `.exe` |
@@ -93,6 +99,7 @@ Offer a community-driven knowledge base
 | [WSL](./windows/wsl.md) | 2.x | Built-in |
 | [balenaEtcher](./windows/balenaetcher.md) | 1.19.21 | `.exe` |
 | [Calibre](./windows/calibre.md) | 7.6.0 | `.msi`/`.exe` |
+| [CapFrameX](./windows/capframex.md) | 1.8.1 | `.exe` |
 | [CrystalDiskInfo](./windows/crystaldiskinfo.md) | 9.3.0 | `.exe` |
 | [Espanso](./windows/espanso.md) | 2.2.1 | `.exe` |
 | [f.lux](./windows/flux.md) | 4.120 | `.exe` |
@@ -105,6 +112,7 @@ Offer a community-driven knowledge base
 | [AutoHotkey](./windows/autohotkey.md) | 2.0.11 | `.exe` |
 | [Bitwarden](./windows/bitwarden.md) | 2024.2.1 | `.exe` |
 | [HWiNFO](./windows/hwinfo.md) | 7.72 | `.exe` |
+| [HxD Hex Editor](./windows/hxd.md) | 2.5.0.0 | `.exe` / Portable |
 | [IrfanView](./windows/irfanview.md) | 4.66 | `.exe` |
 | [mRemoteNG](./windows/mremoteng.md) | 1.77.3 | `.msi` |
 | [OpenVPN](./windows/openvpn.md) | 2.6.9 | `.msi` |
@@ -113,6 +121,7 @@ Offer a community-driven knowledge base
 | [Syncthing](./windows/syncthing.md) | 1.27.6 | `.exe` |
 | [WinMerge](./windows/winmerge.md) | 2.16.38 | `.exe` |
 | [FreeCAD](./windows/freecad.md) | 0.21.2 | `.exe` |
+| [FurMark](./windows/furmark.md) | 2.3.0 | `.exe` |
 | [LMMS](./windows/lmms.md) | 1.2.2 | `.exe` |
 | [MediaInfo](./windows/mediainfo.md) | 24.01 | `.exe` |
 | [MPC-HC](./windows/mpc-hc.md) | 2.3.0 | `.exe` |
@@ -125,6 +134,7 @@ Offer a community-driven knowledge base
 | [Android Studio](./windows/android-studio.md) | 2023.3.1 | `.exe` |
 | [BleachBit](./windows/bleachbit.md) | 4.6.2 | `.exe` |
 | [draw.io](./windows/drawio.md) | 24.2.5 | `.exe` |
+| [Duplicati](./windows/duplicati.md) | 2.0.8.1 | `.exe` / `.msi` |
 | [Kdenlive](./windows/kdenlive.md) | 24.02.1 | `.exe` |
 | [mpv](./windows/mpv.md) | 0.37.0 | Portable |
 | [PeaZip](./windows/peazip.md) | 9.7.0 | `.exe` |

@@ -158,6 +158,38 @@
     "last_verified": "2026-02-27"
   },
   {
+    "name": "Bruno",
+    "slug": "bruno",
+    "file": "windows/bruno.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Bruno",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Bruno"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
+    "name": "Bulk Rename Utility",
+    "slug": "bulk-rename-utility",
+    "file": "windows/bulk-rename-utility.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\TBRU",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\BulkRenameUtility"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
     "name": "Calibre",
     "slug": "calibre",
     "file": "windows/calibre.md",
@@ -174,6 +206,22 @@
       "HKCR\\.epub\\OpenWithProgIds\\calibre.epub",
       "HKCR\\.mobi\\OpenWithProgIds\\calibre.mobi",
       "HKCR\\calibre.epub"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
+    "name": "CapFrameX",
+    "slug": "capframex",
+    "file": "windows/capframex.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\CXCommunity\\CapFrameX",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\CapFrameX"
     ],
     "last_verified": "2026-02-27"
   },
@@ -294,6 +342,23 @@
     "last_verified": "2026-02-27"
   },
   {
+    "name": "Duplicati",
+    "slug": "duplicati",
+    "file": "windows/duplicati.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Duplicati",
+      "HKLM\\SOFTWARE\\Duplicati",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Duplicati_is1"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
     "name": "Espanso",
     "slug": "espanso",
     "file": "windows/espanso.md",
@@ -380,6 +445,23 @@
     "last_verified": "2026-02-27"
   },
   {
+    "name": "Flameshot",
+    "slug": "flameshot",
+    "file": "windows/flameshot.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\flameshot-org\\flameshot",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
     "name": "f.lux",
     "slug": "flux",
     "file": "windows/flux.md",
@@ -432,6 +514,22 @@
     "last_verified": "2026-02-27"
   },
   {
+    "name": "FurMark",
+    "slug": "furmark",
+    "file": "windows/furmark.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Geeks3D\\FurMark",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\FurMark"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
     "name": "GIMP",
     "slug": "gimp",
     "file": "windows/gimp.md",
@@ -480,6 +578,20 @@
     "last_verified": "2026-02-27"
   },
   {
+    "name": "GPU-Z",
+    "slug": "gpu-z",
+    "file": "windows/gpu-z.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\techpowerup\\GPU-Z"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
     "name": "Greenshot",
     "slug": "greenshot",
     "file": "windows/greenshot.md",
@@ -507,6 +619,25 @@
     ],
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HandBrake"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
+    "name": "HashCheck Shell Extension",
+    "slug": "hashcheck",
+    "file": "windows/hashcheck.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\HashCheck",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HashCheck",
+      "HKCR\\CLSID\\{B8F7B5E0-1A2C-4B8A-8FE3-A2D3B9C7E6F4}",
+      "HKCR\\*\\shellex\\PropertySheetHandlers\\HashCheck"
     ],
     "last_verified": "2026-02-27"
   },
@@ -539,6 +670,22 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\HWiNFO64",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HWiNFO64_is1"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
+    "name": "HxD Hex Editor",
+    "slug": "hxd",
+    "file": "windows/hxd.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Maël Hörz\\HxD",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HxD"
     ],
     "last_verified": "2026-02-27"
   },
@@ -1496,6 +1643,22 @@
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\npcap",
       "HKEY_CLASSES_ROOT\\.pcap",
       "HKEY_CLASSES_ROOT\\.pcapng"
+    ],
+    "last_verified": "2026-02-27"
+  },
+  {
+    "name": "WizTree",
+    "slug": "wiztree",
+    "file": "windows/wiztree.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\AntibodySoftware\\WizTree",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\WizTree"
     ],
     "last_verified": "2026-02-27"
   },

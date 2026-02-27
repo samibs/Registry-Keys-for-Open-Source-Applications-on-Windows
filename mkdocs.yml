@@ -56,7 +56,10 @@ nav:
     - Bitwarden: bitwarden.md
     - BleachBit: bleachbit.md
     - Brave Browser: brave.md
+    - Bruno: bruno.md
+    - Bulk Rename Utility: bulk-rename-utility.md
     - Calibre: calibre.md
+    - CapFrameX: capframex.md
     - Clementine: clementine.md
     - Clink: clink.md
     - CPU-Z: cpu-z.md
@@ -64,20 +67,26 @@ nav:
     - DBeaver Community Edition: dbeaver.md
     - Docker Desktop: docker-desktop.md
     - draw.io: drawio.md
+    - Duplicati: duplicati.md
     - Espanso: espanso.md
     - Everything: everything.md
     - ExifTool: exiftool.md
     - f.lux: flux.md
     - FileZilla: filezilla.md
+    - Flameshot: flameshot.md
     - foobar2000: foobar2000.md
     - FreeCAD: freecad.md
+    - FurMark: furmark.md
     - GIMP: gimp.md
     - Git Extensions: git-extensions.md
     - Git for Windows: git.md
+    - GPU-Z: gpu-z.md
     - Greenshot: greenshot.md
     - HandBrake: handbrake.md
+    - HashCheck Shell Extension: hashcheck.md
     - HeidiSQL: heidisql.md
     - HWiNFO: hwinfo.md
+    - HxD Hex Editor: hxd.md
     - Inkscape: inkscape.md
     - Insomnia: insomnia.md
     - IrfanView: irfanview.md
@@ -135,6 +144,7 @@ nav:
     - WinMerge: winmerge.md
     - WinSCP: winscp.md
     - Wireshark: wireshark.md
+    - WizTree: wiztree.md
     - XnView MP: xnviewmp.md
     - ZeroTier: zerotier.md
     - Tags: tags.md

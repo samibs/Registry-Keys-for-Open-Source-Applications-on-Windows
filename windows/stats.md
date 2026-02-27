@@ -6,7 +6,7 @@ tags:
 
 # 📊 Project Statistics
 
-Current coverage across **90 open-source Windows applications** — updated with each release.
+Current coverage across **100 open-source Windows applications** — updated with each release.
 
 ---
 
@@ -14,24 +14,24 @@ Current coverage across **90 open-source Windows applications** — updated with
 
 | Metric | Count |
 |--------|-------|
-| **Total apps documented** | **90** |
-| **Total registry paths documented** | **300** |
-| Apps that write to **HKCU** | 68 (76%) |
-| Apps that write to **HKLM** | 76 (84%) |
-| Apps that write to **HKCR** (file associations / URI schemes) | 33 (37%) |
-| Apps that write to all three (HKCU + HKLM + HKCR) | 20 (22%) |
-| Apps with **Windows service keys** (`HKLM\SYSTEM\...\Services`) | 13 |
+| **Total apps documented** | **100** |
+| **Total registry paths documented** | **323** |
+| Apps that write to **HKCU** | 78 (78%) |
+| Apps that write to **HKLM** | 85 (85%) |
+| Apps that write to **HKCR** (file associations / URI schemes) | 34 (34%) |
+| Apps that write to all three (HKCU + HKLM + HKCR) | 21 (21%) |
+| Apps with **Windows service keys** (`HKLM\SYSTEM\...\Services`) | 15 |
 | Apps that write to **HKLM only** (no user-level keys) | 13 |
-| Apps that write to **HKCU only** | 10 |
+| Apps that write to **HKCU only** | 11 |
 
 ---
 
 ## 🔑 Hive Distribution
 
 ```
-HKLM  ████████████████████████████████████████████████  84%  (76 apps)
-HKCU  ██████████████████████████████████████████        76%  (68 apps)
-HKCR  █████████████████████                             37%  (33 apps)
+HKLM  ████████████████████████████████████████████████  85%  (85 apps)
+HKCU  █████████████████████████████████████████████     78%  (78 apps)
+HKCR  ████████████████████                              34%  (34 apps)
 ```
 
 ---
@@ -123,7 +123,8 @@ These apps can run with zero registry footprint (useful for restricted environme
 | Batch 5 (sysadmin + multimedia) | 60 |
 | Batch 6 (media + sync + dev) | 70 |
 | Batch 7 (creative + utilities) | 80 |
-| Batch 8 (network + media + dev tools) | **90** |
+| Batch 8 (network + media + dev tools) | 90 |
+| Batch 9 (hardware + utilities + developer tools) | **100** |
 
 ---
 
