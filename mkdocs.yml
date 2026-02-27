@@ -45,6 +45,7 @@ nav:
   - Reference:
     - Registry Value Types: registry-types.md
     - Automation Cookbook: cookbook.md
+    - Project Statistics: stats.md
   - Applications:
     - 7-Zip: 7zip.md
     - Audacity: audacity.md

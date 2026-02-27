@@ -30,7 +30,7 @@ if (-not (Test-Path $windowsDir)) {
     exit 1
 }
 
-$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object { $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md') }
+$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object { $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md', 'stats.md') }
 
 if ($files.Count -eq 0) {
     Write-Warning "No markdown files found in: $windowsDir"

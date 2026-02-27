@@ -41,7 +41,7 @@ if (-not (Test-Path $windowsDir)) {
     exit 1
 }
 
-$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object { $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md') } | Sort-Object Name
+$files = Get-ChildItem -Path $windowsDir -Filter "*.md" | Where-Object { $_.Name -notin @('index.md', 'tags.md', 'registry-types.md', 'cookbook.md', 'stats.md') } | Sort-Object Name
 
 $entries = [System.Collections.Generic.List[object]]::new()
 
@@ -68,9 +68,10 @@ foreach ($file in $files) {
     $installerLine = $lines | Where-Object { $_ -match '^\*\*Installer type:\*\*' } | Select-Object -First 1
     $installerType = if ($installerLine -match '^\*\*Installer type:\*\*\s*(.+)$') { $Matches[1].Trim() } else { '' }
 
-    # --- Registry paths: bullet lines under "## 📁 Registry Paths" ---
+    # --- Registry paths: bullet lines OR table rows under "## 📁 Registry Paths" ---
     $inPathsSection = $false
     $paths = [System.Collections.Generic.List[string]]::new()
+    $hivesFromTable = [System.Collections.Generic.SortedSet[string]]::new()
 
     foreach ($line in $lines) {
         if ($line -match '^## .*Registry Paths') {
@@ -80,20 +81,48 @@ foreach ($file in $files) {
         if ($inPathsSection -and $line -match '^## ') {
             break  # hit the next section
         }
-        if ($inPathsSection -and $line -match '^\s*-\s+`(.+)`') {
-            $paths.Add($Matches[1])
+        if ($inPathsSection) {
+            # Old format: bullet with full path  e.g.  - `HKEY_CURRENT_USER\SOFTWARE\Foo`
+            if ($line -match '^\s*-\s+`(.+)`') {
+                $paths.Add($Matches[1])
+            }
+            # New format: table row  e.g.  | `SOFTWARE\Foo` | HKLM | Description |
+            elseif ($line -match '^\|\s*`([^`]+)`\s*\|\s*(HK[A-Z_]+)\s*\|') {
+                $rawPath = $Matches[1]
+                $hive    = $Matches[2].Trim()
+                # Avoid double-prefix: if path already starts with the hive, use as-is
+                $knownPrefixes = @('HKCU','HKLM','HKCR','HKU','HKEY_CURRENT_USER','HKEY_LOCAL_MACHINE','HKEY_CLASSES_ROOT','HKEY_USERS')
+                $pathFirstSegment = ($rawPath -split '\\')[0]
+                $fullPath = if ($pathFirstSegment -in $knownPrefixes) { $rawPath } else { "$hive\$rawPath" }
+                $paths.Add($fullPath)
+                # Map common abbreviations
+                switch ($hive) {
+                    'HKCU' { [void]$hivesFromTable.Add('HKCU') }
+                    'HKLM' { [void]$hivesFromTable.Add('HKLM') }
+                    'HKCR' { [void]$hivesFromTable.Add('HKCR') }
+                    'HKU'  { [void]$hivesFromTable.Add('HKU')  }
+                    'HKEY_CURRENT_USER'  { [void]$hivesFromTable.Add('HKCU') }
+                    'HKEY_LOCAL_MACHINE' { [void]$hivesFromTable.Add('HKLM') }
+                    'HKEY_CLASSES_ROOT'  { [void]$hivesFromTable.Add('HKCR') }
+                    'HKEY_USERS'         { [void]$hivesFromTable.Add('HKU')  }
+                }
+            }
         }
     }
 
-    # --- Hives: derive from paths ---
+    # --- Hives: derive from bullet paths (old format) OR use table-parsed hives (new format) ---
     $hives = [System.Collections.Generic.SortedSet[string]]::new()
-    foreach ($p in $paths) {
-        $hive = ($p -split '\\')[0]
-        switch ($hive) {
-            'HKEY_CURRENT_USER'   { [void]$hives.Add('HKCU') }
-            'HKEY_LOCAL_MACHINE'  { [void]$hives.Add('HKLM') }
-            'HKEY_CLASSES_ROOT'   { [void]$hives.Add('HKCR') }
-            'HKEY_USERS'          { [void]$hives.Add('HKU')  }
+    if ($hivesFromTable.Count -gt 0) {
+        foreach ($h in $hivesFromTable) { [void]$hives.Add($h) }
+    } else {
+        foreach ($p in $paths) {
+            $hive = ($p -split '\\')[0]
+            switch ($hive) {
+                'HKEY_CURRENT_USER'   { [void]$hives.Add('HKCU') }
+                'HKEY_LOCAL_MACHINE'  { [void]$hives.Add('HKLM') }
+                'HKEY_CLASSES_ROOT'   { [void]$hives.Add('HKCR') }
+                'HKEY_USERS'          { [void]$hives.Add('HKU')  }
+            }
         }
     }
 

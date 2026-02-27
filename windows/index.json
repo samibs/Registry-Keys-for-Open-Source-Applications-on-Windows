@@ -37,8 +37,18 @@
     "file": "windows/autohotkey.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\AutoHotkey",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\AutoHotkey",
+      "HKCR\\.ahk",
+      "HKCR\\AutoHotkeyScript",
+      "HKCR\\AutoHotkeyScript\\Shell\\Run",
+      "HKCR\\AutoHotkeyScript\\Shell\\Edit"
+    ]
   },
   {
     "name": "balenaEtcher",
@@ -46,8 +56,15 @@
     "file": "windows/balenaetcher.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS, user-level)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\balena\\balenaEtcher",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\balenaEtcher"
+    ]
   },
   {
     "name": "Bitwarden",
@@ -55,8 +72,15 @@
     "file": "windows/bitwarden.md",
     "version_tested": "",
     "installer_type": "`.exe` (Squirrel, user-level)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Bitwarden",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Bitwarden",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKCU\\SOFTWARE\\Classes\\bitwarden"
+    ]
   },
   {
     "name": "Brave Browser",
@@ -83,8 +107,18 @@
     "file": "windows/calibre.md",
     "version_tested": "",
     "installer_type": "`.msi` / `.exe`",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Kovid Goyal\\calibre",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\calibre",
+      "HKCR\\.epub\\OpenWithProgIds\\calibre.epub",
+      "HKCR\\.mobi\\OpenWithProgIds\\calibre.mobi",
+      "HKCR\\calibre.epub"
+    ]
   },
   {
     "name": "CrystalDiskInfo",
@@ -92,8 +126,13 @@
     "file": "windows/crystaldiskinfo.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\CrystalDewWorld\\CrystalDiskInfo",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\CrystalDiskInfo_is1"
+    ]
   },
   {
     "name": "DBeaver Community Edition",
@@ -132,8 +171,15 @@
     "file": "windows/espanso.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\espanso",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Espanso"
+    ]
   },
   {
     "name": "Everything (voidtools)",
@@ -193,8 +239,14 @@
     "file": "windows/flux.md",
     "version_tested": "",
     "installer_type": "`.exe` (user-level)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Michael Herf\\f.lux",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\flux"
+    ]
   },
   {
     "name": "foobar2000",
@@ -218,8 +270,17 @@
     "file": "windows/freecad.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\FreeCAD",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\FreeCAD 0.21.2",
+      "HKCR\\.FCStd",
+      "HKCR\\FreeCAD.FCStd"
+    ]
   },
   {
     "name": "GIMP",
@@ -316,8 +377,14 @@
     "file": "windows/hwinfo.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS) / Portable",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\HWiNFO64",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\HWiNFO64_is1"
+    ]
   },
   {
     "name": "Inkscape",
@@ -354,8 +421,19 @@
     "file": "windows/irfanview.md",
     "version_tested": "",
     "installer_type": "`.exe` (custom NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\IrfanView",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\IrfanView",
+      "HKCR\\.jpg\\OpenWithProgIds\\IrfanView.jpg",
+      "HKCR\\.png\\OpenWithProgIds\\IrfanView.png",
+      "HKCR\\.bmp\\OpenWithProgIds\\IrfanView.bmp",
+      "HKCR\\IrfanView.jpg"
+    ]
   },
   {
     "name": "KeePass Password Safe",
@@ -377,8 +455,17 @@
     "file": "windows/keepassxc.md",
     "version_tested": "",
     "installer_type": "`.msi` / `.exe`",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\KeePassXC Team\\KeePassXC",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\KeePassXC",
+      "HKCR\\.kdbx",
+      "HKCR\\KeePassXC.Database"
+    ]
   },
   {
     "name": "LibreOffice",
@@ -402,8 +489,14 @@
     "file": "windows/lmms.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\LMMS",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\LMMS_is1"
+    ]
   },
   {
     "name": "MediaInfo",
@@ -411,8 +504,15 @@
     "file": "windows/mediainfo.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\MediaInfo",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\MediaInfo",
+      "HKCR\\*\\shell\\MediaInfo"
+    ]
   },
   {
     "name": "MobaXterm",
@@ -436,8 +536,19 @@
     "file": "windows/mpc-hc.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS) / Portable",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\MPC-HC\\MPC-HC",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\MPC-HC",
+      "HKCR\\.mkv\\OpenWithProgIds\\MPC-HC.mkv",
+      "HKCR\\.mp4\\OpenWithProgIds\\MPC-HC.mp4",
+      "HKCR\\.avi\\OpenWithProgIds\\MPC-HC.avi",
+      "HKCR\\MPC-HC.mkv"
+    ]
   },
   {
     "name": "mRemoteNG",
@@ -445,8 +556,14 @@
     "file": "windows/mremoteng.md",
     "version_tested": "",
     "installer_type": "`.msi`",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\mRemoteNG",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}"
+    ]
   },
   {
     "name": "MusicBee",
@@ -454,8 +571,18 @@
     "file": "windows/musicbee.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS) / Portable",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Bee\\MusicBee",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\MusicBee",
+      "HKCR\\.mp3\\OpenWithProgIds\\MusicBee.mp3",
+      "HKCR\\.flac\\OpenWithProgIds\\MusicBee.flac",
+      "HKCR\\MusicBee.mp3"
+    ]
   },
   {
     "name": "Nextcloud Desktop",
@@ -463,8 +590,16 @@
     "file": "windows/nextcloud.md",
     "version_tested": "",
     "installer_type": "`.msi`",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Nextcloud GmbH\\Nextcloud",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Nextcloud",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services\\nextcloud"
+    ]
   },
   {
     "name": "Nmap",
@@ -472,8 +607,16 @@
     "file": "windows/nmap.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\Nmap",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Nmap",
+      "HKCR\\.nmap",
+      "HKCR\\.xml\\OpenWithProgIds\\Zenmap.xml"
+    ]
   },
   {
     "name": "Node.js",
@@ -540,8 +683,14 @@
     "file": "windows/obsidian.md",
     "version_tested": "",
     "installer_type": "`.exe` (Squirrel, user-level)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\obsidian",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\obsidian",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+    ]
   },
   {
     "name": "OpenVPN",
@@ -549,8 +698,17 @@
     "file": "windows/openvpn.md",
     "version_tested": "",
     "installer_type": "`.msi`",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\OpenVPN",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OpenVPN",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services\\OpenVPNService",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services\\tap0901",
+      "HKCU\\SOFTWARE\\OpenVPN-GUI"
+    ]
   },
   {
     "name": "PDFsam Basic",
@@ -558,8 +716,14 @@
     "file": "windows/pdfsam.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\pdfsam",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\pdfsam_is1"
+    ]
   },
   {
     "name": "Postman",
@@ -599,8 +763,16 @@
     "file": "windows/processhacker.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\SystemInformer",
+      "HKCU\\SOFTWARE\\Process Hacker 2",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Process_Hacker2_is1",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services\\KProcessHacker3"
+    ]
   },
   {
     "name": "PuTTY",
@@ -663,8 +835,12 @@
     "file": "windows/rufus.md",
     "version_tested": "",
     "installer_type": "Standalone `.exe` (no installer) / Portable",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Akeo\\Rufus"
+    ]
   },
   {
     "name": "RustDesk",
@@ -672,8 +848,16 @@
     "file": "windows/rustdesk.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\RustDesk",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\RustDesk",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services\\RustDesk",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+    ]
   },
   {
     "name": "ScreenToGif",
@@ -681,8 +865,14 @@
     "file": "windows/screentogif.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS) / Portable",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\ScreenToGif",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ScreenToGif_is1"
+    ]
   },
   {
     "name": "ShareX",
@@ -739,8 +929,19 @@
     "file": "windows/sumatrapdf.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS) / Portable",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\SumatraPDF",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\SumatraPDF",
+      "HKCR\\.pdf\\OpenWithProgIds\\SumatraPDF",
+      "HKCR\\SumatraPDF",
+      "HKCR\\.epub\\OpenWithProgIds\\SumatraPDF",
+      "HKCR\\.cbz\\OpenWithProgIds\\SumatraPDF"
+    ]
   },
   {
     "name": "Syncthing",
@@ -748,8 +949,16 @@
     "file": "windows/syncthing.md",
     "version_tested": "",
     "installer_type": "Standalone `.exe` / via `SyncTrayzor` wrapper",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKCU\\SOFTWARE\\SyncTrayzor",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\SyncTrayzor",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services\\SyncTrayzor"
+    ]
   },
   {
     "name": "Telegram Desktop",
@@ -772,8 +981,18 @@
     "file": "windows/thunderbird.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\Mozilla\\Mozilla Thunderbird",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Mozilla Thunderbird",
+      "HKLM\\SOFTWARE\\Clients\\Mail\\Mozilla Thunderbird",
+      "HKCR\\mailto",
+      "HKCR\\ThunderbirdEML",
+      "HKCR\\.eml"
+    ]
   },
   {
     "name": "Oracle VM VirtualBox",
@@ -831,8 +1050,14 @@
     "file": "windows/windirstat.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS) / Portable",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\WinDirStat",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\WinDirStat"
+    ]
   },
   {
     "name": "WinMerge",
@@ -840,8 +1065,17 @@
     "file": "windows/winmerge.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS)",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Thingamahoochie\\WinMerge",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\WinMerge_is1",
+      "HKCR\\*\\shell\\WinMerge",
+      "HKCR\\Directory\\shell\\WinMerge"
+    ]
   },
   {
     "name": "WinSCP",
@@ -903,7 +1137,15 @@
     "file": "windows/zerotier.md",
     "version_tested": "",
     "installer_type": "`.msi`",
-    "hives": [],
-    "registry_paths": []
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\ZeroTier, Inc.\\ZeroTier One",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ZeroTier One",
+      "HKLM\\SYSTEM\\CurrentControlSet\\Services\\ZeroTierOneService",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+    ]
   }
 ]
