@@ -69,6 +69,16 @@ When open-source applications are installed on Windows, they write entries to th
 | [Obsidian](obsidian.md) | 1.5.12 | `.exe` | HKCU |
 | [RustDesk](rustdesk.md) | 1.2.7 | `.exe` | HKCU, HKLM, SYSTEM |
 | [Sumatra PDF](sumatrapdf.md) | 3.5.2 | `.exe` | HKCU, HKLM, HKCR |
+| [AutoHotkey](autohotkey.md) | 2.0.11 | `.exe` | HKCU, HKLM, HKCR |
+| [Bitwarden](bitwarden.md) | 2024.2.1 | `.exe` | HKCU |
+| [HWiNFO](hwinfo.md) | 7.72 | `.exe` | HKCU, HKLM |
+| [IrfanView](irfanview.md) | 4.66 | `.exe` | HKCU, HKLM, HKCR |
+| [mRemoteNG](mremoteng.md) | 1.77.3 | `.msi` | HKCU, HKLM |
+| [OpenVPN](openvpn.md) | 2.6.9 | `.msi` | HKCU, HKLM, SYSTEM |
+| [Process Hacker](processhacker.md) | 3.0.7478 | `.exe` | HKCU, HKLM, SYSTEM |
+| [Rufus](rufus.md) | 4.4 | Portable | HKCU |
+| [Syncthing](syncthing.md) | 1.27.6 | `.exe` | HKCU, HKLM |
+| [WinMerge](winmerge.md) | 2.16.38 | `.exe` | HKCU, HKLM, HKCR |
 
 ---
 

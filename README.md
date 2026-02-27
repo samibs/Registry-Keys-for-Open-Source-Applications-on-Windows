@@ -100,6 +100,16 @@ Offer a community-driven knowledge base
 | [Obsidian](./windows/obsidian.md) | 1.5.12 | `.exe` |
 | [RustDesk](./windows/rustdesk.md) | 1.2.7 | `.exe` |
 | [Sumatra PDF](./windows/sumatrapdf.md) | 3.5.2 | `.exe` |
+| [AutoHotkey](./windows/autohotkey.md) | 2.0.11 | `.exe` |
+| [Bitwarden](./windows/bitwarden.md) | 2024.2.1 | `.exe` |
+| [HWiNFO](./windows/hwinfo.md) | 7.72 | `.exe` |
+| [IrfanView](./windows/irfanview.md) | 4.66 | `.exe` |
+| [mRemoteNG](./windows/mremoteng.md) | 1.77.3 | `.msi` |
+| [OpenVPN](./windows/openvpn.md) | 2.6.9 | `.msi` |
+| [Process Hacker](./windows/processhacker.md) | 3.0.7478 | `.exe` |
+| [Rufus](./windows/rufus.md) | 4.4 | Portable |
+| [Syncthing](./windows/syncthing.md) | 1.27.6 | `.exe` |
+| [WinMerge](./windows/winmerge.md) | 2.16.38 | `.exe` |
 
 📄 Template Format
 

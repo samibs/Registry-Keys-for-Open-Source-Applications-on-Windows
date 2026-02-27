@@ -32,11 +32,29 @@
     ]
   },
   {
+    "name": "AutoHotkey",
+    "slug": "autohotkey",
+    "file": "windows/autohotkey.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "balenaEtcher",
     "slug": "balenaetcher",
     "file": "windows/balenaetcher.md",
     "version_tested": "",
     "installer_type": "`.exe` (NSIS, user-level)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
+    "name": "Bitwarden",
+    "slug": "bitwarden",
+    "file": "windows/bitwarden.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (Squirrel, user-level)",
     "hives": [],
     "registry_paths": []
   },
@@ -284,6 +302,15 @@
     ]
   },
   {
+    "name": "HWiNFO",
+    "slug": "hwinfo",
+    "file": "windows/hwinfo.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "Inkscape",
     "slug": "inkscape",
     "file": "windows/inkscape.md",
@@ -311,6 +338,15 @@
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\insomnia",
       "HKEY_CLASSES_ROOT\\insomnia"
     ]
+  },
+  {
+    "name": "IrfanView",
+    "slug": "irfanview",
+    "file": "windows/irfanview.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (custom NSIS)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "KeePass Password Safe",
@@ -366,6 +402,15 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}",
       "HKEY_CURRENT_USER\\Software\\Mobatek\\MobaXterm"
     ]
+  },
+  {
+    "name": "mRemoteNG",
+    "slug": "mremoteng",
+    "file": "windows/mremoteng.md",
+    "version_tested": "",
+    "installer_type": "`.msi`",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "MusicBee",
@@ -454,6 +499,15 @@
     "registry_paths": []
   },
   {
+    "name": "OpenVPN",
+    "slug": "openvpn",
+    "file": "windows/openvpn.md",
+    "version_tested": "",
+    "installer_type": "`.msi`",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "Postman",
     "slug": "postman",
     "file": "windows/postman.md",
@@ -484,6 +538,15 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft PowerToys - x64",
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
     ]
+  },
+  {
+    "name": "Process Hacker (System Informer)",
+    "slug": "processhacker",
+    "file": "windows/processhacker.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "PuTTY",
@@ -539,6 +602,15 @@
       "HKEY_CLASSES_ROOT\\.torrent",
       "HKEY_CLASSES_ROOT\\magnet"
     ]
+  },
+  {
+    "name": "Rufus",
+    "slug": "rufus",
+    "file": "windows/rufus.md",
+    "version_tested": "",
+    "installer_type": "Standalone `.exe` (no installer) / Portable",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "RustDesk",
@@ -608,6 +680,15 @@
     "registry_paths": []
   },
   {
+    "name": "Syncthing",
+    "slug": "syncthing",
+    "file": "windows/syncthing.md",
+    "version_tested": "",
+    "installer_type": "Standalone `.exe` / via `SyncTrayzor` wrapper",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "Telegram Desktop",
     "slug": "telegram",
     "file": "windows/telegram.md",
@@ -671,6 +752,15 @@
       "HKEY_CURRENT_USER\\Software\\Classes\\vscode",
       "HKEY_CURRENT_USER\\Software\\Classes\\vscode-insiders"
     ]
+  },
+  {
+    "name": "WinMerge",
+    "slug": "winmerge",
+    "file": "windows/winmerge.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "WinSCP",

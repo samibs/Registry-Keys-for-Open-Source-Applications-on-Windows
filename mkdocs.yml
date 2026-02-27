@@ -99,3 +99,14 @@ nav:
     - Obsidian: obsidian.md
     - RustDesk: rustdesk.md
     - Sumatra PDF: sumatrapdf.md
+  - New in Batch 5:
+    - AutoHotkey: autohotkey.md
+    - Bitwarden: bitwarden.md
+    - HWiNFO: hwinfo.md
+    - IrfanView: irfanview.md
+    - mRemoteNG: mremoteng.md
+    - OpenVPN: openvpn.md
+    - Process Hacker: processhacker.md
+    - Rufus: rufus.md
+    - Syncthing: syncthing.md
+    - WinMerge: winmerge.md
