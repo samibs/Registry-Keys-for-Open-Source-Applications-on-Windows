@@ -99,6 +99,16 @@ When open-source applications are installed on Windows, they write entries to th
 | [Ventoy](ventoy.md) | 1.0.99 | Portable | HKCU |
 | [XnView MP](xnviewmp.md) | 1.7.2 | `.exe` | HKCU, HKLM, HKCR |
 | [CPU-Z](cpu-z.md) | 2.09.1 | `.exe` / Portable | HKCU, HKLM |
+| [Angry IP Scanner](angry-ip-scanner.md) | 3.9.1 | `.exe` / Portable | HKCU, HKLM |
+| [Clementine](clementine.md) | 1.4.0 | `.exe` | HKCU, HKLM, HKCR |
+| [Clink](clink.md) | 1.6.19 | `.exe` / Portable | HKCU, HKLM |
+| [ExifTool](exiftool.md) | 12.82 | Portable | HKCU |
+| [JDownloader 2](jdownloader.md) | 2.0 | `.exe` | HKCU, HKLM |
+| [Jellyfin](jellyfin.md) | 10.9.7 | `.exe` | HKLM, SYSTEM |
+| [Krita](krita.md) | 5.2.3 | `.exe` / Portable | HKCU, HKLM, HKCR |
+| [LibreWolf](librewolf.md) | 124.0-1 | `.exe` / Portable | HKCU, HKLM, HKCR |
+| [Npcap](npcap.md) | 1.79 | `.exe` | HKLM, SYSTEM |
+| [Windows Terminal](windows-terminal.md) | 1.19 | MSIX / winget | HKCU, HKLM |
 
 ---
 

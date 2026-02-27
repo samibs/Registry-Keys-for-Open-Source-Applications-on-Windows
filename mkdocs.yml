@@ -133,3 +133,14 @@ nav:
     - Ventoy: ventoy.md
     - XnView MP: xnviewmp.md
     - CPU-Z: cpu-z.md
+  - New in Batch 8:
+    - Angry IP Scanner: angry-ip-scanner.md
+    - Clementine: clementine.md
+    - Clink: clink.md
+    - ExifTool: exiftool.md
+    - JDownloader 2: jdownloader.md
+    - Jellyfin: jellyfin.md
+    - Krita: krita.md
+    - LibreWolf: librewolf.md
+    - Npcap: npcap.md
+    - Windows Terminal: windows-terminal.md

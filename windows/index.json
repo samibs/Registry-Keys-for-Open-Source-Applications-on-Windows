@@ -34,6 +34,21 @@
     ]
   },
   {
+    "name": "Angry IP Scanner",
+    "slug": "angry-ip-scanner",
+    "file": "windows/angry-ip-scanner.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Angry IP Scanner",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Angry IP Scanner"
+    ]
+  },
+  {
     "name": "Audacity",
     "slug": "audacity",
     "file": "windows/audacity.md",
@@ -153,6 +168,39 @@
     ]
   },
   {
+    "name": "Clementine",
+    "slug": "clementine",
+    "file": "windows/clementine.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Clementine Music Player",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Clementine Music Player",
+      "HKCR\\.mp3\\OpenWithProgids"
+    ]
+  },
+  {
+    "name": "Clink",
+    "slug": "clink",
+    "file": "windows/clink.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Clink",
+      "HKLM\\SOFTWARE\\Clink",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Clink"
+    ]
+  },
+  {
     "name": "CPU-Z",
     "slug": "cpu-z",
     "file": "windows/cpu-z.md",
@@ -260,6 +308,19 @@
       "HKEY_CURRENT_USER\\Software\\Voidtools\\Everything",
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKEY_CLASSES_ROOT\\es"
+    ]
+  },
+  {
+    "name": "ExifTool",
+    "slug": "exiftool",
+    "file": "windows/exiftool.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Classes\\*\\shell\\ExifTool"
     ]
   },
   {
@@ -499,6 +560,35 @@
     ]
   },
   {
+    "name": "JDownloader 2",
+    "slug": "jdownloader",
+    "file": "windows/jdownloader.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\AppDataLow\\Software\\JDownloader 2.0",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\JDownloader 2"
+    ]
+  },
+  {
+    "name": "Jellyfin",
+    "slug": "jellyfin",
+    "file": "windows/jellyfin.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\Jellyfin\\Server",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{A4E50EA8-7E2A-4B6A-9C3B-5C5A4B3B7A3E}_is1"
+    ]
+  },
+  {
     "name": "Kdenlive",
     "slug": "kdenlive",
     "file": "windows/kdenlive.md",
@@ -546,6 +636,24 @@
     ]
   },
   {
+    "name": "Krita",
+    "slug": "krita",
+    "file": "windows/krita.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\KDE\\Krita",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\krita",
+      "HKCR\\.kra",
+      "HKCR\\.krz"
+    ]
+  },
+  {
     "name": "LibreOffice",
     "slug": "libreoffice",
     "file": "windows/libreoffice.md",
@@ -559,6 +667,26 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\LibreOffice\\LibreOffice\\7.6",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{GUID}",
       "HKEY_CURRENT_USER\\Software\\LibreOffice"
+    ]
+  },
+  {
+    "name": "LibreWolf",
+    "slug": "librewolf",
+    "file": "windows/librewolf.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\LibreWolf",
+      "HKLM\\SOFTWARE\\LibreWolf",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\LibreWolf",
+      "HKCR\\LibreWolfURL",
+      "HKCR\\LibreWolfHTML",
+      "HKLM\\SOFTWARE\\RegisteredApplications"
     ]
   },
   {
@@ -753,6 +881,20 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Notepad++",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Notepad++",
       "HKEY_CURRENT_USER\\Software\\Notepad++"
+    ]
+  },
+  {
+    "name": "Npcap",
+    "slug": "npcap",
+    "file": "windows/npcap.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\Npcap",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\NpcapInst"
     ]
   },
   {
@@ -1196,6 +1338,23 @@
     "registry_paths": [
       "HKCU\\SOFTWARE\\WinDirStat",
       "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\WinDirStat"
+    ]
+  },
+  {
+    "name": "Windows Terminal",
+    "slug": "windows-terminal",
+    "file": "windows/windows-terminal.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Microsoft\\Windows Terminal",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\App Paths\\wt.exe",
+      "HKLM\\SOFTWARE\\Classes\\Directory\\shell\\Open with Windows Terminal",
+      "HKLM\\SOFTWARE\\Classes\\Directory\\Background\\shell\\Open with Windows Terminal"
     ]
   },
   {

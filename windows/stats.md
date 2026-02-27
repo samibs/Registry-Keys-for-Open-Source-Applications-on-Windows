@@ -6,7 +6,7 @@ tags:
 
 # 📊 Project Statistics
 
-Current coverage across **80 open-source Windows applications** — updated with each release.
+Current coverage across **90 open-source Windows applications** — updated with each release.
 
 ---
 
@@ -14,24 +14,24 @@ Current coverage across **80 open-source Windows applications** — updated with
 
 | Metric | Count |
 |--------|-------|
-| **Total apps documented** | **80** |
-| **Total registry paths documented** | **271** |
-| Apps that write to **HKCU** | 60 (75%) |
-| Apps that write to **HKLM** | 67 (84%) |
-| Apps that write to **HKCR** (file associations / URI schemes) | 30 (38%) |
-| Apps that write to all three (HKCU + HKLM + HKCR) | 17 (21%) |
-| Apps with **Windows service keys** (`HKLM\SYSTEM\...\Services`) | 11 |
-| Apps that write to **HKLM only** (no user-level keys) | 11 |
-| Apps that write to **HKCU only** | 9 |
+| **Total apps documented** | **90** |
+| **Total registry paths documented** | **300** |
+| Apps that write to **HKCU** | 68 (76%) |
+| Apps that write to **HKLM** | 76 (84%) |
+| Apps that write to **HKCR** (file associations / URI schemes) | 33 (37%) |
+| Apps that write to all three (HKCU + HKLM + HKCR) | 20 (22%) |
+| Apps with **Windows service keys** (`HKLM\SYSTEM\...\Services`) | 13 |
+| Apps that write to **HKLM only** (no user-level keys) | 13 |
+| Apps that write to **HKCU only** | 10 |
 
 ---
 
 ## 🔑 Hive Distribution
 
 ```
-HKLM  ████████████████████████████████████████████████  84%  (67 apps)
-HKCU  ██████████████████████████████████████████        75%  (60 apps)
-HKCR  ██████████████████████                            38%  (30 apps)
+HKLM  ████████████████████████████████████████████████  84%  (76 apps)
+HKCU  ██████████████████████████████████████████        76%  (68 apps)
+HKCR  █████████████████████                             37%  (33 apps)
 ```
 
 ---
@@ -122,7 +122,8 @@ These apps can run with zero registry footprint (useful for restricted environme
 | Batch 4 (utilities + security) | 50 |
 | Batch 5 (sysadmin + multimedia) | 60 |
 | Batch 6 (media + sync + dev) | 70 |
-| Batch 7 (creative + utilities) | **80** |
+| Batch 7 (creative + utilities) | 80 |
+| Batch 8 (network + media + dev tools) | **90** |
 
 ---
 

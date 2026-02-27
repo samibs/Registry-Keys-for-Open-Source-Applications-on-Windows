@@ -130,6 +130,16 @@ Offer a community-driven knowledge base
 | [Ventoy](./windows/ventoy.md) | 1.0.99 | Portable |
 | [XnView MP](./windows/xnviewmp.md) | 1.7.2 | `.exe` |
 | [CPU-Z](./windows/cpu-z.md) | 2.09.1 | `.exe` / Portable |
+| [Angry IP Scanner](./windows/angry-ip-scanner.md) | 3.9.1 | `.exe` / Portable |
+| [Clementine](./windows/clementine.md) | 1.4.0 | `.exe` |
+| [Clink](./windows/clink.md) | 1.6.19 | `.exe` / Portable |
+| [ExifTool](./windows/exiftool.md) | 12.82 | Portable |
+| [JDownloader 2](./windows/jdownloader.md) | 2.0 | `.exe` |
+| [Jellyfin](./windows/jellyfin.md) | 10.9.7 | `.exe` |
+| [Krita](./windows/krita.md) | 5.2.3 | `.exe` / Portable |
+| [LibreWolf](./windows/librewolf.md) | 124.0-1 | `.exe` / Portable |
+| [Npcap](./windows/npcap.md) | 1.79 | `.exe` |
+| [Windows Terminal](./windows/windows-terminal.md) | 1.19 | MSIX / winget |
 
 📄 Template Format
 
