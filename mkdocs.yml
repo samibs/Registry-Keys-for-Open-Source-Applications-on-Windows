@@ -87,3 +87,15 @@ nav:
     - PowerToys: powertoys.md
     - ShareX: sharex.md
     - WSL: wsl.md
+  - New in Batch 4:
+    - balenaEtcher: balenaetcher.md
+    - Calibre: calibre.md
+    - CrystalDiskInfo: crystaldiskinfo.md
+    - Espanso: espanso.md
+    - f.lux: flux.md
+    - KeePassXC: keepassxc.md
+    - MusicBee: musicbee.md
+    - Nmap: nmap.md
+    - Obsidian: obsidian.md
+    - RustDesk: rustdesk.md
+    - Sumatra PDF: sumatrapdf.md

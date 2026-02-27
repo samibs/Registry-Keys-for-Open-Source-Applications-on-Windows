@@ -32,6 +32,15 @@
     ]
   },
   {
+    "name": "balenaEtcher",
+    "slug": "balenaetcher",
+    "file": "windows/balenaetcher.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS, user-level)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "Brave Browser",
     "slug": "brave",
     "file": "windows/brave.md",
@@ -49,6 +58,24 @@
       "HKEY_CLASSES_ROOT\\BraveHTML",
       "HKEY_CLASSES_ROOT\\brave"
     ]
+  },
+  {
+    "name": "Calibre",
+    "slug": "calibre",
+    "file": "windows/calibre.md",
+    "version_tested": "",
+    "installer_type": "`.msi` / `.exe`",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
+    "name": "CrystalDiskInfo",
+    "slug": "crystaldiskinfo",
+    "file": "windows/crystaldiskinfo.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "DBeaver Community Edition",
@@ -80,6 +107,15 @@
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\com.docker.service",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\DockerDesktopBackend"
     ]
+  },
+  {
+    "name": "Espanso",
+    "slug": "espanso",
+    "file": "windows/espanso.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "Everything (voidtools)",
@@ -132,6 +168,15 @@
       "HKEY_CLASSES_ROOT\\FirefoxHTML-<hash>",
       "HKEY_CLASSES_ROOT\\FirefoxURL-<hash>"
     ]
+  },
+  {
+    "name": "f.lux",
+    "slug": "flux",
+    "file": "windows/flux.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (user-level)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "foobar2000",
@@ -282,6 +327,15 @@
     ]
   },
   {
+    "name": "KeePassXC",
+    "slug": "keepassxc",
+    "file": "windows/keepassxc.md",
+    "version_tested": "",
+    "installer_type": "`.msi` / `.exe`",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "LibreOffice",
     "slug": "libreoffice",
     "file": "windows/libreoffice.md",
@@ -312,6 +366,24 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}",
       "HKEY_CURRENT_USER\\Software\\Mobatek\\MobaXterm"
     ]
+  },
+  {
+    "name": "MusicBee",
+    "slug": "musicbee",
+    "file": "windows/musicbee.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
+    "name": "Nmap",
+    "slug": "nmap",
+    "file": "windows/nmap.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "Node.js",
@@ -371,6 +443,15 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\OBS Studio",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OBS Studio"
     ]
+  },
+  {
+    "name": "Obsidian",
+    "slug": "obsidian",
+    "file": "windows/obsidian.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (Squirrel, user-level)",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "Postman",
@@ -460,6 +541,15 @@
     ]
   },
   {
+    "name": "RustDesk",
+    "slug": "rustdesk",
+    "file": "windows/rustdesk.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [],
+    "registry_paths": []
+  },
+  {
     "name": "ShareX",
     "slug": "sharex",
     "file": "windows/sharex.md",
@@ -507,6 +597,15 @@
       "HKEY_CLASSES_ROOT\\sublime_auto_file",
       "HKEY_CLASSES_ROOT\\*\\shell\\Open with Sublime Text"
     ]
+  },
+  {
+    "name": "Sumatra PDF",
+    "slug": "sumatrapdf",
+    "file": "windows/sumatrapdf.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [],
+    "registry_paths": []
   },
   {
     "name": "Telegram Desktop",

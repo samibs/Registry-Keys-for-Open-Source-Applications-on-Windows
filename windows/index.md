@@ -58,6 +58,17 @@ When open-source applications are installed on Windows, they write entries to th
 | [PowerToys](powertoys.md) | 0.79.0 | `.exe` | HKLM, HKCU |
 | [ShareX](sharex.md) | 16.0.0 | `.exe` | HKLM |
 | [WSL](wsl.md) | 2.x | Built-in | HKLM, HKCU |
+| [balenaEtcher](balenaetcher.md) | 1.19.21 | `.exe` | HKCU, HKLM |
+| [Calibre](calibre.md) | 7.6.0 | `.msi`/`.exe` | HKCU, HKLM, HKCR |
+| [CrystalDiskInfo](crystaldiskinfo.md) | 9.3.0 | `.exe` | HKLM |
+| [Espanso](espanso.md) | 2.2.1 | `.exe` | HKCU, HKLM |
+| [f.lux](flux.md) | 4.120 | `.exe` | HKCU |
+| [KeePassXC](keepassxc.md) | 2.7.7 | `.msi`/`.exe` | HKCU, HKLM, HKCR |
+| [MusicBee](musicbee.md) | 3.5.8698 | `.exe` | HKCU, HKLM, HKCR |
+| [Nmap](nmap.md) | 7.94 | `.exe` | HKLM, HKCR |
+| [Obsidian](obsidian.md) | 1.5.12 | `.exe` | HKCU |
+| [RustDesk](rustdesk.md) | 1.2.7 | `.exe` | HKCU, HKLM, SYSTEM |
+| [Sumatra PDF](sumatrapdf.md) | 3.5.2 | `.exe` | HKCU, HKLM, HKCR |
 
 ---
 

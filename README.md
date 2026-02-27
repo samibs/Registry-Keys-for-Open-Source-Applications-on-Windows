@@ -89,6 +89,17 @@ Offer a community-driven knowledge base
 | [PowerToys](./windows/powertoys.md) | 0.79.0 | `.exe` |
 | [ShareX](./windows/sharex.md) | 16.0.0 | `.exe` |
 | [WSL](./windows/wsl.md) | 2.x | Built-in |
+| [balenaEtcher](./windows/balenaetcher.md) | 1.19.21 | `.exe` |
+| [Calibre](./windows/calibre.md) | 7.6.0 | `.msi`/`.exe` |
+| [CrystalDiskInfo](./windows/crystaldiskinfo.md) | 9.3.0 | `.exe` |
+| [Espanso](./windows/espanso.md) | 2.2.1 | `.exe` |
+| [f.lux](./windows/flux.md) | 4.120 | `.exe` |
+| [KeePassXC](./windows/keepassxc.md) | 2.7.7 | `.msi`/`.exe` |
+| [MusicBee](./windows/musicbee.md) | 3.5.8698 | `.exe` |
+| [Nmap](./windows/nmap.md) | 7.94 | `.exe` |
+| [Obsidian](./windows/obsidian.md) | 1.5.12 | `.exe` |
+| [RustDesk](./windows/rustdesk.md) | 1.2.7 | `.exe` |
+| [Sumatra PDF](./windows/sumatrapdf.md) | 3.5.2 | `.exe` |
 
 📄 Template Format
 
