@@ -122,3 +122,13 @@ nav:
     - Mozilla Thunderbird: thunderbird.md
     - WinDirStat: windirstat.md
     - ZeroTier: zerotier.md
+  - New in Batch 7:
+    - Android Studio: android-studio.md
+    - BleachBit: bleachbit.md
+    - draw.io: drawio.md
+    - Kdenlive: kdenlive.md
+    - mpv: mpv.md
+    - PeaZip: peazip.md
+    - Rclone: rclone.md
+    - Ventoy: ventoy.md
+    - XnView MP: xnviewmp.md

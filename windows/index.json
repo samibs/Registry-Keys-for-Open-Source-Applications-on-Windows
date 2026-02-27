@@ -18,6 +18,22 @@
     ]
   },
   {
+    "name": "Android Studio",
+    "slug": "android-studio",
+    "file": "windows/android-studio.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (custom)",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Android Studio",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Android Studio",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
+    ]
+  },
+  {
     "name": "Audacity",
     "slug": "audacity",
     "file": "windows/audacity.md",
@@ -80,6 +96,22 @@
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Bitwarden",
       "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run",
       "HKCU\\SOFTWARE\\Classes\\bitwarden"
+    ]
+  },
+  {
+    "name": "BleachBit",
+    "slug": "bleachbit",
+    "file": "windows/bleachbit.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\BleachBit",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\BleachBit",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Run"
     ]
   },
   {
@@ -163,6 +195,21 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Docker Desktop",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\com.docker.service",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\DockerDesktopBackend"
+    ]
+  },
+  {
+    "name": "draw.io (diagrams.net)",
+    "slug": "drawio",
+    "file": "windows/drawio.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS, user-level)",
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\draw.io",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\draw.io",
+      "HKCU\\SOFTWARE\\Classes\\drawio"
     ]
   },
   {
@@ -436,6 +483,21 @@
     ]
   },
   {
+    "name": "Kdenlive",
+    "slug": "kdenlive",
+    "file": "windows/kdenlive.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS)",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\kdenlive",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\kdenlive"
+    ]
+  },
+  {
     "name": "KeePass Password Safe",
     "slug": "keepass",
     "file": "windows/keepass.md",
@@ -548,6 +610,20 @@
       "HKCR\\.mp4\\OpenWithProgIds\\MPC-HC.mp4",
       "HKCR\\.avi\\OpenWithProgIds\\MPC-HC.avi",
       "HKCR\\MPC-HC.mkv"
+    ]
+  },
+  {
+    "name": "mpv",
+    "slug": "mpv",
+    "file": "windows/mpv.md",
+    "version_tested": "",
+    "installer_type": "Portable `.7z` / via `mpv.net` GUI wrapper",
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\mpv",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\mpv-net"
     ]
   },
   {
@@ -726,6 +802,26 @@
     ]
   },
   {
+    "name": "PeaZip",
+    "slug": "peazip",
+    "file": "windows/peazip.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKLM\\SOFTWARE\\PeaZip",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\PeaZip",
+      "HKCR\\.zip\\OpenWithProgIds\\PeaZip",
+      "HKCR\\.7z\\OpenWithProgIds\\PeaZip",
+      "HKCR\\.tar\\OpenWithProgIds\\PeaZip",
+      "HKCR\\PeaZip",
+      "HKCR\\*\\shell\\PeaZip"
+    ]
+  },
+  {
     "name": "Postman",
     "slug": "postman",
     "file": "windows/postman.md",
@@ -827,6 +923,20 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\qBittorrent",
       "HKEY_CLASSES_ROOT\\.torrent",
       "HKEY_CLASSES_ROOT\\magnet"
+    ]
+  },
+  {
+    "name": "Rclone",
+    "slug": "rclone",
+    "file": "windows/rclone.md",
+    "version_tested": "",
+    "installer_type": "Standalone `.exe` / via `rclone-browser` GUI",
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\rclone-browser",
+      "HKCU\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\rclone-browser"
     ]
   },
   {
@@ -995,6 +1105,19 @@
     ]
   },
   {
+    "name": "Ventoy",
+    "slug": "ventoy",
+    "file": "windows/ventoy.md",
+    "version_tested": "",
+    "installer_type": "Portable `.zip` (runs as admin)",
+    "hives": [
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\Ventoy"
+    ]
+  },
+  {
     "name": "Oracle VM VirtualBox",
     "slug": "virtualbox",
     "file": "windows/virtualbox.md",
@@ -1129,6 +1252,26 @@
       "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Lxss",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WslService",
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LxssManager"
+    ]
+  },
+  {
+    "name": "XnView MP",
+    "slug": "xnviewmp",
+    "file": "windows/xnviewmp.md",
+    "version_tested": "",
+    "installer_type": "`.exe` (NSIS) / Portable",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\XnviewMP",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\XnViewMP_is1",
+      "HKCR\\.jpg\\OpenWithProgIds\\XnViewMP",
+      "HKCR\\.png\\OpenWithProgIds\\XnViewMP",
+      "HKCR\\.gif\\OpenWithProgIds\\XnViewMP",
+      "HKCR\\XnViewMP"
     ]
   },
   {

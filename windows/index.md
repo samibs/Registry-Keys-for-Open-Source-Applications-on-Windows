@@ -89,6 +89,15 @@ When open-source applications are installed on Windows, they write entries to th
 | [Mozilla Thunderbird](thunderbird.md) | 115.8.0 | `.exe` | HKCU, HKLM, HKCR |
 | [WinDirStat](windirstat.md) | 2.1.0 | `.exe` | HKCU, HKLM |
 | [ZeroTier](zerotier.md) | 1.14.0 | `.msi` | HKCU, HKLM, SYSTEM |
+| [Android Studio](android-studio.md) | 2023.3.1 | `.exe` | HKCU, HKLM |
+| [BleachBit](bleachbit.md) | 4.6.2 | `.exe` | HKCU, HKLM |
+| [draw.io](drawio.md) | 24.2.5 | `.exe` | HKCU |
+| [Kdenlive](kdenlive.md) | 24.02.1 | `.exe` | HKCU, HKLM |
+| [mpv](mpv.md) | 0.37.0 | Portable | HKCU |
+| [PeaZip](peazip.md) | 9.7.0 | `.exe` | HKCU, HKLM, HKCR |
+| [Rclone](rclone.md) | 1.66.0 | Portable | HKCU |
+| [Ventoy](ventoy.md) | 1.0.99 | Portable | HKCU |
+| [XnView MP](xnviewmp.md) | 1.7.2 | `.exe` | HKCU, HKLM, HKCR |
 
 ---
 

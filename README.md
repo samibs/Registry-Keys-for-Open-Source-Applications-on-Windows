@@ -120,6 +120,15 @@ Offer a community-driven knowledge base
 | [Mozilla Thunderbird](./windows/thunderbird.md) | 115.8.0 | `.exe` |
 | [WinDirStat](./windows/windirstat.md) | 2.1.0 | `.exe` |
 | [ZeroTier](./windows/zerotier.md) | 1.14.0 | `.msi` |
+| [Android Studio](./windows/android-studio.md) | 2023.3.1 | `.exe` |
+| [BleachBit](./windows/bleachbit.md) | 4.6.2 | `.exe` |
+| [draw.io](./windows/drawio.md) | 24.2.5 | `.exe` |
+| [Kdenlive](./windows/kdenlive.md) | 24.02.1 | `.exe` |
+| [mpv](./windows/mpv.md) | 0.37.0 | Portable |
+| [PeaZip](./windows/peazip.md) | 9.7.0 | `.exe` |
+| [Rclone](./windows/rclone.md) | 1.66.0 | Portable |
+| [Ventoy](./windows/ventoy.md) | 1.0.99 | Portable |
+| [XnView MP](./windows/xnviewmp.md) | 1.7.2 | `.exe` |
 
 📄 Template Format
 

@@ -6,7 +6,7 @@ tags:
 
 # 📊 Project Statistics
 
-Current coverage across **70 open-source Windows applications** — updated with each release.
+Current coverage across **79 open-source Windows applications** — updated with each release.
 
 ---
 
@@ -14,24 +14,24 @@ Current coverage across **70 open-source Windows applications** — updated with
 
 | Metric | Count |
 |--------|-------|
-| **Total apps documented** | **70** |
-| **Total registry paths documented** | **239** |
-| Apps that write to **HKCU** | 51 (73%) |
-| Apps that write to **HKLM** | 61 (87%) |
-| Apps that write to **HKCR** (file associations / URI schemes) | 28 (40%) |
-| Apps that write to all three (HKCU + HKLM + HKCR) | 16 (23%) |
+| **Total apps documented** | **79** |
+| **Total registry paths documented** | **268** |
+| Apps that write to **HKCU** | 59 (75%) |
+| Apps that write to **HKLM** | 66 (84%) |
+| Apps that write to **HKCR** (file associations / URI schemes) | 30 (38%) |
+| Apps that write to all three (HKCU + HKLM + HKCR) | 17 (22%) |
 | Apps with **Windows service keys** (`HKLM\SYSTEM\...\Services`) | 11 |
 | Apps that write to **HKLM only** (no user-level keys) | 11 |
-| Apps that write to **HKCU only** | 5 |
+| Apps that write to **HKCU only** | 9 |
 
 ---
 
 ## 🔑 Hive Distribution
 
 ```
-HKLM  ████████████████████████████████████████████████  87%  (61 apps)
-HKCU  ██████████████████████████████████████            73%  (51 apps)
-HKCR  █████████████████████                             40%  (28 apps)
+HKLM  ████████████████████████████████████████████████  84%  (66 apps)
+HKCU  ██████████████████████████████████████████        75%  (59 apps)
+HKCR  ██████████████████████                            38%  (30 apps)
 ```
 
 ---
@@ -40,9 +40,9 @@ HKCR  █████████████████████           
 
 | Type | Count |
 |------|-------|
-| `.exe` (various) | 60 |
+| `.exe` (various) | 63 |
 | `.msi` | 11 |
-| Portable (no installer) | 9 |
+| Portable (no installer) | 12 |
 | Built-in / OS feature | 1 |
 
 ---
@@ -121,7 +121,8 @@ These apps can run with zero registry footprint (useful for restricted environme
 | Batch 3 (productivity + dev tools) | 39 |
 | Batch 4 (utilities + security) | 50 |
 | Batch 5 (sysadmin + multimedia) | 60 |
-| Batch 6 (media + sync + dev) | **70** |
+| Batch 6 (media + sync + dev) | 70 |
+| Batch 7 (creative + utilities) | **79** |
 
 ---
 
