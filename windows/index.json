@@ -153,6 +153,22 @@
     ]
   },
   {
+    "name": "CPU-Z",
+    "slug": "cpu-z",
+    "file": "windows/cpu-z.md",
+    "version_tested": "",
+    "installer_type": "",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKCU\\SOFTWARE\\CPUID\\CPU-Z",
+      "HKLM\\SOFTWARE\\CPUID\\CPU-Z",
+      "HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\CPU-Z"
+    ]
+  },
+  {
     "name": "CrystalDiskInfo",
     "slug": "crystaldiskinfo",
     "file": "windows/crystaldiskinfo.md",

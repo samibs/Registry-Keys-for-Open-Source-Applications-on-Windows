@@ -129,6 +129,7 @@ Offer a community-driven knowledge base
 | [Rclone](./windows/rclone.md) | 1.66.0 | Portable |
 | [Ventoy](./windows/ventoy.md) | 1.0.99 | Portable |
 | [XnView MP](./windows/xnviewmp.md) | 1.7.2 | `.exe` |
+| [CPU-Z](./windows/cpu-z.md) | 2.09.1 | `.exe` / Portable |
 
 📄 Template Format
 

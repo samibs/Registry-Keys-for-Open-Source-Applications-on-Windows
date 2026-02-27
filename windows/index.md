@@ -98,6 +98,7 @@ When open-source applications are installed on Windows, they write entries to th
 | [Rclone](rclone.md) | 1.66.0 | Portable | HKCU |
 | [Ventoy](ventoy.md) | 1.0.99 | Portable | HKCU |
 | [XnView MP](xnviewmp.md) | 1.7.2 | `.exe` | HKCU, HKLM, HKCR |
+| [CPU-Z](cpu-z.md) | 2.09.1 | `.exe` / Portable | HKCU, HKLM |
 
 ---
 

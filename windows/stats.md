@@ -6,7 +6,7 @@ tags:
 
 # 📊 Project Statistics
 
-Current coverage across **79 open-source Windows applications** — updated with each release.
+Current coverage across **80 open-source Windows applications** — updated with each release.
 
 ---
 
@@ -14,12 +14,12 @@ Current coverage across **79 open-source Windows applications** — updated with
 
 | Metric | Count |
 |--------|-------|
-| **Total apps documented** | **79** |
-| **Total registry paths documented** | **268** |
-| Apps that write to **HKCU** | 59 (75%) |
-| Apps that write to **HKLM** | 66 (84%) |
+| **Total apps documented** | **80** |
+| **Total registry paths documented** | **271** |
+| Apps that write to **HKCU** | 60 (75%) |
+| Apps that write to **HKLM** | 67 (84%) |
 | Apps that write to **HKCR** (file associations / URI schemes) | 30 (38%) |
-| Apps that write to all three (HKCU + HKLM + HKCR) | 17 (22%) |
+| Apps that write to all three (HKCU + HKLM + HKCR) | 17 (21%) |
 | Apps with **Windows service keys** (`HKLM\SYSTEM\...\Services`) | 11 |
 | Apps that write to **HKLM only** (no user-level keys) | 11 |
 | Apps that write to **HKCU only** | 9 |
@@ -29,8 +29,8 @@ Current coverage across **79 open-source Windows applications** — updated with
 ## 🔑 Hive Distribution
 
 ```
-HKLM  ████████████████████████████████████████████████  84%  (66 apps)
-HKCU  ██████████████████████████████████████████        75%  (59 apps)
+HKLM  ████████████████████████████████████████████████  84%  (67 apps)
+HKCU  ██████████████████████████████████████████        75%  (60 apps)
 HKCR  ██████████████████████                            38%  (30 apps)
 ```
 
@@ -122,7 +122,7 @@ These apps can run with zero registry footprint (useful for restricted environme
 | Batch 4 (utilities + security) | 50 |
 | Batch 5 (sysadmin + multimedia) | 60 |
 | Batch 6 (media + sync + dev) | 70 |
-| Batch 7 (creative + utilities) | **79** |
+| Batch 7 (creative + utilities) | **80** |
 
 ---
 
