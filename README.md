@@ -79,6 +79,16 @@ Offer a community-driven knowledge base
 | [Visual Studio Code](./windows/vscode.md) | 1.85.1 | User `.exe` |
 | [WinSCP](./windows/winscp.md) | 6.3.3 | `.exe` |
 | [Wireshark](./windows/wireshark.md) | 4.2.3 | `.exe` |
+| [Everything](./windows/everything.md) | 1.4.1.1024 | `.exe` |
+| [foobar2000](./windows/foobar2000.md) | 2.1.5 | `.exe` |
+| [Greenshot](./windows/greenshot.md) | 1.3.274 | `.exe` |
+| [Insomnia](./windows/insomnia.md) | 9.3.3 | `.exe` |
+| [MobaXterm](./windows/mobaxterm.md) | 23.6 | `.exe` |
+| [Notepad2](./windows/notepad2.md) | 4.23.04 | `.exe` |
+| [Postman](./windows/postman.md) | 10.22.13 | `.exe` |
+| [PowerToys](./windows/powertoys.md) | 0.79.0 | `.exe` |
+| [ShareX](./windows/sharex.md) | 16.0.0 | `.exe` |
+| [WSL](./windows/wsl.md) | 2.x | Built-in |
 
 📄 Template Format
 

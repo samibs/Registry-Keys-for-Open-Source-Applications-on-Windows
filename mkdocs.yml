@@ -42,6 +42,9 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Reference:
+    - Registry Value Types: registry-types.md
+    - Automation Cookbook: cookbook.md
   - Applications:
     - 7-Zip: 7zip.md
     - Audacity: audacity.md
@@ -72,3 +75,15 @@ nav:
     - Visual Studio Code: vscode.md
     - WinSCP: winscp.md
     - Wireshark: wireshark.md
+    - Tags: tags.md
+  - New in Batch 3:
+    - Everything: everything.md
+    - foobar2000: foobar2000.md
+    - Greenshot: greenshot.md
+    - Insomnia: insomnia.md
+    - MobaXterm: mobaxterm.md
+    - Notepad2: notepad2.md
+    - Postman: postman.md
+    - PowerToys: powertoys.md
+    - ShareX: sharex.md
+    - WSL: wsl.md

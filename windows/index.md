@@ -48,6 +48,16 @@ When open-source applications are installed on Windows, they write entries to th
 | [Visual Studio Code](vscode.md) | 1.85.1 | User `.exe` | HKCU, HKCR |
 | [WinSCP](winscp.md) | 6.3.3 | `.exe` | HKCU, HKLM |
 | [Wireshark](wireshark.md) | 4.2.3 | `.exe` | HKLM, HKCR, SYSTEM |
+| [Everything](everything.md) | 1.4.1.1024 | `.exe` | HKLM, HKCU |
+| [foobar2000](foobar2000.md) | 2.1.5 | `.exe` | HKLM, HKCU |
+| [Greenshot](greenshot.md) | 1.3.274 | `.exe` | HKLM, HKCU |
+| [Insomnia](insomnia.md) | 9.3.3 | `.exe` | HKLM |
+| [MobaXterm](mobaxterm.md) | 23.6 | `.exe` | HKLM, HKCU |
+| [Notepad2](notepad2.md) | 4.23.04 | `.exe` | HKLM |
+| [Postman](postman.md) | 10.22.13 | `.exe` | HKLM, HKCU |
+| [PowerToys](powertoys.md) | 0.79.0 | `.exe` | HKLM, HKCU |
+| [ShareX](sharex.md) | 16.0.0 | `.exe` | HKLM |
+| [WSL](wsl.md) | 2.x | Built-in | HKLM, HKCU |
 
 ---
 

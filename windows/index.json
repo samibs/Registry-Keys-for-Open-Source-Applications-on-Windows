@@ -82,6 +82,24 @@
     ]
   },
   {
+    "name": "Everything (voidtools)",
+    "slug": "everything",
+    "file": "windows/everything.md",
+    "version_tested": "1.4.1.1024",
+    "installer_type": "`.exe` official installer from voidtools.com",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Everything",
+      "HKEY_CURRENT_USER\\Software\\Voidtools\\Everything",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKEY_CLASSES_ROOT\\es"
+    ]
+  },
+  {
     "name": "FileZilla",
     "slug": "filezilla",
     "file": "windows/filezilla.md",
@@ -113,6 +131,22 @@
       "HKEY_CURRENT_USER\\Software\\Mozilla\\Mozilla Firefox",
       "HKEY_CLASSES_ROOT\\FirefoxHTML-<hash>",
       "HKEY_CLASSES_ROOT\\FirefoxURL-<hash>"
+    ]
+  },
+  {
+    "name": "foobar2000",
+    "slug": "foobar2000",
+    "file": "windows/foobar2000.md",
+    "version_tested": "2.1.5",
+    "installer_type": "`.exe` official installer from foobar2000.org",
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\foobar2000",
+      "HKEY_CLASSES_ROOT\\foobar2000",
+      "HKEY_CLASSES_ROOT\\.mp3`, `.flac`, `.ogg"
     ]
   },
   {
@@ -161,6 +195,22 @@
     ]
   },
   {
+    "name": "Greenshot",
+    "slug": "greenshot",
+    "file": "windows/greenshot.md",
+    "version_tested": "1.3.274",
+    "installer_type": "`.exe` official installer from getgreenshot.org",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Greenshot_is1",
+      "HKEY_CURRENT_USER\\Software\\Greenshot",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
+    ]
+  },
+  {
     "name": "HandBrake",
     "slug": "handbrake",
     "file": "windows/handbrake.md",
@@ -203,6 +253,21 @@
     ]
   },
   {
+    "name": "Insomnia",
+    "slug": "insomnia",
+    "file": "windows/insomnia.md",
+    "version_tested": "9.3.3",
+    "installer_type": "`.exe` official installer from insomnia.rest",
+    "hives": [
+      "HKCR",
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\insomnia",
+      "HKEY_CLASSES_ROOT\\insomnia"
+    ]
+  },
+  {
     "name": "KeePass Password Safe",
     "slug": "keepass",
     "file": "windows/keepass.md",
@@ -233,6 +298,22 @@
     ]
   },
   {
+    "name": "MobaXterm",
+    "slug": "mobaxterm",
+    "file": "windows/mobaxterm.md",
+    "version_tested": "23.6",
+    "installer_type": "`.msi` official installer from mobaxterm.mobatek.net",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Mobatek\\MobaXterm",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}",
+      "HKEY_CURRENT_USER\\Software\\Mobatek\\MobaXterm"
+    ]
+  },
+  {
     "name": "Node.js",
     "slug": "nodejs",
     "file": "windows/nodejs.md",
@@ -244,6 +325,21 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Node.js",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\{<GUID>}"
+    ]
+  },
+  {
+    "name": "Notepad2",
+    "slug": "notepad2",
+    "file": "windows/notepad2.md",
+    "version_tested": "4.23.04",
+    "installer_type": "`.exe` unofficial installer / portable ZIP from notepad2.com (by Florian Balmer)",
+    "hives": [
+      "HKCR",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Notepad2",
+      "HKEY_CLASSES_ROOT\\*\\shell\\Open with Notepad2"
     ]
   },
   {
@@ -274,6 +370,38 @@
     "registry_paths": [
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\OBS Studio",
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\OBS Studio"
+    ]
+  },
+  {
+    "name": "Postman",
+    "slug": "postman",
+    "file": "windows/postman.md",
+    "version_tested": "10.22.13",
+    "installer_type": "`.exe` official installer from postman.com",
+    "hives": [
+      "HKCR",
+      "HKCU"
+    ],
+    "registry_paths": [
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\postman",
+      "HKEY_CLASSES_ROOT\\postman"
+    ]
+  },
+  {
+    "name": "Microsoft PowerToys",
+    "slug": "powertoys",
+    "file": "windows/powertoys.md",
+    "version_tested": "0.79.0",
+    "installer_type": "`.exe` official installer from github.com/microsoft/PowerToys",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\PowerToys",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\PowerToys",
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\Microsoft PowerToys - x64",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run"
     ]
   },
   {
@@ -329,6 +457,23 @@
       "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\qBittorrent",
       "HKEY_CLASSES_ROOT\\.torrent",
       "HKEY_CLASSES_ROOT\\magnet"
+    ]
+  },
+  {
+    "name": "ShareX",
+    "slug": "sharex",
+    "file": "windows/sharex.md",
+    "version_tested": "16.0.0",
+    "installer_type": "`.exe` official installer from getsharex.com",
+    "hives": [
+      "HKCR",
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\ShareX_is1",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Run",
+      "HKEY_CLASSES_ROOT\\sharex"
     ]
   },
   {
@@ -463,6 +608,23 @@
       "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\npcap",
       "HKEY_CLASSES_ROOT\\.pcap",
       "HKEY_CLASSES_ROOT\\.pcapng"
+    ]
+  },
+  {
+    "name": "Windows Subsystem for Linux (WSL)",
+    "slug": "wsl",
+    "file": "windows/wsl.md",
+    "version_tested": "WSL 2 (kernel 5.15.x)",
+    "installer_type": "Windows Feature via `wsl --install` (Windows 10 2004+ / Windows 11)",
+    "hives": [
+      "HKCU",
+      "HKLM"
+    ],
+    "registry_paths": [
+      "HKEY_LOCAL_MACHINE\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Lxss",
+      "HKEY_CURRENT_USER\\Software\\Microsoft\\Windows\\CurrentVersion\\Lxss",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\WslService",
+      "HKEY_LOCAL_MACHINE\\SYSTEM\\CurrentControlSet\\Services\\LxssManager"
     ]
   }
 ]
