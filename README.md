@@ -1,6 +1,8 @@
 Registry Keys for Open-Source Applications on Windows
 
 [![Documentation Site](https://img.shields.io/badge/docs-live%20site-blue?logo=materialformkdocs)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/)
+[![Apps Documented](https://img.shields.io/badge/apps%20documented-90-brightgreen)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/)
+[![Registry Paths](https://img.shields.io/badge/registry%20paths-300%2B-orange)](https://samibs.github.io/Registry-Keys-for-Open-Source-Applications-on-Windows/stats/)
 [![Validate Docs](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/validate.yml/badge.svg)](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/validate.yml)
 [![Deploy Pages](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/deploy-pages.yml/badge.svg)](https://github.com/samibs/Registry-Keys-for-Open-Source-Applications-on-Windows/actions/workflows/deploy-pages.yml)
 

@@ -48,99 +48,93 @@ nav:
     - Project Statistics: stats.md
   - Applications:
     - 7-Zip: 7zip.md
+    - Android Studio: android-studio.md
+    - Angry IP Scanner: angry-ip-scanner.md
     - Audacity: audacity.md
+    - AutoHotkey: autohotkey.md
+    - balenaEtcher: balenaetcher.md
+    - Bitwarden: bitwarden.md
+    - BleachBit: bleachbit.md
     - Brave Browser: brave.md
-    - DBeaver: dbeaver.md
+    - Calibre: calibre.md
+    - Clementine: clementine.md
+    - Clink: clink.md
+    - CPU-Z: cpu-z.md
+    - CrystalDiskInfo: crystaldiskinfo.md
+    - DBeaver Community Edition: dbeaver.md
     - Docker Desktop: docker-desktop.md
+    - draw.io: drawio.md
+    - Espanso: espanso.md
+    - Everything: everything.md
+    - ExifTool: exiftool.md
+    - f.lux: flux.md
     - FileZilla: filezilla.md
-    - Mozilla Firefox: firefox.md
+    - foobar2000: foobar2000.md
+    - FreeCAD: freecad.md
     - GIMP: gimp.md
     - Git Extensions: git-extensions.md
     - Git for Windows: git.md
+    - Greenshot: greenshot.md
     - HandBrake: handbrake.md
     - HeidiSQL: heidisql.md
+    - HWiNFO: hwinfo.md
     - Inkscape: inkscape.md
+    - Insomnia: insomnia.md
+    - IrfanView: irfanview.md
+    - JDownloader 2: jdownloader.md
+    - Jellyfin: jellyfin.md
+    - Kdenlive: kdenlive.md
     - KeePass Password Safe: keepass.md
+    - KeePassXC: keepassxc.md
+    - Krita: krita.md
     - LibreOffice: libreoffice.md
+    - LibreWolf: librewolf.md
+    - LMMS: lmms.md
+    - MediaInfo: mediainfo.md
+    - Microsoft PowerToys: powertoys.md
+    - MobaXterm: mobaxterm.md
+    - Mozilla Firefox: firefox.md
+    - Mozilla Thunderbird: thunderbird.md
+    - MPC-HC: mpc-hc.md
+    - mpv: mpv.md
+    - mRemoteNG: mremoteng.md
+    - MusicBee: musicbee.md
+    - Nextcloud Desktop: nextcloud.md
+    - Nmap: nmap.md
     - Node.js: nodejs.md
     - Notepad++: notepadplusplus.md
+    - Notepad2: notepad2.md
+    - Npcap: npcap.md
     - OBS Studio: obs.md
+    - Obsidian: obsidian.md
+    - OpenVPN: openvpn.md
+    - Oracle VM VirtualBox: virtualbox.md
+    - PDFsam Basic: pdfsam.md
+    - PeaZip: peazip.md
+    - Postman: postman.md
+    - Process Hacker: processhacker.md
     - PuTTY: putty.md
     - Python: python.md
     - qBittorrent: qbittorrent.md
+    - Rclone: rclone.md
+    - Rufus: rufus.md
+    - RustDesk: rustdesk.md
+    - ScreenToGif: screentogif.md
+    - ShareX: sharex.md
     - Signal Desktop: signal.md
     - Sublime Text: sublime-text.md
+    - Sumatra PDF: sumatrapdf.md
+    - Syncthing: syncthing.md
     - Telegram Desktop: telegram.md
-    - Oracle VM VirtualBox: virtualbox.md
-    - VLC Media Player: vlc.md
+    - Ventoy: ventoy.md
     - Visual Studio Code: vscode.md
+    - VLC Media Player: vlc.md
+    - WinDirStat: windirstat.md
+    - Windows Subsystem for Linux: wsl.md
+    - Windows Terminal: windows-terminal.md
+    - WinMerge: winmerge.md
     - WinSCP: winscp.md
     - Wireshark: wireshark.md
-    - Tags: tags.md
-  - New in Batch 3:
-    - Everything: everything.md
-    - foobar2000: foobar2000.md
-    - Greenshot: greenshot.md
-    - Insomnia: insomnia.md
-    - MobaXterm: mobaxterm.md
-    - Notepad2: notepad2.md
-    - Postman: postman.md
-    - PowerToys: powertoys.md
-    - ShareX: sharex.md
-    - WSL: wsl.md
-  - New in Batch 4:
-    - balenaEtcher: balenaetcher.md
-    - Calibre: calibre.md
-    - CrystalDiskInfo: crystaldiskinfo.md
-    - Espanso: espanso.md
-    - f.lux: flux.md
-    - KeePassXC: keepassxc.md
-    - MusicBee: musicbee.md
-    - Nmap: nmap.md
-    - Obsidian: obsidian.md
-    - RustDesk: rustdesk.md
-    - Sumatra PDF: sumatrapdf.md
-  - New in Batch 5:
-    - AutoHotkey: autohotkey.md
-    - Bitwarden: bitwarden.md
-    - HWiNFO: hwinfo.md
-    - IrfanView: irfanview.md
-    - mRemoteNG: mremoteng.md
-    - OpenVPN: openvpn.md
-    - Process Hacker: processhacker.md
-    - Rufus: rufus.md
-    - Syncthing: syncthing.md
-    - WinMerge: winmerge.md
-  - New in Batch 6:
-    - FreeCAD: freecad.md
-    - LMMS: lmms.md
-    - MediaInfo: mediainfo.md
-    - MPC-HC: mpc-hc.md
-    - Nextcloud Desktop: nextcloud.md
-    - PDFsam Basic: pdfsam.md
-    - ScreenToGif: screentogif.md
-    - Mozilla Thunderbird: thunderbird.md
-    - WinDirStat: windirstat.md
-    - ZeroTier: zerotier.md
-  - New in Batch 7:
-    - Android Studio: android-studio.md
-    - BleachBit: bleachbit.md
-    - draw.io: drawio.md
-    - Kdenlive: kdenlive.md
-    - mpv: mpv.md
-    - PeaZip: peazip.md
-    - Rclone: rclone.md
-    - Ventoy: ventoy.md
     - XnView MP: xnviewmp.md
-    - CPU-Z: cpu-z.md
-  - New in Batch 8:
-    - Angry IP Scanner: angry-ip-scanner.md
-    - Clementine: clementine.md
-    - Clink: clink.md
-    - ExifTool: exiftool.md
-    - JDownloader 2: jdownloader.md
-    - Jellyfin: jellyfin.md
-    - Krita: krita.md
-    - LibreWolf: librewolf.md
-    - Npcap: npcap.md
-    - Windows Terminal: windows-terminal.md
+    - ZeroTier: zerotier.md
+    - Tags: tags.md
