@@ -86,6 +86,7 @@ nav:
     - Clink: clink.md
     - CPU-Z: cpu-z.md
     - CrystalDiskInfo: crystaldiskinfo.md
+    - DB Browser for SQLite: db-browser-for-sqlite.md
     - DBeaver Community Edition: dbeaver.md
     - Docker Desktop: docker-desktop.md
     - draw.io: drawio.md
@@ -114,6 +115,7 @@ nav:
     - IrfanView: irfanview.md
     - JDownloader 2: jdownloader.md
     - Jellyfin: jellyfin.md
+    - Joplin: joplin.md
     - Kdenlive: kdenlive.md
     - KeePass Password Safe: keepass.md
     - KeePassXC: keepassxc.md
@@ -126,6 +128,7 @@ nav:
     - MobaXterm: mobaxterm.md
     - Mozilla Firefox: firefox.md
     - Mozilla Thunderbird: thunderbird.md
+    - Mp3tag: mp3tag.md
     - MPC-HC: mpc-hc.md
     - mpv: mpv.md
     - mRemoteNG: mremoteng.md
@@ -158,6 +161,7 @@ nav:
     - Syncthing: syncthing.md
     - Telegram Desktop: telegram.md
     - Ventoy: ventoy.md
+    - VeraCrypt: veracrypt.md
     - Visual Studio Code: vscode.md
     - VLC Media Player: vlc.md
     - WinDirStat: windirstat.md
