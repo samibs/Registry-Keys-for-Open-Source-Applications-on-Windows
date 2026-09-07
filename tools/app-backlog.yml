@@ -26,7 +26,7 @@ apps:
     installer_type: "msi"
     tags: ["3d-graphics", "HKCU", "HKLM", "msi-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "DB Browser for SQLite"
     slug: "db-browser-for-sqlite"
@@ -34,7 +34,7 @@ apps:
     installer_type: "msi"
     tags: ["database", "sqlite", "HKCU", "HKLM", "msi-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "Joplin"
     slug: "joplin"
@@ -42,7 +42,7 @@ apps:
     installer_type: "exe"
     tags: ["note-taking", "HKCU", "HKLM", "exe-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "VeraCrypt"
     slug: "veracrypt"
@@ -50,7 +50,7 @@ apps:
     installer_type: "exe"
     tags: ["encryption", "security", "HKCU", "HKLM", "exe-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "Mp3tag"
     slug: "mp3tag"
@@ -58,7 +58,7 @@ apps:
     installer_type: "exe"
     tags: ["audio", "tag-editor", "HKCU", "HKLM", "exe-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "MusicBrainz Picard"
     slug: "musicbrainz-picard"
