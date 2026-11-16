@@ -66,7 +66,7 @@ apps:
     installer_type: "msi"
     tags: ["audio", "tag-editor", "HKCU", "HKLM", "msi-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "FreeFileSync"
     slug: "freefilesync"
@@ -74,7 +74,7 @@ apps:
     installer_type: "exe"
     tags: ["file-sync", "backup", "HKCU", "HKLM", "exe-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "ImageGlass"
     slug: "imageglass"
@@ -82,7 +82,7 @@ apps:
     installer_type: "msi"
     tags: ["image-viewer", "HKCU", "HKLM", "msi-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "Darktable"
     slug: "darktable"
@@ -90,7 +90,7 @@ apps:
     installer_type: "exe"
     tags: ["photo-editing", "raw-processing", "HKCU", "HKLM", "exe-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "RawTherapee"
     slug: "rawtherapee"
@@ -98,7 +98,7 @@ apps:
     installer_type: "exe"
     tags: ["photo-editing", "raw-processing", "HKCU", "HKLM", "exe-installer"]
     hives: ["HKCU", "HKLM"]
-    status: queued
+    status: stub
 
   - name: "Shotcut"
     slug: "shotcut"

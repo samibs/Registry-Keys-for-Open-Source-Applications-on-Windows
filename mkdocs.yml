@@ -86,6 +86,7 @@ nav:
     - Clink: clink.md
     - CPU-Z: cpu-z.md
     - CrystalDiskInfo: crystaldiskinfo.md
+    - Darktable: darktable.md
     - DB Browser for SQLite: db-browser-for-sqlite.md
     - DBeaver Community Edition: dbeaver.md
     - Docker Desktop: docker-desktop.md
@@ -99,6 +100,7 @@ nav:
     - Flameshot: flameshot.md
     - foobar2000: foobar2000.md
     - FreeCAD: freecad.md
+    - FreeFileSync: freefilesync.md
     - FurMark: furmark.md
     - GIMP: gimp.md
     - Git Extensions: git-extensions.md
@@ -110,6 +112,7 @@ nav:
     - HeidiSQL: heidisql.md
     - HWiNFO: hwinfo.md
     - HxD Hex Editor: hxd.md
+    - ImageGlass: imageglass.md
     - Inkscape: inkscape.md
     - Insomnia: insomnia.md
     - IrfanView: irfanview.md
@@ -133,6 +136,7 @@ nav:
     - mpv: mpv.md
     - mRemoteNG: mremoteng.md
     - MusicBee: musicbee.md
+    - MusicBrainz Picard: musicbrainz-picard.md
     - Nextcloud Desktop: nextcloud.md
     - Nmap: nmap.md
     - Node.js: nodejs.md
@@ -150,6 +154,7 @@ nav:
     - PuTTY: putty.md
     - Python: python.md
     - qBittorrent: qbittorrent.md
+    - RawTherapee: rawtherapee.md
     - Rclone: rclone.md
     - Rufus: rufus.md
     - RustDesk: rustdesk.md
